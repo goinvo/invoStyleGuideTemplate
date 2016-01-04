@@ -1,0 +1,24 @@
+/* variables */
+$input-height: 2.7rem;
+$radius-base: 0.2rem;
+
+/* mix-ins */
+@mixin border-radius($radius) { 
+	-webkit-border-radius: $radius;
+	-moz-border-radius:	$radius;
+	border-radius: $radius;
+}
+@mixin input-focus {
+	border: $focus-border;
+	box-shadow: $focus-shadow;
+}
+@mixin button-hover {
+	background:$button-hover;
+	border:$button-hover-border;
+}
+@mixin no-select {
+	  -webkit-user-select: none;  /* Chrome all / Safari all */
+	  -moz-user-select: none;     /* Firefox all */
+	  -ms-user-select: none;      /* IE 10+ */
+	  user-select: none;	
+}

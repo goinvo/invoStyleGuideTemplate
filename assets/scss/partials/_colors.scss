@@ -1,0 +1,136 @@
+//## IMS Main Color Palette
+$ims-cyan:              #00aeef; //rgb(0,174,239)
+$ims-dark-blue:         #002868;
+$ims-light-blue:        #d5e4f3;
+$ims-light-brown:       #f7f2db;
+$ims-ivory:             #fef9e3;
+//## IMS Supplemental Color Palette
+$ims-orange:            #faa53a;
+$ims-yellow:            #ffd800; //modified from f8c242; clashes with ims-green in color-blindness tests
+$ims-green:             #77a822; //modified from b7cc37; clashes with ims-yellow and ims-orange in color-blindness tests
+$ims-plum:              #9c0048; //modified from #a2255f; for color blindness
+$ims-teal:              #1b8f9e;
+$ims-gray:              #a6a8ac;
+$ims-stone:             #c5c19d;
+$ims-warm-gray:         #f7f5f4;
+//## Report colors: listed dark to light
+$report-blue: rgb(0,40,104); //ims-dark-blue
+$report-blue2: rgb(51,83,134);
+$report-blue3: rgb(102,126,164);
+$report-blue4: rgb(153,169,195);
+$report-blue5: rgb(204,212,225);
+
+$report-teal: rgb(27,143,158); //ims teal
+$report-teal2: rgb(73,165,177);
+$report-teal3: rgb(118,188,197);
+$report-teal4: rgb(164,210,216);
+$report-teal5: rgb(209,233,236);
+
+$report-cyan: rgb(0,170,239); //ims-cyan
+$report-cyan2: rgb(51,187,242);
+$report-cyan3: rgb(102,204,245);
+$report-cyan4: rgb(153,221,249);
+$report-cyan5: rgb(217,242,253);
+
+$report-plum: rgb(156,0,72); //ims-plum modified
+$report-plum2: rgb(176,51,109);
+$report-plum3: rgb(196,102,145);
+$report-plum4: rgb(223,167,185);
+$report-plum5: rgb(235,204,218);
+
+$report-orange: rgb(250,165,58); //ims-orange
+$report-orange2: rgb(251,183,97);
+$report-orange3: rgb(252,201,137);
+$report-orange4: rgb(253,219,176);
+$report-orange5: rgb(254,237,216);
+
+$report-yellow: rgb(255,216,0); //ims-yellow modified
+$report-yellow2: rgb(255,224,51);
+$report-yellow3: rgb(255,232,102);
+$report-yellow4: rgb(255,239,153);
+$report-yellow5: rgb(255,245,191);
+
+$report-violet: rgb(78,12,120);
+$report-violet2: rgb(113,61,147);
+$report-violet3: rgb(149,109,174);
+$report-violet4: rgb(184,158,201);
+$report-violet5: rgb(211,194,221);
+
+$report-green: rgb(119,168,34); //ims-green modified
+$report-green2: rgb(146,185,78);
+$report-green3: rgb(173,203,122);
+$report-green4: rgb(201,220,167);
+$report-green5: rgb(221,223,200);
+
+$report-positive: rgb(72,139,67);
+$report-positive2: rgb(109,162,105);
+$report-positive3: rgb(145,185,142);
+$report-positive4: rgb(182,209,180);
+$report-positive5: rgb(218,232,217);
+
+$report-negative: rgb(114,22,22);
+$report-negative2: rgb(142,69,69);
+$report-negative3: rgb(170,115,115);
+$report-negative4: rgb(199,162,162);
+$report-negative5: rgb(220,197,197);
+
+//Application colors
+$font-color-base: #323334;
+$font-color-link: #00aeef;
+$font-color-secondary: #979ba8;
+$font-color-nav: #fff;
+
+$shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,.2);
+$hard-shadow:  0 0.1rem 0.1rem 0 rgba(0,0,0,.3);
+$blue-shadow: 0 0.1rem 0.3rem 0 rgba(0,174,239,.2);
+$ui-handle-shadow: 0 0.1rem 0.5rem 0 rgba(0,0,0,.2);
+$ui-track-shadow: inset 0 0.1rem 0.3rem -0.1rem rgba(0,0,0,.2);
+$border-color: #d6d6d6;
+$border-base: solid $border-color 0.1rem;
+
+$main-nav-color: #34363b;
+$sub-nav-color: #f7f5f4; /*$ims-warm-grey*/
+$main-nav-selected: #282a2e;
+$sub-nav-selected: #dfdfdf;
+$main-nav-border: solid #000 0.1rem;
+$sub-nav-border: solid $border-color 0.1rem;
+$alert-color: #00aeef;
+$breadcrumb-bg: #dfdfdf;
+
+$button-base-bg: linear-gradient(to bottom, #fdfdfd 0%,#ececec 100%);
+$button-hover: linear-gradient(to bottom, #efefef 0%,#cecece 100%);
+$button-hover-border: solid #b6b6b6 0.1rem;
+$button-active-inactive-bg:#979ba8;
+$button-active-bg: #00aeef;
+$button-border-active: solid #00aeef 0.1rem;
+$button-active-hover: #00a5ea;
+$button-hover-border-active: solid #0080c8 0.1rem;
+$font-color-button-active: #fff;
+$input-border: solid #d6d6d6 0.1rem;
+$textured-button-bg: linear-gradient(to bottom, #00aded 30%,#048fc3 100%);
+$focus-border: solid #00aeef 0.1rem; /* ims-cyan */
+$focus-shadow: 0 0.1rem 0.3rem 0 rgba(0,174,239,.5); /* ims-cyan $ 50% alpha */
+$dropdown-selected: #dcedf8;
+
+$error-border: solid #db9fa5 0.1rem;
+$error-background: #f6e9e9;
+$error-color: #b94a48;
+
+$card-option-bg: #fefefe;
+$card-border: solid #d6d6d6 0.1rem;
+$control-popup-border: solid #c8c8c8 0.1rem;
+$selected-option-bg: #dcedf8;
+$side-panel-bg: rgba(247,245,244,.9); /*f7f5f4 // $ims-warm-grey*/
+$side-panel-border: solid $border-color 0.1rem;
+
+$axis-border: solid #d6d6d6 0.1rem;
+$report-grid-lines: #fafafa;
+$report-grid-zero-line: #e4e4e4;
+$report-hover-tip-bg: rgba(38,42,51,.85);
+$report-hover-tip-text: #fff;
+
+//tile colors
+$brand-color: #002868;
+$private-color: #8bc34a;
+$shared-color: #00aaef;
+$cohort-color: #002868;

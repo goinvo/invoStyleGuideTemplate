@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'e360-icons';
+	src:url('fonts/e360-icons.eot?o6wjuy');
+	src:url('fonts/e360-icons.eot?o6wjuy#iefix') format('embedded-opentype'),
+		url('fonts/e360-icons.ttf?o6wjuy') format('truetype'),
+		url('fonts/e360-icons.woff?o6wjuy') format('woff'),
+		url('fonts/e360-icons.svg?o6wjuy#e360-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="e360-"], [class*=" e360-"] {
+	font-family: 'e360-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.e360-icons {
+	display: inline-block;
+	font: normal normal normal 12px/1 e360-icons;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.e360-2x {
+	font-size:2em;
+}
+.e360-3x {
+	font-size:3em;
+}
+.e360-4x {
+	font-size:4em;
+}
+.e360-5x {
+	font-size:5em;
+}
+.e360-icon-xxs {
+	font-size: 25%;
+}
+.e360-icon-xs {
+	font-size:50%;
+}
+.e360-icon-s {
+	font-size: 66%;
+}
+.e360-icon-m {
+	font-size: 100%;
+}
+.e360-icon-l {
+	font-size: 150%;
+}
+.e360-icon-xl {
+	font-size: 200%;
+}
+.e360-icon-xxl {
+	font-size: 400%;
+}
+.e360-chart-bar:before {
+	content: "\e900";
+}
+.e360-chart-bar-stacked:before {
+	content: "\e901";
+}
+.e360-chart-bar-stack-vertical:before {
+	content: "\e902";
+}
+.e360-chart-switch-matrix:before {
+	content: "\e903";
+}
+.e360-chart-switch-matrix-basic:before {
+	content: "\e904";
+}
+.e360-check-bubble:before {
+	content: "\e905";
+}
+.e360-close:before {
+	content: "\e906";
+}
+.e360-collapse:before {
+	content: "\e907";
+}
+.e360-column-shift-arrow:before {
+	content: "\e908";
+}
+.e360-column-shift-double-arrow:before {
+	content: "\e909";
+}
+.e360-copy:before {
+	content: "\e90a";
+}
+.e360-database:before {
+	content: "\e90b";
+}
+.e360-edit:before {
+	content: "\e90c";
+}
+.e360-faved:before {
+	content: "\e90d";
+}
+.e360-input-drop-arrow:before {
+	content: "\e90e";
+}
+.e360-locked:before {
+	content: "\e90f";
+}
+.e360-mini-chart-switch-matrix-arrow:before {
+	content: "\e910";
+}
+.e360-more-info:before {
+	content: "\e911";
+}
+.e360-options-ellipsis:before {
+	content: "\e912";
+}
+.e360-save:before {
+	content: "\e913";
+}
+.e360-search:before {
+	content: "\e914";
+}
+.e360-share:before {
+	content: "\e915";
+}
+.e360-time-line-play:before {
+	content: "\e916";
+}
+.e360-ui-drop-arrow:before {
+	content: "\e917";
+}
+.e360-unlocked:before {
+	content: "\e918";
+}
+.e360-view-grid:before {
+	content: "\e919";
+}
+.e360-view-list:before {
+	content: "\e91a";
+}
+.e360-workspace:before {
+	content: "\e91b";
+}
+.e360-workspace-landing:before {
+	content: "\e91c";
+}
+

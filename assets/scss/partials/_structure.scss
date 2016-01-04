@@ -1,0 +1,326 @@
+
+
+.topNav {
+	height: 5.0rem;
+	background: $main-nav-color;
+	color: $font-color-nav;
+	font-size: $font-size-base;
+	position: relative;
+	ul {
+		list-style: none;
+		display: inline-block;
+		margin-left: -4.0rem;
+		margin-top: 0rem;
+		li {
+			display:inline-block;
+			padding: 0 1.5rem 0 1.5rem; 
+			line-height: 5.0rem; 
+
+			@include no-select;
+			ul.dropdown {
+				background:$main-nav-selected;
+				border: $main-nav-border;
+				margin-top: 0rem;
+				padding-top:0.7rem;
+				padding-bottom:0.7rem;
+				li { 
+					color:$font-color-nav;
+					padding: 0.7rem 0rem 0.7rem 0;
+					&:nth-child(2) {margin-left: 0; } 
+				}
+			}	
+			&#user { 
+				border-right:$main-nav-border; 
+				cursor: pointer;
+				position: relative;
+				.dropdown {
+					margin-left: 0;
+					padding-left: 3.0rem;
+					width: 79%;
+				}
+			}
+			&:hover { background: $main-nav-selected; }
+			&:first-child { padding-left: 3.0rem; }
+			&:nth-child(2) {margin-left: -0.3rem; } /*hack to space between user and workspaces*/
+			a {
+				color: $font-color-nav;
+				&:hover { text-decoration: none; }
+			}
+			&.active {
+				background: $main-nav-selected;
+			}
+			.alert {
+				min-width: 1.1rem;
+				background: $alert-color;
+				@include border-radius(1.1rem);
+				font-size: 0.8rem;
+				padding: 0 0.4rem 0 0.4rem;
+				position: relative;
+				top: -0.1rem;
+				left: 0.2rem;
+			}
+			.e360-ui-drop-arrow {
+				color: $font-color-nav;
+			}
+		}
+	}
+	.logo-container {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		div { display:inline-block;}
+		#logo {
+			border-left:$main-nav-border;
+			height: 3.5rem;
+			padding: 1.5rem 3.0rem 0 1.5rem;
+		}
+		.e360-search {
+			position:absolute;
+			top:1.5rem;
+			right:13.0rem;
+			font-size: 1.7em;
+		}
+	}
+}
+
+.subNav {
+	position: relative;
+	height: 4.6rem;
+	box-sizing: border-box;
+	background: $sub-nav-color;
+	border-bottom: $sub-nav-border;
+	color: $font-color-base;
+	font-size: $font-size-base;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		vertical-align: top;
+		display: inline-block;
+
+		li {
+			box-sizing: border-box;
+			@include no-select;
+			display: inline-block;
+			padding: 1.5rem 1.5rem 0 1.5rem;
+			height: 4.6rem;
+			position: relative;
+			margin-left: -0.3rem;
+
+			svg {
+				fill: $font-color-link;
+			}
+			.icon {
+				color: $font-color-link;
+			}
+			ul.dropdown {
+				background:$sub-nav-color;
+				border: $sub-nav-border;
+				margin-top: 1.4rem;
+				margin-left: 0;
+				padding-left: 0;
+				li { 
+					display: block;
+					padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+					color: $font-color-base;
+					line-height: 1.4rem;
+					height: auto;
+					&:hover, &.active {
+						background: $dropdown-selected;
+						color: $font-color-link;
+					} 
+				}
+			}
+			&.chart:hover,
+			&.reportSwitch:hover,
+			&.reportAction:hover,
+			&.chart.chartSwitch.active,
+			&.reportSwitch.active,
+			&.reportAction.active {
+				background: $sub-nav-selected;
+				a {
+					color: $font-color-base;
+					text-decoration: none;
+					font-weight: bold;
+					letter-spacing: -0.03rem;
+				}
+				.icon { color: $font-color-base; }
+				svg {fill:$font-color-base;}
+			}
+
+			.dropdown {
+				background: #f7f5f4;
+				border: solid 0.1rem #d6d6d6;
+				overflow: auto;
+				z-index:3;
+				margin-top: 1.6rem;
+				li {
+					&:hover {
+						background: #dcedf8;
+						color: #00aeef;
+					}
+				}
+			}
+		}
+	}
+	
+	.subNavLeft {
+		position: absolute;
+		left: 0;
+		display: inline-block;
+	}
+
+	.subNavRight {
+		position: absolute;
+		right: 0;
+		display: inline-block;
+		li {
+			border-left: $sub-nav-border;
+			height: 4.4rem;
+		}
+	}
+
+	.reportSwitch,
+	.chart:last-child,
+	.pageTitle {
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0.6rem;
+			right: 0;
+			height: 3.4rem;
+			border-right: $sub-nav-border;
+		}
+	}
+
+	.breadcrumbNav {
+		.breadcrumb {
+			margin-right: -1.5rem;
+			padding-left: 2.5rem;
+			margin-left: 1.5rem;
+			padding-right: 0.3rem; 
+			a {color: $font-color-secondary;}
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: -1.7rem;
+				width: 0; 
+				height: 0; 
+				border-top: 2.3rem solid transparent; 
+				border-bottom: 2.3rem solid transparent;
+				border-left: 1.5rem solid $sub-nav-selected;  
+				z-index: 3;
+			}
+			&:after{
+				right: -1.5rem; 
+				border-left: 1.5rem solid $sub-nav-color; 
+			}
+			&:first-child {
+				padding-left: 3.0rem;
+				margin-left: 0rem;
+			}
+			&:hover { 
+				a{color: $font-color-base;} 
+				background: $sub-nav-selected;
+				&:after {
+					border-left: 1.5rem solid $sub-nav-selected;
+				}
+				&:last-child {
+					background: $sub-nav-color;
+					&:after {
+						border-left-color: $sub-nav-color;
+					}
+				}
+			}
+		}
+	}
+	.pageTitle {
+		font-weight: bold;
+		margin-left: 2.5rem;
+		top: -0.1rem;
+	}
+	.chartTypeList {
+		li {
+			top: 0;
+			height: 4.6rem;
+			vertical-align: top;
+			.icon { color: $font-color-link; }
+			.active { color: $font-color-base; }
+			a { color: $font-color-base; }
+		}
+	}
+	.reportDetails, .reportSettings, .filters {
+		a {
+			color: $font-color-base;
+			
+			&:hover {
+				text-decoration: none;
+				font-weight: bold;
+			} 
+		}
+	}
+	&#workspaceList, &#workspaceLanding {
+		.pageTitle {
+			&:before{
+				border-right: none;
+			}
+		}
+		.filters {
+			margin-left: 2.5rem;
+			li {
+				display: inline-block;
+			}
+		}
+	}
+	.e360-faved {
+		color: $sub-nav-color;
+		margin-right: 0.9rem;
+		&.faved {
+			color: #e9dd5c;
+		}
+	}
+}
+
+.dropdown, ul.dropdown {
+	display: none;
+	position: absolute;
+	left:0;
+	box-shadow: $shadow;
+	z-index: 3;
+	width: 100%;
+	overflow: hidden;
+	max-height: 20.0rem;
+	&.expand {
+		display:block;
+	}
+	li {
+		display: block;
+		height: auto;
+		font-size:1.2rem;
+		line-height:1.4rem;
+	}
+}
+
+.pageTitle .editInput {
+	width: 57.5rem;
+	padding: 0;
+	margin: 0;
+	textarea, input[type="text"], pre {
+		font-size:$font-size-base;
+		width: 53.8rem;
+		margin-top: -1rem;
+	}
+	.e360-edit {
+		top: 0;
+		padding-top: 0;
+	}
+	.confirm {
+		top: -1.0rem;
+		padding-top: 0;
+		height: 3.4rem;
+	}
+}

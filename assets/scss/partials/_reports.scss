@@ -1,0 +1,442 @@
+.reportTitle {
+	width: 57.5rem;
+	textarea, input[type="text"], pre {
+		font-size:$font-size-title;	
+		width: 53.8rem;
+		line-height:2.2rem;
+	}
+}
+
+.reportLegend {
+	height: 53.5rem;
+	width: 11.7rem;
+	background: #fff;
+	display: inline-block;
+	margin-left: 1.5rem;
+	position: relative;
+	vertical-align: top;
+	ul {
+		list-style:none;
+		margin: 0;
+		padding: 0;
+		&.legend {
+			width: 11.7rem;
+		}
+		li {
+			padding-top: 0.4rem;
+			padding-bottom: 0.4rem;
+			line-height: 1.4rem;
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+		.selectAllLegend {
+			padding-top: 0.9rem;
+			padding-bottom: 0.9rem;
+			border-top: $border-base;
+		}
+		.searchBox {
+			.search {
+				padding-left: 2.5rem;
+			}
+			.e360-search {
+				position: absolute;
+				top: 0.7rem;
+				left: 0.5rem;
+			}
+		}
+		.searchLegend {
+			.search {
+				width: 70%;
+			}
+		}
+		.legendList {
+			max-height: 42.9rem;
+			overflow: auto;
+		}
+		.legend-color {
+			label {
+				color: $font-color-secondary;
+				opacity: .5;
+				&:focus, &:hover {
+					color: $font-color-base;
+				}
+			}
+			input[type="checkbox"] {
+				&#alphacyn:checked + label:before {		background: $report-blue;}
+				&#betacyn:checked + label:before {		background: $report-blue2;}
+				&#deltacyn:checked + label:before {		background: $report-blue3;}
+				&#etacyn:checked + label:before {		background: $report-blue4;}
+				&#gammacyn:checked + label:before {		background: $report-blue5;}
+				&#gammacyn-deltacyn:checked + label:before {background: $report-teal;}
+				&#kappacyn-betacyn:checked + label:before {background: $report-teal2;}
+				&#omegacyn:checked + label:before {		background: $report-teal3;}
+				&#sigmacyn:checked + label:before {		background: $report-teal4;}
+				&#sigma-alphacyn:checked + label:before {background: $report-teal5;}
+				&#sigma-betacyn:checked + label:before {background: $report-cyan;}
+				&#thetacyn:checked + label:before {		background: $report-cyan2;}
+				&#zetacyn:checked + label:before {		background: $report-cyan3;}
+
+				&#alpha-betacyn:checked + label:before {background: $report-cyan4;}
+				&#alphacyn-betacyn:checked + label:before {background: $report-cyan5;}
+				&#delta-betacyn:checked + label:before {background: $report-plum;}
+				&#delta-etacyn:checked + label:before {background: $report-plum2;}
+				&#eta-betacyn:checked + label:before {	background: $report-plum3;}
+				&#gamma-betacyn:checked + label:before {background: $report-plum4;}
+				&#iotacyn:checked + label:before {		background: $report-plum5;}
+				&#theta-sigmacyn:checked + label:before {background: $report-orange;}
+
+				&#alphacyn2:checked + label:before {		background: $report-blue;}
+				&#betacyn2:checked + label:before {		background: $report-blue2;}
+				&#deltacyn2:checked + label:before {		background: $report-blue3;}
+				&#etacyn2:checked + label:before {		background: $report-blue4;}
+				&#gammacyn2:checked + label:before {		background: $report-blue5;}
+				&#gammacyn-deltacyn2:checked + label:before {background: $report-teal;}
+				&#kappacyn-betacyn2:checked + label:before {background: $report-teal2;}
+				&#omegacyn2:checked + label:before {		background: $report-teal3;}
+				&#sigmacyn2:checked + label:before {		background: $report-teal4;}
+				&#sigma-alphacyn2:checked + label:before {background: $report-teal5;}
+				&#sigma-betacyn2:checked + label:before {background: $report-cyan;}
+				&#thetacyn2:checked + label:before {		background: $report-cyan2;}
+				&#zetacyn2:checked + label:before {		background: $report-cyan3;}
+
+				&#alpha-betacyn2:checked + label:before {background: $report-cyan4;}
+				&#alphacyn-betacyn2:checked + label:before {background: $report-cyan5;}
+				&#delta-betacyn2:checked + label:before {background: $report-plum;}
+				&#delta-etacyn2:checked + label:before {background: $report-plum2;}
+				&#eta-betacyn2:checked + label:before {	background: $report-plum3;}
+				&#gamma-betacyn2:checked + label:before {background: $report-plum4;}
+				&#iotacyn2:checked + label:before {		background: $report-plum5;}
+				&#theta-sigmacyn2:checked + label:before {background: $report-orange;}
+
+				&:checked + label:before {
+					border: none;
+				}
+				&:checked + label {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.hidden {
+		border-top:$border-base;
+		border-bottom:$border-base;
+		//margin-top: 0.8rem;
+		.hiddenCount {
+			cursor: pointer;
+			width: 8.5rem;
+			position: relative;
+			@include no-select;
+			padding: 0.8rem 0.8rem 0.8rem 2.2rem;
+			color: $font-color-link;
+			.e360-ui-drop-arrow { color: $font-color-link;}
+			&.active {
+				color: $font-color-base;
+				.e360-ui-drop-arrow { color: $font-color-base;}
+			}
+
+			.dropdown {
+				margin-top: 0.8rem;
+				background: #fff;
+				padding: 0.8rem;
+				width: 87%;
+				border: $border-base;
+				.hiddenList {
+					overflow-y: auto;
+					max-height: 12.0rem;
+					border-bottom:$border-base;
+				}
+				.searchHidden {
+					margin-left: -0.9rem;
+					margin-top: -0.9rem;
+					z-index: 3;
+					width: 87%;
+				}
+				.selectAllHidden {
+					padding-top: 0.8rem;
+				}
+			}
+		}
+	}
+}
+
+#moreInformation {
+	#moreInfoIcon {
+		fill: #b4e7fa;
+		&:hover{
+			fill: #252525;
+		}	
+	}
+	.popup{
+		box-shadow: $shadow;
+		border: $control-popup-border;
+		background: $ims-warm-gray;
+		font-size: $font-size-large;
+		color: $font-color-base;
+		a:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.cohortDefinition {
+	h4 {
+		font-weight: normal;
+		font-size: 1.4rem;
+		line-height: 1.8rem;
+		//letter-spacing: 0.02rem;
+		a {
+			color: $font-color-base;
+			&:hover {
+				text-decoration: none;
+				//font-weight: bold;
+				//letter-spacing: -0.03rem;
+				//cursor: pointer;
+			}
+		}
+	}
+	h4, span {
+		display: inline-block;
+	}
+	.grouping {
+		border-bottom: $border-base;
+		padding: 0.5rem 0 0.5rem 0;
+	}
+	.sampleSize {
+		margin-left: 1.5rem;
+		color: $font-color-secondary;
+		fonf-size: $font-size-base;
+	}
+	.e360-more-info {
+		margin-left: 1.5rem;
+		vertical-align: middle;
+		&:hover {
+			color: $font-color-base;
+		}
+	}
+}
+
+.report-container {
+	height: 52.0rem;
+	width: 90.2rem;
+	background: #fff;
+}
+.axis {
+	position: relative;
+	ul {
+		list-style: none;
+		margin: 0;
+		li {
+			margin: 0;
+		}
+	}
+	.labels {
+		color: $font-color-secondary;
+		font-size: $font-size-base;
+	}
+	&.x-axis {
+		max-height: 47.0rem; //will vary based on chart
+		
+		.axis-label-container {
+			width: 2.0rem;
+			height: 100%;
+			display: inline-block;
+			position: absolute;
+			left: 0;
+		}
+		.axis-label {
+			transform: rotate(-90deg);
+			color: $font-color-secondary;
+			position: absolute;
+			top: 45%;
+			left: -1.2rem;
+		}
+		.values {
+			text-align: right;
+		}
+		.labels {
+			li {
+				&.value {
+					padding-bottom: 0.2rem; 
+					width: 3.0rem;
+				}
+				
+				//will vary based on number of labels shown and, in the future, the size of the chart
+				&:last-child {
+					padding-bottom: 0.9rem;
+				}
+				&.tick {
+					height: 0.1rem;
+					width: 100%;
+					background: rgba(214,214,214,.4); //$border-base $ .4
+					margin-bottom: 3.1rem;
+				}
+				&.tick-zero {
+					height: 0.1rem;
+					width: 100%;
+					margin-bottom: 3.1rem;
+					background: $border-color; 
+				}
+			}
+		}
+	}
+	&.y-axis {
+		.axisBar {
+			height: 0.1rem;
+			width: 100%;
+			background: $border-color;
+		}
+		.labels {
+			margin-top: 0.9rem;
+			margin-left: 3.0rem;
+			li {
+				display: inline-block;
+				width: 3.5rem;
+				vertical-align: top;
+				padding-left: 3.1rem;
+			}
+			.active {
+				font-weight: bold;
+			}
+			.newYear {
+				border-left: $border-base;
+			}
+		}
+	}
+	.label { 
+		font-size: $font-size-base;
+		//typically drug names, dimensions, on-report values
+	}
+}
+
+
+.reportTip {
+	background: rgba(38,42,51,.9);
+	color: $report-hover-tip-text;
+	font-size: $font-size-base;
+	border-top-right-radius: 1.2rem;
+	border-bottom-right-radius: 1.2rem;
+	border-bottom-left-radius: 1.2rem;
+	padding: 1.5rem;
+	max-width: 45.0rem;
+	max-height: 25.0rem;
+	position: relative;
+	.tipTitle {
+		.title {
+			margin: 0;
+			font-weight: normal;
+		}
+		margin-bottom: 1.4rem;
+	}
+	.values {
+		max-height: 20.0rem;
+		overflow: auto;
+		dd {
+			margin-top: -1.8rem;
+		}
+		dt, dd {
+			padding-top: 0.1rem;
+			padding-bottom: 0.1rem;
+		}
+		.value {
+			width: 2.8rem;
+			text-align: right;
+			margin-right: 0.2rem;
+		}
+	}
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 1.6rem 1.6rem 0;
+		border-color: transparent rgba(38,42,51,.9) transparent transparent;
+		position: absolute;
+		top: 0;
+		left: -1.6rem;
+	}
+}
+
+.timeline {
+	.timelineBar {
+		height: 4.4rem;
+		border-top: $border-base;
+		border-bottom: $border-base;
+		.dates {
+			//labels within timeline
+			text-transform:uppercase;
+			color:$font-color-secondary;
+			font-size: $font-size-small;
+			.selectDisabled {
+				opacity: .4
+			}
+		}
+		.selectedTime {
+			background: rgba(196,224,243,.6);
+		}
+	}
+
+	.indexPeriods {
+		//lookback, clean, observation, restart periods 
+		background: $sub-nav-color;
+		.label {
+			color: $font-color-secondary;
+		}
+		.timeSelected {
+			font-weight: bold;
+			color: $font-color-base;
+		}
+		.lookback {
+			background: rgba(199,199,199,.6);
+			border-left: 0.2rem solid #707070;
+		}
+		.restart {
+			background: #fee8ce;
+			border-left: 0.2rem solid #faa53a;
+		}
+		.observation {
+			background: #d2dfcf; //rgba(72,139,67.2)
+			border-left: 0.2rem solid #488b43;
+		}
+	}
+	
+	.labelBar {
+		//label below timeline
+		height: 2.2rem;
+		color:$font-color-secondary;
+		font-size: $font-size-small;
+		border-bottom: $border-base;
+		background: $sub-nav-color;
+		.dateSelected {
+			color:$font-color-base;
+			font-weight: bold;
+		}
+		.analysisPeriod {
+			color: $font-color-secondary;
+			font-weight: normal;
+		}
+	}
+
+	.timeSelectDisabled {
+		background: rgba(221,221,221,.4);
+		.label {
+			opacity: .4
+		}
+		.ticks {
+			opacity: .4
+		}
+	}
+	.ticks {
+		.month {
+			border: rgba(214,214,214,.15) 0.1rem solid;
+			height: 2.2rem;
+		}
+		.year {
+			border: rgba(214,214,214,.3) 0.1rem solid;
+			height: 0.4rem;
+		}
+		.selectDisabled {
+			opacity: .4
+		}
+	}	
+}
