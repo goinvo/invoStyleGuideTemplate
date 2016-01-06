@@ -1,6 +1,39 @@
+ /* Grid */
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.column, .columns {
+	width: 100%;
+	float: left;
+	box-sizing: border-box;
+}
 
 
-.topNav {
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Application styles */
+.menu {
 	height: 5.0rem;
 	background: $main-nav-color;
 	color: $font-color-nav;
@@ -15,7 +48,7 @@
 			display:inline-block;
 			padding: 0 1.5rem 0 1.5rem; 
 			line-height: 5.0rem; 
-
+			box-sizing: border-box;
 			@include no-select;
 			ul.dropdown {
 				background:$main-nav-selected;
@@ -25,7 +58,7 @@
 				padding-bottom:0.7rem;
 				li { 
 					color:$font-color-nav;
-					padding: 0.7rem 0rem 0.7rem 0;
+					padding: 0.75rem 0rem 0.75rem 0;
 					&:nth-child(2) {margin-left: 0; } 
 				}
 			}	
@@ -41,7 +74,8 @@
 			}
 			&:hover { background: $main-nav-selected; }
 			&:first-child { padding-left: 3.0rem; }
-			&:nth-child(2) {margin-left: -0.3rem; } /*hack to space between user and workspaces*/
+			&:last-child { line-height: 4.6rem; } /*hack to force alert li to be the right height*/
+			&:nth-child(2) { margin-left: -0.3rem; } /*hack to space between user and workspaces*/
 			a {
 				color: $font-color-nav;
 				&:hover { text-decoration: none; }
@@ -69,17 +103,24 @@
 		position: absolute;
 		top: 0;
 		right: 0;
-		div { display:inline-block;}
 		#logo {
 			border-left:$main-nav-border;
-			height: 3.5rem;
-			padding: 1.5rem 3.0rem 0 1.5rem;
+			//margin-top: -0.5rem;
+			//height: 3.7rem;
+			padding: 0.5rem 2.0rem 0 1.5rem;
+			line-height: 4.4rem;
+		}
+		.search {
+			position: relative;
+			padding-right: 1.5rem;
+			//top: -0.3rem;
+			&:hover {
+				cursor: pointer;
+				background: $main-nav-selected;
+			}
 		}
 		.e360-search {
-			position:absolute;
-			top:1.5rem;
-			right:13.0rem;
-			font-size: 1.7em;
+			font-size: 1.8rem;
 		}
 	}
 }
@@ -324,3 +365,33 @@
 		height: 3.4rem;
 	}
 }
+
+/* Larger than mobile */
+@media (max-width: 480px) {}
+
+/* Larger than tablet */
+@media (max-width: 760px) {
+	.menu {
+		
+		ul {
+			height: 100%;
+			width: 15.0rem;
+			li {
+				display: block;
+				padding-left: 2.0rem;
+				background: $main-nav-color;
+				&:nth-child(2) {margin-left: 0; }
+			}
+		}
+		.right-container {
+			position: relative;
+			display: block;
+		}
+	}
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}

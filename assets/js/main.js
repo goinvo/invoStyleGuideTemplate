@@ -222,4 +222,19 @@ $(document).ready(function() {
 	    $(this).find(".dropdown").toggleClass("expand");
 	});
 
+	$(".sizes .container-small").click(function(){
+		$(".container").toggleClass("small");
+		$(".container").removeClass("medium");
+	});
+
+	$(".sizes .container-medium").click(function(){
+		$(".container").toggleClass("medium");
+		$(".container").removeClass("small");
+	});
+
+	$(".sizes .container-large").click(function(){
+		$(".container").removeClass("small");
+		$(".container").removeClass("medium");
+	});
+
 });

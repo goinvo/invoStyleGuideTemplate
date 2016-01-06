@@ -1,4 +1,8 @@
-$font-family: Arial, Helvetica, sans-serif;
+html {
+	font-size: 62.5%; /*base 10*/
+}
+
+$font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 $font-size-small: 1.0rem; /* =10px */
 $font-size-base: 1.2rem; /* =12px */
 $font-size-large: 1.4rem; /* =14px */
@@ -28,17 +32,17 @@ a {
 h1 {
 	font-size:$font-size-large-title;
 	line-height: $line-height-title-large;
-	font-weight: normal;
+	font-weight: 300;
 }
 h2 {
 	font-size:$font-size-title;
 	line-height: $line-height-title;
-	font-weight: normal;
+	font-weight: 300;
 }
 h3 {
 	font-size: $font-size-small-title;
 	line-height: $line-height-title;
-	font-weight: normal;
+	font-weight: 300;
 }
 
 .secondary {

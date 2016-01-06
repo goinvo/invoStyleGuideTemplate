@@ -5,17 +5,24 @@
 	<title>Style Guide Template</title>
 	<meta name="viewport" content="initial-scale=1, width=device-width">
 	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="./assets/css/e360-icons.css">
 	<link rel="stylesheet" href="./assets/css/guide.css" media="screen">
 </head>
 
 <body>
 	<div class="guide-header">
-		<h1>Style Guide Template</h1>
-		<p id="version">Version 1.0 - 4 Jan 2016</p>
+		<h1>Style Guide Template <span id="version">v1.0 - 6 Jan 2016</span></h1>
 		<p class="sub-note">Note: All styles are written with base-10 font-size, where 1.2rem = 12px.</p>
+		<div class="sizes">
+			<ul>
+				<li class="container-small">Small</li>
+				<li class="container-medium">Medium</li>
+				<li class="container-large">Large</li>
+			</ul>
+		</div>
 	</div>
-	<div class="guide-section" id="table-contents">
+	<div class="table-contents">
 		<ul>
 			<li><h3><a href="#structure">Structure</a></h3>
 				<ul>
@@ -63,24 +70,19 @@
 				</ul>
 			</li>
 		</ul>
-		
 	</div>
-
-	<div class="container">
 		
-		
-		<div id="guide">
+	<div class="guide">
+		<div class="container">
 
 			<div class="guide-section" id="structure">
 				<h2 class="guide-sectionTitle">Structure</h2>
-				<div class="content">
-					<div class="style-element" id="header">
-						<h3 class="elementTitle">Header</h3>
-						<div class="example_img">
-							<img src="./assets/images/imsHealth_styleGuideNotations.png" class="scale-with-grid">
-						</div>
-						<p>Hover over different areas of the navigation and click on the user greeting to view different states outlined in the styles.</p>
-						<div class="topNav">
+			
+				<div class="style-element" id="header">
+					<h3 class="elementTitle">Header</h3>
+					<p>Hover over different areas of the navigation and click on the user greeting to view different states outlined in the styles.</p>
+					<div class="component">
+						<div class="menu">
 							<ul>
 								<li id="user"><a>Welcome, User</a><span class="e360-ui-drop-arrow"></span>
 									<ul class="dropdown">
@@ -96,71 +98,68 @@
 								<li><a>Admin</a><span class="e360-ui-drop-arrow"></span></li>
 								<li><a>Tasks</a> <span class="alert"> 1 </span></li>
 							</ul>
-							<div class="logo-container">
-								<span class="e360-search"></span>
-								<div id="logo"><img src="./assets/images/logo.png" width="73" height="24" /></div>
-							</div>
+							<ul class="logo-container">
+								<li class="search e360-search"></li>
+								<li id="logo"><img src="./assets/images/logo.png" width="45" height="24" /></li>
+							</ul>
 						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/86ca192605323c3df522.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
-						</div>
-					</div><!--end header style-element-->
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/86ca192605323c3df522.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
+					</div>
+				</div><!--end header style-element-->
 
-					<div class="style-element" id="sub-navigation">
-						<h3 class="elementTitle">Sub-navigation</h3>
-						<p>Hover over different areas of the subnavigation and click on the favorite icon to see different states outlined in the styles.</p>
+				<div class="style-element" id="sub-navigation">
+					<h3 class="elementTitle">Sub-navigation</h3>
+					<p>Hover over different areas of the subnavigation and click on the favorite icon to see different states outlined in the styles.</p>
 
-						<div class="subNav" id="workspaceList">
-							<div class="subNavLeft">
-								<ul class="breadcrumbNav">
-									<li class="subNavItem breadcrumb pageTitle">Workspaces</li>
-								</ul>
-								<ul class="filters">
-									<li class="subNavItem"><a>All</a></li>
-									<li class="subNavItem"><a>Public</a></li>
-									<li class="subNavItem"><a>Shared</a></li>
-									<li class="subNavItem"><a>Private</a></li>
-								</ul>
-							</div>
+					<div class="subNav" id="workspaceList">
+						<div class="subNavLeft">
+							<ul class="breadcrumbNav">
+								<li class="subNavItem breadcrumb pageTitle">Workspaces</li>
+							</ul>
+							<ul class="filters">
+								<li class="subNavItem"><a>All</a></li>
+								<li class="subNavItem"><a>Public</a></li>
+								<li class="subNavItem"><a>Shared</a></li>
+								<li class="subNavItem"><a>Private</a></li>
+							</ul>
 						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/6314130d95df60f71969.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
-						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/6314130d95df60f71969.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
+					</div>
 
-						<div class="subNav" id="workspaceLanding">
-							<div class="subNavLeft">
-								<ul class="breadcrumbNav">
-									<li class="subNavItem breadcrumb">
-										<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
-									</li>		
-									<li class="subNavItem pageTitle"><span class="e360-faved"></span><span class="editInput"><input type="text" value="Company Workspace" /><span class="e360-edit"></span><button class="confirm active">OK</button></span></li>
-								</ul>
-							</div>
+					<div class="subNav" id="workspaceLanding">
+						<div class="subNavLeft">
+							<ul class="breadcrumbNav">
+								<li class="subNavItem breadcrumb">
+									<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
+								</li>		
+								<li class="subNavItem pageTitle"><span class="e360-faved"></span><span class="editInput"><input type="text" value="Company Workspace" /><span class="e360-edit"></span><button class="confirm active">OK</button></span></li>
+							</ul>
 						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/fd90a936c0ae733b67bc.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
-							<script src="https://gist.github.com/jen-p/430bdbd90246e68f3513.js"></script>
-							<script src="https://gist.github.com/jen-p/d599386ff94cfdeb188e.js"></script>
-						</div>
-						<!--<h3 class="show_JS">Show Scripts</h3>
-						<div class="js">
-							<script src="https://gist.github.com/jen-p/1b789e69f8e3afdfd239.js"></script>
-						</div>-->
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/fd90a936c0ae733b67bc.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
+						<script src="https://gist.github.com/jen-p/430bdbd90246e68f3513.js"></script>
+						<script src="https://gist.github.com/jen-p/d599386ff94cfdeb188e.js"></script>
+					</div>
 
 						<div class="subNav">
 							<div class="subNavLeft">
@@ -2262,8 +2261,9 @@ rgb
 				</div><!--end workspace layout -->
 			</div><!--end workspace guide-section-->
 
-		</div> <!-- end guide -->
-	</div> <!--end container-->
+		</div> <!--end container-->
+	</div> <!-- end guide -->
+	
 
 	<script src="./assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
   	<script src="./assets/js/main.js" type="text/javascript"></script>
