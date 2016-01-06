@@ -1,8 +1,9 @@
 /*
 	Style guide styles
 	Ignore this file in terms of style
-	and design patterns for applciation
+	and design patterns for application
 */
+
 .guide-header {
 	width: 100%;
 	display: block;
@@ -51,7 +52,7 @@
 	position: fixed;
 	right: 0;
 	min-width: 12.0rem;
-	padding: 1.0rem;
+	padding: 3.5rem 1.5rem 0 1.5rem;
 	background: #fff;
 	border-left: $border-base;
 	z-index: 9;
@@ -79,12 +80,13 @@
 .guide {
 	width: 85%;
 	display: block;
-	margin-top: 9.0rem;
+	margin-top: 7.5rem;
 	background: #fafafa;
 }
 
 .container {
 	//border: solid red 1px;
+	padding: 2.0rem;
 	background: #fff;
 	&.small {
 		//border: solid blue 1px;
@@ -97,47 +99,12 @@
 
 }
 
-h1 {
-	font-size:$font-size-large-title;
-	line-height: $line-height-title-large;
-	font-weight: 700;
-}
-h2 {
-	font-size:$font-size-large-title;
-	line-height: $line-height-title;
-	font-weight: 700;
-}
-h3 {
-	font-size: $font-size-small-title;
-	line-height: $line-height-title;
-	font-weight: 300;
-}
-
-.component {
-	h1 {
-		font-size:$font-size-large-title;
-		line-height: $line-height-title-large;
-		font-weight: 300;
-	}
-	h2 {
-		font-size:$font-size-title;
-		line-height: $line-height-title;
-		font-weight: 300;
-	}
-	h3 {
-		font-size: $font-size-small-title;
-		line-height: $line-height-title;
-		font-weight: 300;
-	}
-}
-
 .guide-section {
 	border-bottom: solid 0.063rem #dedede;
-	padding-bottom: 0.75rem;
+	padding-bottom: 2.5rem;
+	margin: 1.5rem 0 1.5rem 0;
 }
-p {
-	font-family: $font-family-serif;
-}
+
 h3.elementTitle {font-weight: bold; }
 pre {
 	color: $font-color-secondary;
@@ -150,29 +117,14 @@ pre {
 	}
 }
 p {
-	max-width: 60rem;
-	padding-left: 2.0rem;
-	pre { margin-top: -0.725rem; }
-}
-.note {
-	margin-bottom: 3.5rem;
-}
-
-.component {
-	h1 {
-		font-size:$font-size-large-title;
-		line-height: $line-height-title-large;
-		font-weight: 300;
+	max-width: 50rem;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+	pre { 
+		margin-top: -0.725rem; 
 	}
-	h2 {
-		font-size:$font-size-title;
-		line-height: $line-height-title;
-		font-weight: 300;
-	}
-	h3 {
-		font-size: $font-size-small-title;
-		line-height: $line-height-title;
-		font-weight: 300;
+	&.note {
+		font-family: $font-family-serif;
 	}
 }
 
@@ -181,10 +133,7 @@ p {
 	font-size: 1.0rem;
 }
 
-.guide-section {
-	margin: 2.5rem 0 3.75rem 0;
-	border-left: $border-base;
-}
+
 #slider .sub-note {
 	right: 0; 
 	position: absolute;
@@ -260,67 +209,38 @@ h3.show_markup, h3.show_styles, h3.show_JS {
 	height: 67.5rem;
 	display: block;
 }
-#report-colors {
-	.examples {
-		display: block;
-	}
-	.alpha-toggle, .shades-toggle {
-		display: block;
-		cursor: pointer;
-	}
-	.alpha, .shades {
-		display: none;
-		&.show {
-			display:block;
-		}
-	}
-	.color {
-		//position: relative;
-		div {
-			display: inline-block;
-		}
-		span {
-			font-family: 'consolas';
-			color: $font-color-secondary;
-			font-size: $font-size-base;
-		}
-			
-		.color-block {
-			height: 8rem;
-			width: 8rem;
-			margin: 0 -0.3rem 0 0;
-		}
-		.color-label {
-			height: 8rem;
-			width: 8rem;
-		}
-		&.sob {
-			div {display: block; }
-			div.color-block, span {
-				display: inline-block;
-			}
-			.color-block {
-				margin-bottom: -2.5rem;
-				margin-top: -3.5rem;
-				margin-right: 1rem;
 
-				&#new{ background: $report-positive; }
-				&#win{ background: #7fae7b; }
-				&#add-on{ background: #b6d1b4; }
+.color {
+	p { 
+		font-size: $font-size-small;
+		color: $font-color-secondary;
+	}
+	div {
+		display: inline-block;
+	}
+	span {
+		font-family: 'consolas';
+		color: $font-color-secondary;
+		font-size: $font-size-base;
+	}
+		
+	.color-block {
+		height: 8.5rem;
+		width: 8.5rem;
+		margin: 0;
+		&.dark-grey { background: $app-dark-gray; }
+		&.warm-grey { background: $app-warm-gray; }
+		&.cyan { background: $app-cyan; }
+	}
+	.color-label {
+		height: 8.5rem;
+		width: 8.5rem;
+	}
+}
 
-				&#repeat { background: $report-blue2; }
-				&#restart { background: $report-blue4; }
-
-				&#end { background: $report-negative; }
-				&#loss { background: #995757; }
-				&#drop-off{ background: #b88a8a; }
-				&#off-drug { background: #dcc5c5; }
-			}
-		}
-		&.color-block {
-			.dark-grey { background: $app-dark-gray; }
-			.warm-grey { background: $app-warm-gray; }
-			.cyan { background: $app-cyan; }
-		}
+#typography {
+	p.note { 
+		font-size: $font-size-small;
+		color: $font-color-secondary;
 	}
 }

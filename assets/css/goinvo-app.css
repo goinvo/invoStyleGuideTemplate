@@ -19,9 +19,10 @@ html {
 /* 28px */
 body {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.6rem;
   color: #323334;
+  font-weight: 300;
 }
 
 a {
@@ -33,19 +34,19 @@ a:hover {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   line-height: 2.8rem;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 2.2rem;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 2.2rem;
   font-weight: 300;
 }
@@ -468,7 +469,7 @@ input[type=range], .range {
   -moz-border-radius: 1rem;
   border-radius: 1rem;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   vertical-align: center;
   box-shadow: inset 0 0.1rem 0.3rem -0.1rem rgba(0, 0, 0, 0.2);
@@ -532,7 +533,7 @@ input[type=range], .range {
   -moz-border-radius: 0.3rem;
   border-radius: 0.3rem;
   box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.2);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   max-height: 55.0rem;
@@ -546,7 +547,7 @@ input[type=range], .range {
 }
 .popupDialog .description {
   color: #979ba8;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .popupDialog .popupOptions {
   max-height: 45.0rem;
@@ -579,7 +580,7 @@ input[type=range], .range {
   margin-right: -1.5;
 }
 .popupDialog .group .title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
 .popupDialog .group .parameter {
@@ -660,7 +661,7 @@ input[type=range], .range {
 .sidePanel .group .title {
   width: 15.4rem;
   color: #979ba8;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   cursor: pointer;
   position: relative;
@@ -863,7 +864,7 @@ img.scale-with-grid {
   height: 5.0rem;
   background: #34363b;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   position: relative;
 }
 .menu ul {
@@ -977,7 +978,7 @@ img.scale-with-grid {
   background: #f7f5f4;
   border-bottom: solid #d6d6d6 0.1rem;
   color: #323334;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .subNav ul {
   list-style: none;
@@ -1188,7 +1189,7 @@ img.scale-with-grid {
   margin: 0;
 }
 .pageTitle .editInput textarea, .pageTitle .editInput input[type="text"], .pageTitle .editInput pre {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 53.8rem;
   margin-top: -1rem;
 }
@@ -1230,21 +1231,21 @@ img.scale-with-grid {
 
 .companyTitle {
   /*branded title, primarily for company workspaces*/
-  font-size: 2.4rem;
+  font-size: 3rem;
 }
 
 .workspaceMetadata {
   /*info along bottom right on sharing, creating, last updated*/
   color: #979ba8;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .workspaceMetadata .updateData {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .tile {
   box-sizing: border-box;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #979ba8;
   box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.2);
   border: solid #d6d6d6 0.1rem;
@@ -1282,7 +1283,7 @@ img.scale-with-grid {
   width: 5.0rem;
 }
 .tile .workspaceType {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #fff;
   text-transform: lowercase;
   font-variant: small-caps;
@@ -1306,7 +1307,7 @@ img.scale-with-grid {
   max-width: 20.0rem;
 }
 .tile .description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #979ba8;
   padding: 0.4rem 0 0.6rem 0;
 }
@@ -1356,7 +1357,7 @@ img.scale-with-grid {
   margin-top: 2.0rem;
 }
 .tile .footer .updateDate {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: #979ba8;
 }
 .tile .optionPopup {
@@ -1367,7 +1368,7 @@ img.scale-with-grid {
   border: solid #c8c8c8 0.1rem;
 }
 .tile .stats {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   /*short, aggregate value contained in asset*/
   color: #979ba8;
   /*short, aggregate value contained in asset*/
@@ -1375,7 +1376,7 @@ img.scale-with-grid {
 .tile .stats .value {
   /*number itself*/
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 .tile .stats .value .unit {
   /*ie shortening 'million' to M*/
@@ -1389,7 +1390,7 @@ img.scale-with-grid {
 }
 .cohortTile .cohortContents {
   color: #323334;
-  font-size: 1rem;
+  font-size: 1.2rem;
   list-style: none;
   margin-top: 0;
   margin-left: 0;
@@ -1411,10 +1412,10 @@ img.scale-with-grid {
 }
 .cohortTile .cohortStats .stat {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 .cohortTile .cohortStats .unit {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
 }
 .cohortTile .cohortDescription {
   color: #979ba8;
@@ -1449,7 +1450,7 @@ img.scale-with-grid {
   width: 57.5rem;
 }
 .reportTitle textarea, .reportTitle input[type="text"], .reportTitle pre {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   width: 53.8rem;
   line-height: 2.2rem;
 }
@@ -1697,7 +1698,7 @@ img.scale-with-grid {
   box-shadow: 0 0.1rem 0.3rem 0 rgba(0, 0, 0, 0.2);
   border: solid #c8c8c8 0.1rem;
   background: #f7f5f4;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #323334;
 }
 #moreInformation .popup a:hover {
@@ -1725,7 +1726,7 @@ img.scale-with-grid {
 .cohortDefinition .sampleSize {
   margin-left: 1.5rem;
   color: #979ba8;
-  fonf-size: 1.2rem;
+  fonf-size: 1.4rem;
 }
 .cohortDefinition .e360-more-info {
   margin-left: 1.5rem;
@@ -1753,7 +1754,7 @@ img.scale-with-grid {
 }
 .axis .labels {
   color: #979ba8;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .axis.x-axis {
   max-height: 47.0rem;
@@ -1816,13 +1817,13 @@ img.scale-with-grid {
   border-left: solid #d6d6d6 0.1rem;
 }
 .axis .label {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .reportTip {
   background: rgba(38, 42, 51, 0.9);
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border-top-right-radius: 1.2rem;
   border-bottom-right-radius: 1.2rem;
   border-bottom-left-radius: 1.2rem;
@@ -1874,7 +1875,7 @@ img.scale-with-grid {
 .timeline .timelineBar .dates {
   text-transform: uppercase;
   color: #979ba8;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .timeline .timelineBar .dates .selectDisabled {
   opacity: 0.4;
@@ -1907,7 +1908,7 @@ img.scale-with-grid {
 .timeline .labelBar {
   height: 2.2rem;
   color: #979ba8;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-bottom: solid #d6d6d6 0.1rem;
   background: #f7f5f4;
 }
