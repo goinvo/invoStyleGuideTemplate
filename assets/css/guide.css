@@ -1,9 +1,7 @@
 /* variables */
 /* mix-ins */
-/*$ims-warm-grey*/
 /* ims-cyan */
 /* ims-cyan $ 50% alpha */
-/*f7f5f4 // $ims-warm-grey*/
 html {
   font-size: 62.5%;
   /*base 10*/
@@ -615,7 +613,7 @@ input[type=range], .range {
 
 .sidePanel {
   box-sizing: border-box;
-  background: rgba(247, 245, 244, 0.9);
+  background: #f7f5f4;
   border-left: solid #d6d6d6 0.1rem;
   min-height: 70.0rem;
   width: 21.4rem;
@@ -2043,26 +2041,43 @@ h1 {
   font-size: 2.4rem;
   line-height: 2.8rem;
   font-weight: 700;
-  padding-left: 2.0rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: 2.2rem;
   font-weight: 700;
-  padding-left: 2.0rem;
 }
 
 h3 {
   font-size: 1.4rem;
   line-height: 2.2rem;
   font-weight: 300;
-  padding-left: 2.0rem;
 }
 
-h2.sectionTitle {
+.component h1 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 300;
+}
+.component h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+}
+.component h3 {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  font-weight: 300;
+}
+
+.guide-section {
   border-bottom: solid 0.063rem #dedede;
   padding-bottom: 0.75rem;
+}
+
+p {
+  font-family: Georgia;
 }
 
 h3.elementTitle {
@@ -2259,371 +2274,14 @@ h3.show_markup, h3.show_styles, h3.show_JS {
 #report-colors .color.sob .color-block#off-drug {
   background: #dcc5c5;
 }
-#report-colors .color.ims-blue .color-block:nth-child(1) {
-  background: #002868;
+#report-colors .color.color-block .dark-grey {
+  background: #34363b;
 }
-#report-colors .color.ims-blue .color-block:nth-child(2) {
-  background: #335386;
+#report-colors .color.color-block .warm-grey {
+  background: #f7f5f4;
 }
-#report-colors .color.ims-blue .color-block:nth-child(3) {
-  background: #667ea4;
-}
-#report-colors .color.ims-blue .color-block:nth-child(4) {
-  background: #99a9c3;
-}
-#report-colors .color.ims-blue .color-block:nth-child(5) {
-  background: #ccd4e1;
-}
-#report-colors .color.ims-teal .color-block:nth-child(1) {
-  background: #1b8f9e;
-}
-#report-colors .color.ims-teal .color-block:nth-child(2) {
-  background: #49a5b1;
-}
-#report-colors .color.ims-teal .color-block:nth-child(3) {
-  background: #76bcc5;
-}
-#report-colors .color.ims-teal .color-block:nth-child(4) {
-  background: #a4d2d8;
-}
-#report-colors .color.ims-teal .color-block:nth-child(5) {
-  background: #d1e9ec;
-}
-#report-colors .color.ims-cyan .color-block:nth-child(1) {
-  background: #00aaef;
-}
-#report-colors .color.ims-cyan .color-block:nth-child(2) {
-  background: #33bbf2;
-}
-#report-colors .color.ims-cyan .color-block:nth-child(3) {
-  background: #66ccf5;
-}
-#report-colors .color.ims-cyan .color-block:nth-child(4) {
-  background: #99ddf9;
-}
-#report-colors .color.ims-cyan .color-block:nth-child(5) {
-  background: #d9f2fd;
-}
-#report-colors .color.ims-plum .color-block:nth-child(1) {
-  background: #9c0048;
-}
-#report-colors .color.ims-plum .color-block:nth-child(2) {
-  background: #b0336d;
-}
-#report-colors .color.ims-plum .color-block:nth-child(3) {
-  background: #c46691;
-}
-#report-colors .color.ims-plum .color-block:nth-child(4) {
-  background: #dfa7b9;
-}
-#report-colors .color.ims-plum .color-block:nth-child(5) {
-  background: #ebccda;
-}
-#report-colors .color.ims-orange .color-block:nth-child(1) {
-  background: #faa53a;
-}
-#report-colors .color.ims-orange .color-block:nth-child(2) {
-  background: #fbb761;
-}
-#report-colors .color.ims-orange .color-block:nth-child(3) {
-  background: #fcc989;
-}
-#report-colors .color.ims-orange .color-block:nth-child(4) {
-  background: #fddbb0;
-}
-#report-colors .color.ims-orange .color-block:nth-child(5) {
-  background: #feedd8;
-}
-#report-colors .color.ims-yellow .color-block:nth-child(1) {
-  background: #ffd800;
-}
-#report-colors .color.ims-yellow .color-block:nth-child(2) {
-  background: #ffe033;
-}
-#report-colors .color.ims-yellow .color-block:nth-child(3) {
-  background: #ffe866;
-}
-#report-colors .color.ims-yellow .color-block:nth-child(4) {
-  background: #ffef99;
-}
-#report-colors .color.ims-yellow .color-block:nth-child(5) {
-  background: #fff5bf;
-}
-#report-colors .color.report-violet .color-block:nth-child(1) {
-  background: #4e0c78;
-}
-#report-colors .color.report-violet .color-block:nth-child(2) {
-  background: #713d93;
-}
-#report-colors .color.report-violet .color-block:nth-child(3) {
-  background: #956dae;
-}
-#report-colors .color.report-violet .color-block:nth-child(4) {
-  background: #b89ec9;
-}
-#report-colors .color.report-violet .color-block:nth-child(5) {
-  background: #d3c2dd;
-}
-#report-colors .color.ims-green .color-block:nth-child(1) {
-  background: #77a822;
-}
-#report-colors .color.ims-green .color-block:nth-child(2) {
-  background: #92b94e;
-}
-#report-colors .color.ims-green .color-block:nth-child(3) {
-  background: #adcb7a;
-}
-#report-colors .color.ims-green .color-block:nth-child(4) {
-  background: #c9dca7;
-}
-#report-colors .color.ims-green .color-block:nth-child(5) {
-  background: #dddfc8;
-}
-#report-colors .color.report-positive .color-block:nth-child(1) {
-  background: #488b43;
-}
-#report-colors .color.report-positive .color-block:nth-child(2) {
-  background: #6da269;
-}
-#report-colors .color.report-positive .color-block:nth-child(3) {
-  background: #91b98e;
-}
-#report-colors .color.report-positive .color-block:nth-child(4) {
-  background: #b6d1b4;
-}
-#report-colors .color.report-positive .color-block:nth-child(5) {
-  background: #dae8d9;
-}
-#report-colors .color.report-negative .color-block:nth-child(1) {
-  background: #721616;
-}
-#report-colors .color.report-negative .color-block:nth-child(2) {
-  background: #8e4545;
-}
-#report-colors .color.report-negative .color-block:nth-child(3) {
-  background: #aa7373;
-}
-#report-colors .color.report-negative .color-block:nth-child(4) {
-  background: #c7a2a2;
-}
-#report-colors .color.report-negative .color-block:nth-child(5) {
-  background: #dcc5c5;
-}
-#report-colors .color.ims-blue-tens .color-block:nth-child(1) {
-  background: #193d77;
-}
-#report-colors .color.ims-blue-tens .color-block:nth-child(2) {
-  background: #4c6895;
-}
-#report-colors .color.ims-blue-tens .color-block:nth-child(3) {
-  background: #7f93b3;
-}
-#report-colors .color.ims-blue-tens .color-block:nth-child(4) {
-  background: #b2bed1;
-}
-#report-colors .color.ims-teal-tens .color-block:nth-child(1) {
-  background: #319aa8;
-}
-#report-colors .color.ims-teal-tens .color-block:nth-child(2) {
-  background: #5fb0bb;
-}
-#report-colors .color.ims-teal-tens .color-block:nth-child(3) {
-  background: #8dc7ce;
-}
-#report-colors .color.ims-teal-tens .color-block:nth-child(4) {
-  background: #badde2;
-}
-#report-colors .color.ims-cyan-tens .color-block:nth-child(1) {
-  background: #19b2f1;
-}
-#report-colors .color.ims-cyan-tens .color-block:nth-child(2) {
-  background: #4cc3f4;
-}
-#report-colors .color.ims-cyan-tens .color-block:nth-child(3) {
-  background: #7fd4f7;
-}
-#report-colors .color.ims-cyan-tens .color-block:nth-child(4) {
-  background: #b2e5fa;
-}
-#report-colors .color.ims-plum-tens .color-block:nth-child(1) {
-  background: #9c0048;
-}
-#report-colors .color.ims-plum-tens .color-block:nth-child(2) {
-  background: #ba4c7f;
-}
-#report-colors .color.ims-plum-tens .color-block:nth-child(3) {
-  background: #cd7fa3;
-}
-#report-colors .color.ims-plum-tens .color-block:nth-child(4) {
-  background: #e1b2c8;
-}
-#report-colors .color.ims-orange-tens .color-block:nth-child(1) {
-  background: #faae4d;
-}
-#report-colors .color.ims-orange-tens .color-block:nth-child(2) {
-  background: #fbc075;
-}
-#report-colors .color.ims-orange-tens .color-block:nth-child(3) {
-  background: #fcd29c;
-}
-#report-colors .color.ims-orange-tens .color-block:nth-child(4) {
-  background: #fde4c4;
-}
-#report-colors .color.ims-yellow-tens .color-block:nth-child(1) {
-  background: #ffdc19;
-}
-#report-colors .color.ims-yellow-tens .color-block:nth-child(2) {
-  background: #ffe44c;
-}
-#report-colors .color.ims-yellow-tens .color-block:nth-child(3) {
-  background: #ffeb7f;
-}
-#report-colors .color.ims-yellow-tens .color-block:nth-child(4) {
-  background: #fff3b2;
-}
-#report-colors .color.report-violet-tens .color-block:nth-child(1) {
-  background: #5f2485;
-}
-#report-colors .color.report-violet-tens .color-block:nth-child(2) {
-  background: #8354a0;
-}
-#report-colors .color.report-violet-tens .color-block:nth-child(3) {
-  background: #a685bb;
-}
-#report-colors .color.report-violet-tens .color-block:nth-child(4) {
-  background: #cab6d6;
-}
-#report-colors .color.ims-green-tens .color-block:nth-child(1) {
-  background: #84b138;
-}
-#report-colors .color.ims-green-tens .color-block:nth-child(2) {
-  background: #a0c264;
-}
-#report-colors .color.ims-green-tens .color-block:nth-child(3) {
-  background: #bbd390;
-}
-#report-colors .color.ims-green-tens .color-block:nth-child(4) {
-  background: #d6e5bc;
-}
-#report-colors .color.ims-blue-shades .color-block:nth-child(1) {
-  background: #002053;
-}
-#report-colors .color.ims-blue-shades .color-block:nth-child(2) {
-  background: #29426b;
-}
-#report-colors .color.ims-blue-shades .color-block:nth-child(3) {
-  background: #526583;
-}
-#report-colors .color.ims-blue-shades .color-block:nth-child(4) {
-  background: #7a879c;
-}
-#report-colors .color.ims-blue-shades .color-block:nth-child(5) {
-  background: #a3aab4;
-}
-#report-colors .color.ims-teal-shades .color-block:nth-child(1) {
-  background: #16727e;
-}
-#report-colors .color.ims-teal-shades .color-block:nth-child(2) {
-  background: #3a848e;
-}
-#report-colors .color.ims-teal-shades .color-block:nth-child(3) {
-  background: #5e969e;
-}
-#report-colors .color.ims-teal-shades .color-block:nth-child(4) {
-  background: #83a8ad;
-}
-#report-colors .color.ims-teal-shades .color-block:nth-child(5) {
-  background: #9eb6b9;
-}
-#report-colors .color.ims-cyan-shades .color-block:nth-child(1) {
-  background: #0088bf;
-}
-#report-colors .color.ims-cyan-shades .color-block:nth-child(2) {
-  background: #2996c2;
-}
-#report-colors .color.ims-cyan-shades .color-block:nth-child(3) {
-  background: #52a3c4;
-}
-#report-colors .color.ims-cyan-shades .color-block:nth-child(4) {
-  background: #8eb7c8;
-}
-#report-colors .color.ims-cyan-shades .color-block:nth-child(5) {
-  background: #a3beca;
-}
-#report-colors .color.ims-plum-shades .color-block:nth-child(1) {
-  background: #7d003a;
-}
-#report-colors .color.ims-plum-shades .color-block:nth-child(2) {
-  background: #8d2957;
-}
-#report-colors .color.ims-plum-shades .color-block:nth-child(3) {
-  background: #9d5274;
-}
-#report-colors .color.ims-plum-shades .color-block:nth-child(4) {
-  background: #ac7a92;
-}
-#report-colors .color.ims-plum-shades .color-block:nth-child(5) {
-  background: #b899a7;
-}
-#report-colors .color.ims-orange-shades .color-block:nth-child(1) {
-  background: #c8842e;
-}
-#report-colors .color.ims-orange-shades .color-block:nth-child(2) {
-  background: #c9924e;
-}
-#report-colors .color.ims-orange-shades .color-block:nth-child(3) {
-  background: #caa16e;
-}
-#report-colors .color.ims-orange-shades .color-block:nth-child(4) {
-  background: #caaf8d;
-}
-#report-colors .color.ims-orange-shades .color-block:nth-child(5) {
-  background: #cbbaa5;
-}
-#report-colors .color.ims-yellow-shades .color-block:nth-child(1) {
-  background: #ccad00;
-}
-#report-colors .color.ims-yellow-shades .color-block:nth-child(2) {
-  background: #ccb329;
-}
-#report-colors .color.ims-yellow-shades .color-block:nth-child(3) {
-  background: #ccba52;
-}
-#report-colors .color.ims-yellow-shades .color-block:nth-child(4) {
-  background: #ccbf7a;
-}
-#report-colors .color.ims-yellow-shades .color-block:nth-child(5) {
-  background: #ccc499;
-}
-#report-colors .color.report-violet-shades .color-block:nth-child(1) {
-  background: #3e0a60;
-}
-#report-colors .color.report-violet-shades .color-block:nth-child(2) {
-  background: #5a3176;
-}
-#report-colors .color.report-violet-shades .color-block:nth-child(3) {
-  background: #77578b;
-}
-#report-colors .color.report-violet-shades .color-block:nth-child(4) {
-  background: #937ea1;
-}
-#report-colors .color.report-violet-shades .color-block:nth-child(5) {
-  background: #a99bb1;
-}
-#report-colors .color.ims-green-shades .color-block:nth-child(1) {
-  background: #5f861b;
-}
-#report-colors .color.ims-green-shades .color-block:nth-child(2) {
-  background: #75943e;
-}
-#report-colors .color.ims-green-shades .color-block:nth-child(3) {
-  background: #8aa262;
-}
-#report-colors .color.ims-green-shades .color-block:nth-child(4) {
-  background: #a1b086;
-}
-#report-colors .color.ims-green-shades .color-block:nth-child(5) {
-  background: #b1baa0;
+#report-colors .color.color-block .cyan {
+  background: #00aeef;
 }
 
 /*# sourceMappingURL=guide.css.map */

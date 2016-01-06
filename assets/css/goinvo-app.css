@@ -1,10 +1,8 @@
 @import url(../IconLibrary/ims-fonts.css);
 /* variables */
 /* mix-ins */
-/*$ims-warm-grey*/
 /* ims-cyan */
 /* ims-cyan $ 50% alpha */
-/*f7f5f4 // $ims-warm-grey*/
 html {
   font-size: 62.5%;
   /*base 10*/
@@ -616,7 +614,7 @@ input[type=range], .range {
 
 .sidePanel {
   box-sizing: border-box;
-  background: rgba(247, 245, 244, 0.9);
+  background: #f7f5f4;
   border-left: solid #d6d6d6 0.1rem;
   min-height: 70.0rem;
   width: 21.4rem;

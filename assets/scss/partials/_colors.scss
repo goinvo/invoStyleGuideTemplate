@@ -1,4 +1,71 @@
 //## IMS Main Color Palette
+$app-cyan:              #00aeef; //rgb(0,174,239)
+$app-dark-gray:         #34363b; 
+$app-warm-gray:         #f7f5f4; //rgb(247,245,244)
+
+//Application colors
+$font-color-base: #323334;
+$font-color-link: #00aeef;
+$font-color-secondary: #979ba8;
+$font-color-nav: #fff;
+
+$shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,.2);
+$hard-shadow:  0 0.1rem 0.1rem 0 rgba(0,0,0,.3);
+$blue-shadow: 0 0.1rem 0.3rem 0 rgba(0,174,239,.2);
+$ui-handle-shadow: 0 0.1rem 0.5rem 0 rgba(0,0,0,.2);
+$ui-track-shadow: inset 0 0.1rem 0.3rem -0.1rem rgba(0,0,0,.2);
+$border-color: #d6d6d6;
+$border-base: solid $border-color 0.1rem;
+
+$main-nav-color: $app-dark-gray;
+$sub-nav-color: $app-warm-gray;
+$main-nav-selected: #282a2e;
+$sub-nav-selected: #dfdfdf;
+$main-nav-border: solid #000 0.1rem;
+$sub-nav-border: solid $border-color 0.1rem;
+$alert-color: $app-cyan;
+$breadcrumb-bg: #dfdfdf;
+
+$button-base-bg: linear-gradient(to bottom, #fdfdfd 0%,#ececec 100%);
+$button-hover: linear-gradient(to bottom, #efefef 0%,#cecece 100%);
+$button-hover-border: solid #b6b6b6 0.1rem;
+$button-active-inactive-bg:#979ba8;
+$button-active-bg: $app-cyan;
+$button-border-active: solid $app-cyan 0.1rem;
+$button-active-hover: #00a5ea;
+$button-hover-border-active: solid #0080c8 0.1rem;
+$font-color-button-active: #fff;
+$input-border: solid #d6d6d6 0.1rem;
+$textured-button-bg: linear-gradient(to bottom, #00aded 30%,#048fc3 100%);
+$focus-border: solid $app-cyan 0.1rem; /* ims-cyan */
+$focus-shadow: 0 0.1rem 0.3rem 0 rgba(0,174,239,.5); /* ims-cyan $ 50% alpha */
+$dropdown-selected: #dcedf8;
+
+$error-border: solid #db9fa5 0.1rem;
+$error-background: #f6e9e9;
+$error-color: #b94a48;
+
+$card-option-bg: #fefefe;
+$card-border: solid #d6d6d6 0.1rem;
+$control-popup-border: solid #c8c8c8 0.1rem;
+$selected-option-bg: #dcedf8;
+$side-panel-bg: $app-warm-gray;
+$side-panel-border: solid $border-color 0.1rem;
+
+$axis-border: solid #d6d6d6 0.1rem;
+$report-grid-lines: #fafafa;
+$report-grid-zero-line: #e4e4e4;
+$report-hover-tip-bg: rgba(38,42,51,.85);
+$report-hover-tip-text: #fff;
+
+//tile colors
+$brand-color: #002868;
+$private-color: #8bc34a;
+$shared-color: #00aaef;
+$cohort-color: #002868;
+
+
+//## IMS Main Color Palette
 $ims-cyan:              #00aeef; //rgb(0,174,239)
 $ims-dark-blue:         #002868;
 $ims-light-blue:        #d5e4f3;
@@ -73,64 +140,3 @@ $report-negative2: rgb(142,69,69);
 $report-negative3: rgb(170,115,115);
 $report-negative4: rgb(199,162,162);
 $report-negative5: rgb(220,197,197);
-
-//Application colors
-$font-color-base: #323334;
-$font-color-link: #00aeef;
-$font-color-secondary: #979ba8;
-$font-color-nav: #fff;
-
-$shadow: 0 0.1rem 0.3rem 0 rgba(0,0,0,.2);
-$hard-shadow:  0 0.1rem 0.1rem 0 rgba(0,0,0,.3);
-$blue-shadow: 0 0.1rem 0.3rem 0 rgba(0,174,239,.2);
-$ui-handle-shadow: 0 0.1rem 0.5rem 0 rgba(0,0,0,.2);
-$ui-track-shadow: inset 0 0.1rem 0.3rem -0.1rem rgba(0,0,0,.2);
-$border-color: #d6d6d6;
-$border-base: solid $border-color 0.1rem;
-
-$main-nav-color: #34363b;
-$sub-nav-color: #f7f5f4; /*$ims-warm-grey*/
-$main-nav-selected: #282a2e;
-$sub-nav-selected: #dfdfdf;
-$main-nav-border: solid #000 0.1rem;
-$sub-nav-border: solid $border-color 0.1rem;
-$alert-color: #00aeef;
-$breadcrumb-bg: #dfdfdf;
-
-$button-base-bg: linear-gradient(to bottom, #fdfdfd 0%,#ececec 100%);
-$button-hover: linear-gradient(to bottom, #efefef 0%,#cecece 100%);
-$button-hover-border: solid #b6b6b6 0.1rem;
-$button-active-inactive-bg:#979ba8;
-$button-active-bg: #00aeef;
-$button-border-active: solid #00aeef 0.1rem;
-$button-active-hover: #00a5ea;
-$button-hover-border-active: solid #0080c8 0.1rem;
-$font-color-button-active: #fff;
-$input-border: solid #d6d6d6 0.1rem;
-$textured-button-bg: linear-gradient(to bottom, #00aded 30%,#048fc3 100%);
-$focus-border: solid #00aeef 0.1rem; /* ims-cyan */
-$focus-shadow: 0 0.1rem 0.3rem 0 rgba(0,174,239,.5); /* ims-cyan $ 50% alpha */
-$dropdown-selected: #dcedf8;
-
-$error-border: solid #db9fa5 0.1rem;
-$error-background: #f6e9e9;
-$error-color: #b94a48;
-
-$card-option-bg: #fefefe;
-$card-border: solid #d6d6d6 0.1rem;
-$control-popup-border: solid #c8c8c8 0.1rem;
-$selected-option-bg: #dcedf8;
-$side-panel-bg: rgba(247,245,244,.9); /*f7f5f4 // $ims-warm-grey*/
-$side-panel-border: solid $border-color 0.1rem;
-
-$axis-border: solid #d6d6d6 0.1rem;
-$report-grid-lines: #fafafa;
-$report-grid-zero-line: #e4e4e4;
-$report-hover-tip-bg: rgba(38,42,51,.85);
-$report-hover-tip-text: #fff;
-
-//tile colors
-$brand-color: #002868;
-$private-color: #8bc34a;
-$shared-color: #00aaef;
-$cohort-color: #002868;

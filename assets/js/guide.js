@@ -10,8 +10,8 @@ $(document).ready(function() {
 	    }
 	});
 
-	$(".show_CSS").click(function(){
-	    $(this).next(".css").toggleClass("show");
+	$(".show_styles").click(function(){
+	    $(this).next(".styles").toggleClass("show");
 	    if ($(this).html() == "Show LESS" ) {
 	    	$(this).html("Hide LESS");
 	    } else {
@@ -44,5 +44,20 @@ $(document).ready(function() {
 	    } else {
 	    	$(this).html("Show Shade colors");
 	    }
+	});
+
+	$(".sizes .container-small").click(function(){
+		$(".container").toggleClass("small");
+		$(".container").removeClass("medium");
+	});
+
+	$(".sizes .container-medium").click(function(){
+		$(".container").toggleClass("medium");
+		$(".container").removeClass("small");
+	});
+
+	$(".sizes .container-large").click(function(){
+		$(".container").removeClass("small");
+		$(".container").removeClass("medium");
 	});
 });

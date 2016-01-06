@@ -74,9 +74,40 @@
 		
 	<div class="guide">
 		<div class="container">
+			<div class="guide-section" id="intro">
+				<h2 class="guide-section-title">Introduction</h2>
+				<p>Use this style guide as a template to build your html-based style guide.</p>
+			</div>
+
+			<div class="guide-section" id="intro">
+				<h2 class="guide-section-title">Colors</h2>
+				<p></p>
+
+				<div class="style-element" id="report-colors">
+					<h3 class="elementTitle">Colors</h3>
+					
+					<p>Primary - IMS Health blue base</p>
+					<div class="color">
+						<div class="app-blue"></div>
+						<div class="app-teal"></div>
+						<div class="ims-cyan"></div>
+					</div>
+					<div class="color">
+	 					<div class="color-label"><pre>#002868 
+rgb
+0,40,104</pre></div>
+	 					<div class="color-label"><pre>#1b8f9e 
+rgb
+27,143,158</pre></div>
+						<div class="color-label"><pre>#00aaef 
+rgb
+0,170,239</pre></div>
+					</div>
+				</div><!--end report colors -->
+			</div>
 
 			<div class="guide-section" id="structure">
-				<h2 class="guide-sectionTitle">Structure</h2>
+				<h2 class="guide-section-title">Structure</h2>
 			
 				<div class="style-element" id="header">
 					<h3 class="elementTitle">Header</h3>
@@ -304,7 +335,7 @@
 			</div><!-- end structure guide-section -->
 
 			<div class="guide-section" id="typography">
-				<h2 class="guide-sectionTitle">Typography</h2>
+				<h2 class="guide-section-title">Typography</h2>
 				<div class="content">
 					<div class="style-element">
 						<pre>font-family: Arial, Helvetica, sans-serif;
@@ -477,7 +508,7 @@
 			</div><!-- end typography guide-section-->
 
 			<div class="guide-section" id="controls">
-				<h2 class="guide-sectionTitle">Controls</h2>
+				<h2 class="guide-section-title">Controls</h2>
 				<div class="content">
 					<div class="style-element" id="text-input">
 						<h3 class="elementTitle">Text Input</h3>
@@ -992,7 +1023,7 @@
 			</div> <!-- end controls guide-section -->
 
 			<div class="guide-section" id="report">
-				<h2 class="guide-sectionTitle">Report</h2>
+				<h2 class="guide-section-title">Report</h2>
 
 				<div class="style-element" id="report-layout">
 					<h3 class="elementTitle">Layout</h3>
@@ -1417,718 +1448,10 @@
 						<script src="https://gist.github.com/jen-p/53565a42a95d08ab69da.js"></script>
 					</div>
 				</div>
-
-				<!--<div class="style-element" id="timeline">
-					<h3 class="elementTitle">Timeline</h3>
-					<p class="sub-note">Note: Timeline not built out in guide, general styles shown below:</p>
-					<img src="./assets/images/sourceofBusiness_Timeline.png" class="scale-with-grid"/>
-					<h3 class="show_styles">Show LESS</h3>
-					<div class="styles">
-						<script src="https://gist.github.com/jen-p/0e9a2224c1132da4c933.js"></script>
-					</div>
-				</div>-->
-
-				<div class="style-element" id="report-colors">
-					<h3 class="elementTitle">Colors</h3>
-
-					<h3 class="elementTitle">Source of Business palette</h3>
-					<div class="color sob">
-						<div>
-							<div class="color-block" id="new"></div>
-							<span class="color-label"><pre>New
-#488b43 
-rgb 72,139,67</pre></span>
-						</div>
-						<div>
-							<div class="color-block" id="win"></div>
-							<span class="color-label"><pre>Win
-#7fae7b 
-rgb 127,174,123</pre></span>
-						</div>
-						<div>
-							<div class="color-block" id="add-on"></div>
-							<span class="color-label"><pre>Add-On
-#b6d1b4 
-rgb 182,209,180</pre></span>
-						</div>
-
-						<div>
-							<div class="color-block" id="restart"></div>
-							<span class="color-label"><pre>Restart
-#99a9c3 
-rgb 153,169,195</pre></span>
-						</div>
-						<div>
-							<div class="color-block" id="repeat"></div>
-							<span class="color-label"><pre>Repeat
-#335386 
-rgb 51,83,134</pre></span>
-						</div>
-
-						<div>
-							<div class="color-block" id="off-drug"></div>
-							<span class="color-label"><pre>Off-Drug
-#dcc5c5 
-rgb 220,197,197</pre></span>
-						</div>
-						<div>
-							<div class="color-block" id="drop-off"></div>
-							<span class="color-label"><pre>Drop-Off
-#b88a8a 
-rgb 184,138,138</pre></span>
-						</div>
-						<div>
-							<div class="color-block" id="loss"></div>
-							<span class="color-label"><pre>Loss
-#995757 
-rgb 153,87,87</pre></span>	
-						</div>
-						<div>
-							<div class="color-block" id="end"></div>
-							<span class="color-label"><pre>End
-#721616 
-rgb 114,22,22</pre></span>		
-						</div>
-					</div>
-					
-					<h3 class="elementTitle">Standard Report Colors</h3>
-					<div class="note">
-						<p>Keeping colors to a minimum and using shade, rather than hue, reduces color clash and avoids having colors that appear similar for various types of color-blindness.</p>
-						<p>Colors begin with a base, and each subsequent color is a 20% alpha shift. Unless the user specifies otherwise, begin with primary set of colors, IMS base blue, then with secondary set, and so on. Once all colors have been cycled through, use the remaining 10% alpha shift, followed by shades.</p>
-					</div>
-					
-					<p>Primary - IMS Health blue base</p>
-					<div class="color ims-blue">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#002868 
-rgb
-0,40,104</pre></div>
-	 					<div class="color-label"><pre>#335386 
-rgb
-51,83,134</pre></div>
-						 <div class="color-label"><pre>#667ea4 
-rgb
-102,126,164</pre></div>
-						 <div class="color-label"><pre>#99a9c3 
-rgb
-153,169,195</pre></div>
-						 <div class="color-label"><pre>#ccd4e1 
-rgb
-204,212,225</pre></div>
-					</div>
-					<p>Secondary - IMS Health teal base</p>
-					<div class="color ims-teal">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color"> 
-						<div class="color-label"><pre>#1b8f9e 
-rgb
-27,143,158</pre></div>
-	 					<div class="color-label"><pre>#49a5b1 
-rgb
-73,165,177</pre></div>
-	 					<div class="color-label"><pre>#76bcc5 
-rgb
-118,188,197</pre></div>
-	 					<div class="color-label"><pre>#a4d2d8 
-rgb
-164,210,216</pre></div>
-	 					<div class="color-label"><pre>#c6e3e7 
-rgb
-198,227,231</pre></div>
-					</div>
-					<p>IMS Health cyan base</p>
-					<div class="color ims-cyan">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#00aaef 
-rgb
-0,170,239</pre></div> 		
-	 					<div class="color-label"><pre>#33bbf2 
-rgb
-51,187,242</pre></div>
-	 					<div class="color-label"><pre>#66ccf5 
-rgb
-102,204,245</pre></div>
-	 					<div class="color-label"><pre>#99ddf9 
-rgb
-153,221,249</pre></div>
-	 					<div class="color-label"><pre>#cceefc 
-rgb
-204,238,252</pre></div>
-					</div>
-					<p>IMS Health plum base</p>
-					<div class="color ims-plum">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#9c0048 
-rgb
-156,0,72</pre></div>
-	 					<div class="color-label"><pre>#b0336d 
-rgb
-176,51,109</pre></div>
-	 					<div class="color-label"><pre>#c46691 
-rgb
-196,102,145</pre></div>
-	 					<div class="color-label"><pre>#dfa7b9 
-rgb
-223,167,185</pre></div>
-	 					<div class="color-label"><pre>#e6bfd1 
-rgb
-230,191,209</pre></div>
-					</div>
-					<p>IMS Health orange base</p>
-					<div class="color ims-orange">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#faa53a 
-rgb
-250,165,58</pre></div>
-	 					<div class="color-label"><pre>#fbb761 
-rgb
-251,183,97</pre></div>
-	 					<div class="color-label"><pre>#fcc989 
-rgb
-252,201,137</pre></div>
-	 					<div class="color-label"><pre>#fddbb0 
-rgb
-253,219,176</pre></div>
-	 					<div class="color-label"><pre>#fee8ce 
-rgb
-254,237,216</pre></div>
-					</div>
-					<p>Violet base</p>
-					<div class="color report-violet">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#4e0c78 
-rgb
-78,12,120</pre></div>
-	 					<div class="color-label"><pre>#713d93 
-rgb
-113,61,147</pre></div>
-	 					<div class="color-label"><pre>#956dae 
-rgb
-149,109,174</pre></div>
-	 					<div class="color-label"><pre>#b89ec9 
-rgb
-184,158,201</pre></div>
-	 					<div class="color-label"><pre>#d3c2dd 
-rgb
-211,194,221</pre></div>
-					</div>
-					<p>IMS-Health Green base</p>
-					<div class="color ims-green">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#77a822 
-rgb
-119,168,34</pre></div>
-	 					<div class="color-label"><pre>#92b94e 
-rgb
-146,185,78</pre></div>
-	 					<div class="color-label"><pre>#adcb7a 
-rgb
-173,203,122</pre></div>
-	 					<div class="color-label"><pre>#c9dca7 
-rgb
-201,220,167</pre></div>
-	 					<div class="color-label"><pre>#dde9c8 
-rgb
-221,223,200</pre></div>
-					</div>
-					<p>IMS Health yellow base</p>
-					<div class="color ims-yellow">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-	 					<div class="color-label"><pre>#ffd800 
-rgb
-255,216,0</pre></div>
-	 					<div class="color-label"><pre>#ffe033 
-rgb
-255,224,51</pre></div>
-	 					<div class="color-label"><pre>#ffe866 
-rgb
-255,232,102</pre></div>
-	 					<div class="color-label"><pre>#fddbb0 
-rgb
-253,219,176</pre></div>
-	 					<div class="color-label"><pre>#ffef99 
-rgb
-255,239,153</pre></div>
-					</div>
-					<p>Positive</p>
-					<div class="color report-positive">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-						<div class="color-label"><pre>#488b43 
-rgb
-72,139,67</pre></div>
-						<div class="color-label"><pre>#6da269 
-rgb
-109,162,105</pre></div>
-						<div class="color-label"><pre>#91b98e 
-rgb
-145,185,142</pre></div>
-						<div class="color-label"><pre>#b6d1b4 
-rgb
-182,209,180</pre></div>
-						<div class="color-label"><pre>#d1e2d0 
-rgb
-218,232,217</pre></div>
-					</div>
-					<p>Negative</p>
-					<div class="color report-negative">
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-						<div class="color-block"></div>
-					</div>
-					<div class="color">
-						<div class="color-label"><pre>#721616 
-rgb
-114,22,22</pre></div>
-						<div class="color-label"><pre>#8e4545 
-rgb
-142,69,69</pre></div>
-						<div class="color-label"><pre>#aa7373 
-rgb
-170,115,115</pre></div>
-						 <div class="color-label"><pre>#c7a2a2 
-rgb
-199,162,162</pre></div>
-						 <div class="color-label"><pre>#dcc5c5 
-rgb
-220,197,197</pre></div>
-					</div>
-
-					<a class="shades-toggle"><h3 class="elementTitle">Show Shade colors</h3></a>
-					<div class="shades">
-						<p>Primary - IMS Health blue base</p>
-						<div class="color ims-blue-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#002053 
-rgb
-0,32,83</pre></div>
-		 					<div class="color-label"><pre>#29426b 
-rgb
-41,66,107</pre></div>
-							 <div class="color-label"><pre>#526583 
-rgb
-82,101,131</pre></div>
-							 <div class="color-label"><pre>#7a879c 
-rgb
-122,135,156</pre></div>
-							 <div class="color-label"><pre>#a3aab4 
-rgb
-163,170,180</pre></div>
-						</div>
-						<p>Secondary - IMS Health teal base</p>
-						<div class="color ims-teal-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color"> 
-							<div class="color-label"><pre>#16727e 
-rgb
-22,114,126</pre></div>
-		 					<div class="color-label"><pre>#3a848e 
-rgb
-58,132,142</pre></div>
-		 					<div class="color-label"><pre>#5e969e 
-rgb
-94,150,158</pre></div>
-		 					<div class="color-label"><pre>#83a8ad 
-rgb
-131,168,173</pre></div>
-		 					<div class="color-label"><pre>#9eb6b9 
-rgb
-158,182,185</pre></div>
-						</div>
-						<p>IMS Health cyan base</p>
-						<div class="color ims-cyan-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#0088bf 
-rgb
-0,136,191</pre></div> 		
-		 					<div class="color-label"><pre>#2996c2 
-rgb
-41,150,194</pre></div>
-		 					<div class="color-label"><pre>#52a3c4 
-rgb
-82,163,196</pre></div>
-		 					<div class="color-label"><pre>#8eb7c8 
-rgb
-142,183,200</pre></div>
-		 					<div class="color-label"><pre>#a3beca 
-rgb
-163,190,202</pre></div>
-						</div>
-						<p>IMS Health plum base</p>
-						<div class="color ims-plum-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#7d003a 
-rgb
-125,0,58</pre></div>
-		 					<div class="color-label"><pre>#8d2957 
-rgb
-141,41,87</pre></div>
-		 					<div class="color-label"><pre>#9d5274 
-rgb
-157,82,116</pre></div>
-		 					<div class="color-label"><pre>#ac7a92 
-rgb
-172,122,146</pre></div>
-		 					<div class="color-label"><pre>#b899a7 
-rgb
-184,153,167</pre></div>
-						</div>
-						<p>IMS Health orange base</p>
-						<div class="color ims-orange-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#c8842e 
-rgb
-200,132,46</pre></div>
-		 					<div class="color-label"><pre>#c9924e 
-rgb
-201,146,78</pre></div>
-		 					<div class="color-label"><pre>#caa16e 
-rgb
-202,161,110</pre></div>
-		 					<div class="color-label"><pre>#caaf8d 
-rgb
-202,175,141</pre></div>
-		 					<div class="color-label"><pre>#cbbaa5 
-rgb
-203,186,165</pre></div>
-						</div>
-						<p>Violet base</p>
-						<div class="color report-violet-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#3e0a60 
-rgb
-62,10,96</pre></div>
-		 					<div class="color-label"><pre>#5a3176 
-rgb
-90,49,118</pre></div>
-		 					<div class="color-label"><pre>#77578b 
-rgb
-119,87,139</pre></div>
-		 					<div class="color-label"><pre>#937ea1 
-rgb
-147,126,161</pre></div>
-		 					<div class="color-label"><pre>#a99bb1 
-rgb
-169,155,177</pre></div>
-						</div>
-						<p>IMS-Health Green base</p>
-						<div class="color ims-green-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#5f861b 
-rgb
-95,134,27</pre></div>
-		 					<div class="color-label"><pre>#75943e 
-rgb
-117,148,62</pre></div>
-		 					<div class="color-label"><pre>#8aa262 
-rgb
-138,162,98</pre></div>
-		 					<div class="color-label"><pre>#a1b086 
-rgb
-161,176,134</pre></div>
-		 					<div class="color-label"><pre>#b1baa0 
-rgb
-177,186,160</pre></div>
-						</div>
-						<p>IMS Health yellow base</p>
-						<div class="color ims-yellow-shades">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#ccad00 
-rgb
-204,173,0</pre></div>
-		 					<div class="color-label"><pre>#ccb329 
-rgb
-204,179,41</pre></div>
-		 					<div class="color-label"><pre>#ccba52 
-rgb
-204,186,82</pre></div>
-		 					<div class="color-label"><pre>#ccbf7a 
-rgb
-204,191,122</pre></div>
-		 					<div class="color-label"><pre>#ccc499 
-rgb
-204,196,153</pre></div>
-						</div>
-					</div>
-
-					<a class="alpha-toggle"><h3 class="elementTitle">Show 10% Alpha scale colors</h3></a>
-					<div class="alpha">
-						<p>Primary - IMS Health blue base</p>
-						<div class="color ims-blue-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#193d77 
-rgb
-25,61,119</pre></div>
-							 <div class="color-label"><pre>#4c6895 
-rgb
-76,104,149</pre></div>
-							 <div class="color-label"><pre>#7f93b3 
-rgb
-127,147,179</pre></div>
-							 <div class="color-label"><pre>#b2bed1 
-rgb
-178,190,209</pre></div>
-						</div>
-						<p>Secondary - IMS Health teal base</p>
-						<div class="color ims-teal-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color"> 
-							<div class="color-label"><pre>#319aa8 
-rgb
-49,154,168</pre></div>
-		 					<div class="color-label"><pre>#5fb0bb 
-rgb
-95,176,187</pre></div>
-		 					<div class="color-label"><pre>#8dc7ce 
-rgb
-141,199,206</pre></div>
-		 					<div class="color-label"><pre>#badde2 
-rgb
-186,221,226</pre></div>
-						</div>
-						<p>IMS Health cyan base</p>
-						<div class="color ims-cyan-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#19b2f1 
-rgb
-25,178,241</pre></div> 		
-		 					<div class="color-label"><pre>#4cc3f4 
-rgb
-76,195,244</pre></div>
-		 					<div class="color-label"><pre>#7fd4f7 
-rgb
-127,212,247</pre></div>
-		 					<div class="color-label"><pre>#b2e5fa 
-rgb
-178,229,250</pre></div>
-						</div>
-						<p>IMS Health plum base</p>
-						<div class="color ims-plum-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#a6195a 
-rgb
-156,0,72</pre></div>
-		 					<div class="color-label"><pre>#ba4c7f 
-rgb
-186,76,127</pre></div>
-		 					<div class="color-label"><pre>#cd7fa3 
-rgb
-205,127,163</pre></div>
-		 					<div class="color-label"><pre>#e1b2c8 
-rgb
-225,178,200</pre></div>
-						</div>
-						<p>IMS Health orange base</p>
-						<div class="color ims-orange-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#faae4d 
-rgb
-250,174,77</pre></div>
-		 					<div class="color-label"><pre>#fbc075 
-rgb
-251,192,117</pre></div>
-		 					<div class="color-label"><pre>#fcd29c 
-rgb
-252,210,156</pre></div>
-		 					<div class="color-label"><pre>#fde4c4 
-rgb
-253,228,196</pre></div>
-						</div>
-						<p>Violet base</p>
-						<div class="color report-violet-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#5f2485 
-rgb
-95,36,133</pre></div>
-		 					<div class="color-label"><pre>#8354a0 
-rgb
-131,84,160</pre></div>
-		 					<div class="color-label"><pre>#a685bb 
-rgb
-166,133,187</pre></div>
-		 					<div class="color-label"><pre>#cab6d6 
-rgb
-202,182,214</pre></div>
-						</div>
-						<p>IMS-Health Green base</p>
-						<div class="color ims-green-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#84b138 
-rgb
-132,177,56</pre></div>
-		 					<div class="color-label"><pre>#a0c264 
-rgb
-160,194,100</pre></div>
-		 					<div class="color-label"><pre>#adcb7a 
-rgb
-187,211,144</pre></div>
-		 					<div class="color-label"><pre>#d6e5bc 
-rgb
-214,229,188</pre></div>
-						</div>
-						<p>IMS Health yellow base</p>
-						<div class="color ims-yellow-tens">
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-							<div class="color-block"></div>
-						</div>
-						<div class="color">
-		 					<div class="color-label"><pre>#ffdc19 
-rgb
-255,220,25</pre></div>
-		 					<div class="color-label"><pre>#ffe44c 
-rgb
-255,228,76</pre></div>
-		 					<div class="color-label"><pre>#ffeb7f 
-rgb
-255,235,127</pre></div>
-		 					<div class="color-label"><pre>#fff3b2 
-rgb
-255,243,178</pre></div>
-						</div>
-					</div>
-				</div><!--end report colors -->
-
 			</div><!--end report guide-section-->
 
 			<div class="guide-section" id="workspace">
-				<h2 class="guide-sectionTitle">Workspace Styles</h2>
+				<h2 class="guide-section-title">Workspace Styles</h2>
 				<div class="style-element" id="workspace-tiles">
 					<h3 class="elementTitle">Tiles</h3>
 					<div class="tile corporate workspaceTile" id="companyTile">
@@ -2267,5 +1590,7 @@ rgb
 
 	<script src="./assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
   	<script src="./assets/js/main.js" type="text/javascript"></script>
+  	<script src="./assets/js/guide.js" type="text/javascript"></script>
+  	<script src="./assets/js/mustache.js" type="text/javascript"></script>
 </body>
 </html>
