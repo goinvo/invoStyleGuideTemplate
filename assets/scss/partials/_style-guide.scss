@@ -133,13 +133,6 @@ p {
 	font-size: 1.0rem;
 }
 
-
-#slider .sub-note {
-	right: 0; 
-	position: absolute;
-	margin-top: -0.8rem;
-}
-
 #parameterPanel {
 	display: block;
 	.sidePanel {
@@ -149,6 +142,7 @@ p {
 
 h3.show_markup, h3.show_styles, h3.show_JS { 
 	color: $font-color-link;
+	font-size: 1.2rem;
 	cursor: pointer;
 	text-align: right;
 	margin-right: 3.0rem;

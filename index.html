@@ -24,49 +24,41 @@
 	</div>
 	<div class="table-contents">
 		<ul>
-			<li><h3><a href="#structure">Structure</a></h3>
-				<ul>
-					<li><a href="#header">Header</a></li>
-					<li><a href="#sub-navigation">Subnav</a></li>
-				</ul>
-			</li>
-
+			<li><h3><a href="#introduction">Introduction</a></h3></li>
+			<li><h3><a href="#colors">Colors</a></h3></li>
 			<li><h3><a href="#typography">Typography</a></h3>
 				<ul>
 					<li><a href="#typography">Typography</a></li>
 					<li><a href="#icons">Icons</a></li>
 				</ul>
 			</li>
-			
 			<li><h3><a href="#controls">Controls</a></h3>
 				<ul>
-					<li><a href="#text-input">Text Input </a></li>
-					<li><a href="#select">Select</a></li>
+					<li><a href="#text-input">Text Input</a></li>
+					<li><a href="#select-box">Select</a></li>
+					<li><a href="#radio-button">Radio Button</a></li>
+					<li><a href="#checkboxes">Checkbox</a></li>
 					<li><a href="#buttons">Button</a></li>
 					<li><a href="#slider">Slider</a></li>
 					<li><a href="#toggle">Toggle</a></li>
-					<li><a href="#radio-button">Radio Button</a></li>
-					<li><a href="#checkbox-option">Checkbox</a></li>
-					<li><a href="#popup">Popup</a></li>
-					<li><a href="#parameterPanel">Parameter Panel</a></li>
+					<li><a href="#edit-title">Edit Title</a></li>
 				</ul>
 			</li>
-			<li><h3><a href="#report">Report</a></h3>
+
+			<li><h3><a href="#structure">Structure</a></h3>
 				<ul>
-					<li><a href="#report-layout">Layout</a></li>
-					<li><a href="#report-title">Title</a></li>
-					<li><a href="#cohort-definition">Cohort Definition</a></li>
-					<li><a href="#report-legend">Legend</a></li>
-					<li><a href="#axis-labels">Axis &amp; Labels</a></li>
-					<li><a href="#report-tip">Report Tooltip</a></li>
-					<li><a href="#timeline">Timeline</a></li>
-					<li><a href="#report-colors">Colors</a></li>
+					<li><a href="#nav-menu">Menu</a></li>
+					<li><a href="#breadcrumb-menu">Breadcrumbs</a></li>
+					<li><a href="#modal-popup">Popup</a></li>
+					<li><a href="#side-panel">Side Panel</a></li>
+					<li><a href="#tiles">Tiles</a></li>
 				</ul>
-			</li>
-			<li><h3><a href="#workspace">Workspace</a></h3>
+			</li>	
+			<li><h3><a href="#charts">Charts</a></h3>
 				<ul>
-					<li><a href="#workspace-tiles">Tiles</a></li>
-					<li><a href="#workspace-layout">Layout</a></li>
+					<li><a href="#chart-grid">Chart Grid</a></li>
+					<li><a href="#chart-legend">Legend</a></li>
+					<li><a href="#tip-popover">Tooltip</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -116,1115 +108,978 @@ color: #00aeef;
 :hover {text-decoration: underline;}</pre>
 				</div>
 			</div>
-		</div>
-	</div>
 
-	<div class="guide">
-		<div class="container">
-			<div class="guide-section" id="structure">
-				<h2 class="guide-section-title">Structure</h2>
-			
-				<div class="style-element" id="header">
-					<h3 class="elementTitle">Header</h3>
-					<p>Hover over different areas of the navigation and click on the user greeting to view different states outlined in the styles.</p>
-					<div class="component">
-						<div class="menu">
-							<ul>
-								<li id="user"><a>Welcome, User</a><span class="e360-ui-drop-arrow"></span>
-									<ul class="dropdown">
-										<li>User Settings</li>
-										<li>Log out</li>
-									</ul>
-								</li>
-								<li><a>Workspaces</a></li>
-								<li><a>Cohorts</a></li>
-								<li><a>Cards</a><span class="e360-ui-drop-arrow"></span></li>
-								<li><a>Codelist</a><span class="e360-ui-drop-arrow"></span></li>
-								<li><a>Recruitment</a></li>
-								<li><a>Admin</a><span class="e360-ui-drop-arrow"></span></li>
-								<li><a>Tasks</a> <span class="alert"> 1 </span></li>
-							</ul>
-							<ul class="logo-container">
-								<li class="search e360-search"></li>
-								<li id="logo"><img src="./assets/images/logo.png" width="45" height="24" /></li>
-							</ul>
+			<div class="guide-section" id="icons">
+				<h2 class="guide-section-title">Icons</h2>
+				<div class="component">
+					<ul>
+						<li>
+							<span class="e360-input-drop-arrow"></span>
+							<p class="icon-name">e360-input-drop-arrow</p>
+							<p class="icon-desc">Accompanying arrow on select inputs</p>
+						</li>
+						<li>
+							<span class="e360-ui-drop-arrow"></span>
+							<p class="icon-name">e360-ui-drop-arrow</p>
+							<p class="icon-desc">Accompanying arrow on dropdowns in navigation and report controls</p>
+						</li>
+						<li>
+							<span class="e360-close"></span>
+							<p class="icon-name">e360-close</p>
+							<p class="icon-desc">Close panels, modals, etc.</p>
+						</li>
+						<li>
+							<span class="e360-faved"></span>
+							<p class="icon-name">e360-faved</p>
+							<p class="icon-desc">Favorite workspaces, found on workspace tiles and in workspace subnav</p>
+						</li>
+						<li>
+							<span class="e360-options-ellipsis"></span>
+							<p class="icon-name">e360-options-ellipsis</p>
+							<p class="icon-desc">Workspace options, found on workspace tiles</p>
+						</li>
+						<li>
+							<span class="e360-search"></span>
+							<p class="icon-name">e360-search</p>
+							<p class="icon-desc">Search</p>
+						</li>
+						<li>
+							<span class="e360-edit"></span>
+							<p class="icon-name">e360-edit</p>
+							<p class="icon-desc">Edit</p>
+						</li>
+						<li>
+							<span class="e360-save"></span>
+							<p class="icon-name">e360-save</p>
+							<p class="icon-desc">Save a workspace or report</p>
+						</li>
+						<li>
+							<span class="e360-download"><svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg></span>
+							<p class="icon-desc">Download / Export</p>
+						</li>
+						<li>
+							<span class="e360-copy"></span>
+							<p class="icon-name">e360-copy</p>
+							<p class="icon-desc">Copy a workspace or report from a tile</p>
+						</li>
+						<li>
+							<span class="e360-share"></span>
+							<p class="icon-name">e360-share</p>
+							<p class="icon-desc">Share a workspace from a tile or subnavigation</p>
+						</li>
+						<li>
+							<span class="e360-workspace-landing"></span>
+							<p class="icon-name">e360-workspace-landing</p>
+							<p class="icon-desc">Breadcrumb to return to list of workspaces</p>
+						</li>
+						<li>
+							<span class="e360-view-list"></span>
+							<p class="icon-name">e360-view-list</p>
+							<p class="icon-desc">(Not currently used) List view of workspaces and reports</p>
+						</li>
+						<li>
+							<span class="e360-workspace"></span>
+							<p class="icon-name">e360-workspace</p>
+							<p class="icon-desc">Breadcrumb to return to workspace</p>
+						</li>
+						<li>
+							<span class="e360-chart-bar"></span>
+							<p class="icon-name">e360-chart-bar</p>
+							<p class="icon-desc">Bar chart</p>
+						</li>
+						<li>
+							<span class="e360-chart-bar-stacked"></span>
+							<p class="icon-name">e360-chart-bar-stacked</p>
+							<p class="icon-desc">Stacked bar chart</p>
+						</li>
+						<li>
+							<span class="e360-chart-bar-stack-vertical"></span>
+							<p class="icon-name">e360-chart-bar-stack-vertical</p>
+							<p class="icon-desc">Vertically stacked bar chart</p>
+						</li>
+						<li>
+							<span class="e360-chart-switch-matrix"></span>
+							<p class="icon-name">e360-chart-switch-matrix</p>
+							<p class="icon-desc">Sankey switch matrix</p>
+						</li>
+						<li>
+							<span class="e360-column-shift-arrow"></span>
+							<p class="icon-name">e360-column-shift</p>
+							<p class="icon-desc">(Not currently used) Horizontal auto-scroll of table by 1 column</p>
+						</li>
+						<li>
+							<span class="e360-column-shift-double-arrow"></span>
+							<p class="icon-name">e360-shift-double-arrow</p>
+							<p class="icon-desc">(Not currently used) Horizontal auto-scroll of table by currently visible columns</p>
+						</li>
+						<li>
+							<span class="e360-locked"></span>
+							<p class="icon-name">e360-locked</p>
+							<p class="icon-desc">(Not currently used) Locked column on table</p>
+						</li>
+						<li>
+							<span class="e360-unlocked"></span>
+							<p class="icon-name">e360-unlocked</p>
+							<p class="icon-desc">(Not currently used) Unlocked column on table</p>
+						</li>
+					</ul>
+				</div>
+			</div><!--end icons -->
+
+			<div class="bookmark" id="controls"></div>
+			<div class="guide-section" id="text-input">
+				<h2 class="guide-section-title">Text Input</h2>
+				<div class="component">
+					<div class="inputGroup">
+						<div class="label">Label</div>
+						<input type="text" placeholder="Text input" />
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/3a31b3669c92fc5fe0da.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/9c2896788b3ec8cc1fc1.js"></script>
+						<script src="https://gist.github.com/jen-p/9235022bd39dc4ff7eb9.js"></script>
+					</div>
+
+					<div class="inputGroup required">
+						<div class="label">Required field <span class="asterisk">*</span></div>
+						<input type="text" placeholder="Text input" required />
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/e9effe5631dc68fa6d3c.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/6028f50eaf9b921208ae.js"></script>
+					</div>
+
+					<div class="inputGroup error">
+						<div class="label">Errored field</div>
+						<input type="text" placeholder="Text input" required />
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/4469651f96f4d070db3c.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/71ff943382a39a920099.js"></script>
+					</div>
+
+					<div class="inputGroup">
+						<div class="label">Disabled Field</div>
+						<input type="text" placeholder="Text input" disabled />
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/6db0f63d6be0cd42ada0.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/10b40b546615faf66d60.js"></script>
+					</div>
+				</div>
+			</div><!--end text input -->
+
+			<div class="guide-section" id="select-box">
+				<h2 class="guide-section-title">Select box</h2>
+				<div class="component">
+					<div class="inputGroup">
+						<div class="label">Label</div>
+						<div class="select">
+							<label>
+								<select name="Select">
+								  <option value="">Select box</option>
+								  <option value="1">Option 1</option>
+								  <option value="2">Option 2</option>
+								  <option value="3">Option 3</option>
+								  <option value="4">Option 4</option>
+								</select>
+							</label>
 						</div>
 					</div>
 					<h3 class="show_markup">Show Markup</h3>
 					<div class="markup">
-						<script src="https://gist.github.com/jen-p/86ca192605323c3df522.js"></script>
+						<script src="https://gist.github.com/jen-p/32796454f0c968356120.js"></script>
 					</div>
 					<h3 class="show_styles">Show LESS</h3>
 					<div class="styles">
-						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
+						<script src="https://gist.github.com/jen-p/fef6b98bd044ab270032.js"></script>
+						<script src="https://gist.github.com/jen-p/9235022bd39dc4ff7eb9.js"></script>
 					</div>
-				</div><!--end header style-element-->
 
-				<div class="style-element" id="sub-navigation">
-					<h3 class="elementTitle">Sub-navigation</h3>
-					<p>Hover over different areas of the subnavigation and click on the favorite icon to see different states outlined in the styles.</p>
-
-					<div class="subNav" id="workspaceList">
-						<div class="subNavLeft">
-							<ul class="breadcrumbNav">
-								<li class="subNavItem breadcrumb pageTitle">Workspaces</li>
-							</ul>
-							<ul class="filters">
-								<li class="subNavItem"><a>All</a></li>
-								<li class="subNavItem"><a>Public</a></li>
-								<li class="subNavItem"><a>Shared</a></li>
-								<li class="subNavItem"><a>Private</a></li>
-							</ul>
+					<div class="inputGroup error">
+						<div class="label">Errored Select</div>
+						<div class="select">
+							<label>
+								<select name="Select">
+								  <option value="">Select box</option>
+								  <option value="1">Option 1</option>
+								  <option value="2">Option 2</option>
+								  <option value="3">Option 3</option>
+								  <option value="4">Option 4</option>
+								</select>
+							</label>
 						</div>
 					</div>
 					<h3 class="show_markup">Show Markup</h3>
 					<div class="markup">
-						<script src="https://gist.github.com/jen-p/6314130d95df60f71969.js"></script>
+						<script src="https://gist.github.com/jen-p/43f72e83991040584948.js"></script>
 					</div>
 					<h3 class="show_styles">Show LESS</h3>
 					<div class="styles">
-						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
+						<script src="https://gist.github.com/jen-p/347ff19b260017684b85.js"></script>
 					</div>
 
-					<div class="subNav" id="workspaceLanding">
-						<div class="subNavLeft">
-							<ul class="breadcrumbNav">
-								<li class="subNavItem breadcrumb">
-									<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
-								</li>		
-								<li class="subNavItem pageTitle"><span class="e360-faved"></span><span class="editInput"><input type="text" value="Company Workspace" /><span class="e360-edit"></span><button class="confirm active">OK</button></span></li>
-							</ul>
+					<div class="inputGroup">
+						<div class="label">Disabled Select</div>
+						<div class="select">
+							<label>
+								<select name="Select" disabled>
+								  <option value="">Select box</option>
+								  <option value="1">Option 1</option>
+								  <option value="2">Option 2</option>
+								  <option value="3">Option 3</option>
+								  <option value="4">Option 4</option>
+								</select>
+							</label>
 						</div>
 					</div>
 					<h3 class="show_markup">Show Markup</h3>
 					<div class="markup">
-						<script src="https://gist.github.com/jen-p/fd90a936c0ae733b67bc.js"></script>
+						<script src="https://gist.github.com/jen-p/f0d66467b592422f6a27.js"></script>
 					</div>
 					<h3 class="show_styles">Show LESS</h3>
 					<div class="styles">
-						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
-						<script src="https://gist.github.com/jen-p/430bdbd90246e68f3513.js"></script>
-						<script src="https://gist.github.com/jen-p/d599386ff94cfdeb188e.js"></script>
+						<script src="https://gist.github.com/jen-p/6cd7213db3834cc5a48f.js"></script>
 					</div>
+				</div>
+			</div><!--end select-->
 
-						<div class="subNav">
-							<div class="subNavLeft">
-								<ul class="breadcrumbNav">
-									<li class="subNavItem breadcrumb">
-										<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
-									</li>
-									<li class="subNavItem breadcrumb">
-										<a id="workspaceButton"><span class="e360-workspace"></span></a>
-									</li>
-									<li class="subNavItem pageTitle">Source of Business</li>
-								</ul>
-								<ul class="chartTypeList">
-									<li class="subNavItem chart active" id="businessBasic">
-										<span class="icon active e360-chart-bar-stack-vertical"></span>
-									</li>
-									<li class="subNavItem chart" id="sankey">
-										<span class="icon e360-chart-switch-matrix"></span>
-									</li>
-									<li class="subNavItem chart" id="switchBasic">
-										<span class="icon e360-chart-switch-matrix-basic"></span>
-									</li>
-								</ul>
-								<ul class="reportDetails">
-									<li class="subNavItem reportSwitch" id="timeframe">
-										<a>Monthly</a><span class="arrow e360-ui-drop-arrow"></span>
-										<ul class="dropdown">
-											<li class="active">Monthly</li>
-											<li>Quarterly</li>
-											<li>MAT</li>
-										</ul>
-									</li>
-									<li class="subNavItem reportSwitch" id="timeframe">
-										<a>Alphacyn</a><span class="arrow e360-ui-drop-arrow"></span>
-										<ul class="dropdown">
-											<li class="active">Alphacyn</li>
-											<li>Betacyn</li>
-											<li>Deltacyn</li>
-											<li>Etacyn</li>
-											<li>Gammacyn</li>
-											<li>Gammacyn Deltacyn</li>
-											<li>Kappacyn</li>
-											<li>Kappacyn Betacyn</li>
-											<li>Omegacyn</li>
-											<li>Omega Zetacyn</li>
-											<li>Sigma Alphacyn</li>
-											<li>Sigma Betacyn</li>
-											<li>Sigmacyn</li>
-											<li>Thetacyn</li>
-											<li>Zetacyn</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="subNavRight">
-								<ul class="reportSettings">
-									<li class="subNavItem reportAction exportButton">
-										<svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg>
-									</li>
-									<li class="subNavItem reportAction saveButton">
-										<span class="icon e360-save"></span>
-									</li>
-									<li class="subNavItem reportAction">
-										<a>Project Settings</a>
-									</li>
-									<li class="subNavItem reportAction">
-										<a>Parameters</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p>The 'Monthly' dropdown shown above is an example from Source of Business as a report option to change the way we're looking at the same data. We want to separate these from the chart type options with a border in between.</p>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/a5aee5d86ce211db7dfc.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
-						</div>
-
-						<div class="subNav">
-							<div class="subNavLeft">
-								<ul class="breadcrumbNav">
-									<li class="subNavItem breadcrumb">
-										<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
-									</li>
-									<li class="subNavItem breadcrumb">
-										<a id="workspaceButton"><span class="e360-workspace"></span></a>
-									</li>
-									<li class="subNavItem pageTitle">Persistence</li>
-								</ul>
-								<ul class="chartTypeList">
-									<li class="subNavItem chart chartSwitch">
-										<a>Patient</a><span class="e360-ui-drop-arrow"></span>
-										<ul class="dropdown">
-											<li class="active">Patients</li>
-											<li>Percentage</li>
-										</ul>
-									</li>
-								</ul>
-								<ul class="reportDetails">
-									<li class="subNavItem reportSwitch" id="timeframe">
-										<a>Monthly</a><span class="arrow e360-ui-drop-arrow"></span>
-										<ul class="dropdown">
-											<li class="active">Monthly</li>
-											<li>Quarterly</li>
-											<li>MAT</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="subNavRight">
-								<ul class="reportSettings">
-									<li class="subNavItem reportAction exportButton">
-										<svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg>
-									</li>
-									<li class="subNavItem reportAction saveButton">
-										<span class="icon e360-save"></span>
-									</li>
-									<li class="subNavItem reportAction">
-										<a>Project Settings</a>
-									</li>
-									<li class="subNavItem reportAction">
-										<a>Parameters</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<p>The 'Patient' dropdown shown above is an example from Persistence, where patient is a chart-type, equivalent to the icons shown in the previous source of business example.</p>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/e21a8a9e7490f66f76fc.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
-						</div>
-
-					</div> <!--end subnav style-element -->
-				</div> <!--end strcuture content-->
-			</div><!-- end structure guide-section -->
-
-			<div class="guide-section" id="typography">
-				<h2 class="guide-section-title">Typography</h2>
-				<div class="content">
-					<div class="style-element">
-						<pre>font-family: Arial, Helvetica, sans-serif;
-						</pre>
-						<h1>Header 1</h1>
-						<pre>font-size: 2.4rem; /* 24px */</pre>
-						<h2>Header 2</h2>
-						<pre>font-size: 1.8rem; /* 18px */</pre>
-						<h3>Header 3</h3>
-						<pre>font-size: 1.4rem; /* 14px */</pre>
-						<p>Body</p>
-						<pre>font-size: 1.2rem; /* 12px */
-	color: #323334;</pre>
-						<p class="secondary">Secondary text</p>
-						<pre>font-size: 1.2rem; /* 12px */
-	color: #979ba8;</pre>
-						<p class="link"><a>Link text</a></p>
-						<pre>font-size: 1.2rem; /* 12px */
-	color: #00aeef;
-	:hover {text-decoration: underline;}</pre>
-					</div>
-
-					<div class="style-element" id="icons">
-						<h3 class="elementTitle">Icons</h3>
-
-						<ul>
-							<li>
-								<span class="e360-input-drop-arrow"></span>
-								<p class="icon-name">e360-input-drop-arrow</p>
-								<p class="icon-desc">Accompanying arrow on select inputs</p>
-							</li>
-							<li>
-								<span class="e360-ui-drop-arrow"></span>
-								<p class="icon-name">e360-ui-drop-arrow</p>
-								<p class="icon-desc">Accompanying arrow on dropdowns in navigation and report controls</p>
-							</li>
-							<li>
-								<span class="e360-close"></span>
-								<p class="icon-name">e360-close</p>
-								<p class="icon-desc">Close panels, modals, etc.</p>
-							</li>
-							<li>
-								<span class="e360-faved"></span>
-								<p class="icon-name">e360-faved</p>
-								<p class="icon-desc">Favorite workspaces, found on workspace tiles and in workspace subnav</p>
-							</li>
-							<li>
-								<span class="e360-options-ellipsis"></span>
-								<p class="icon-name">e360-options-ellipsis</p>
-								<p class="icon-desc">Workspace options, found on workspace tiles</p>
-							</li>
-							<li>
-								<span class="e360-search"></span>
-								<p class="icon-name">e360-search</p>
-								<p class="icon-desc">Search</p>
-							</li>
-							<li>
-								<span class="e360-edit"></span>
-								<p class="icon-name">e360-edit</p>
-								<p class="icon-desc">Edit</p>
-							</li>
-							<li>
-								<span class="e360-save"></span>
-								<p class="icon-name">e360-save</p>
-								<p class="icon-desc">Save a workspace or report</p>
-							</li>
-							<li>
-								<span class="e360-download"><svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg></span>
-								<p class="icon-desc">Download / Export</p>
-							</li>
-							<li>
-								<span class="e360-copy"></span>
-								<p class="icon-name">e360-copy</p>
-								<p class="icon-desc">Copy a workspace or report from a tile</p>
-							</li>
-							<li>
-								<span class="e360-share"></span>
-								<p class="icon-name">e360-share</p>
-								<p class="icon-desc">Share a workspace from a tile or subnavigation</p>
-							</li>
-							<li>
-								<span class="e360-workspace-landing"></span>
-								<p class="icon-name">e360-workspace-landing</p>
-								<p class="icon-desc">Breadcrumb to return to list of workspaces</p>
-							</li>
-							<li>
-								<span class="e360-workspace"></span>
-								<p class="icon-name">e360-workspace</p>
-								<p class="icon-desc">Breadcrumb to return to workspace</p>
-							</li>
-							<li>
-								<span class="e360-chart-bar"></span>
-								<p class="icon-name">e360-chart-bar</p>
-								<p class="icon-desc">Bar chart</p>
-							</li>
-							<li>
-								<span class="e360-chart-bar-stacked"></span>
-								<p class="icon-name">e360-chart-bar-stacked</p>
-								<p class="icon-desc">Stacked bar chart</p>
-							</li>
-							<li>
-								<span class="e360-chart-bar-stack-vertical"></span>
-								<p class="icon-name">e360-chart-bar-stack-vertical</p>
-								<p class="icon-desc">Vertically stacked bar chart</p>
-							</li>
-							<li>
-								<span class="e360-chart-switch-matrix"></span>
-								<p class="icon-name">e360-chart-switch-matrix</p>
-								<p class="icon-desc">Sankey switch matrix</p>
-							</li>
-							<li>
-								<span class="e360-chart-switch-matrix-basic"></span>
-								<p class="icon-name">e360-chart-switch-matrix-basic</p>
-								<p class="icon-desc">Circular switch matrix</p>
-							</li>
-							<li>
-								<span class="e360-database"></span>
-								<p class="icon-name">e360-daabase</p>
-								<p class="icon-desc">Used in description of cohort contents and sources</p>
-							</li>
-
-							<li>
-								<span class="e360-view-grid"></span>
-								<p class="icon-name">e360-view-grid</p>
-								<p class="icon-desc">(Not currently used) Tiled/Grid view of workspaces and reports</p>
-							</li>
-							<li>
-								<span class="e360-view-list"></span>
-								<p class="icon-name">e360-view-list</p>
-								<p class="icon-desc">(Not currently used) List view of workspaces and reports</p>
-							</li>
-							<li>
-								<span class="e360-collapse"></span>
-								<p class="icon-name">e360-collapse</p>
-								<p class="icon-desc">(Not currently used) Used in collapse of groups of columns in table view</p>
-							</li>
-							<li>
-								<span class="e360-column-shift-arrow"></span>
-								<p class="icon-name">e360-column-shift</p>
-								<p class="icon-desc">(Not currently used) Horizontal auto-scroll of table by 1 column</p>
-							</li>
-							<li>
-								<span class="e360-column-shift-double-arrow"></span>
-								<p class="icon-name">e360-shift-double-arrow</p>
-								<p class="icon-desc">(Not currently used) Horizontal auto-scroll of table by currently visible columns</p>
-							</li>
-							<li>
-								<span class="e360-locked"></span>
-								<p class="icon-name">e360-locked</p>
-								<p class="icon-desc">(Not currently used) Locked column on table</p>
-							</li>
-							<li>
-								<span class="e360-unlocked"></span>
-								<p class="icon-name">e360-unlocked</p>
-								<p class="icon-desc">(Not currently used) Unlocked column on table</p>
-							</li>
-							<li>
-								<span class="e360-more-info"></span>
-								<p class="icon-name">e360-more-info</p>
-								<p class="icon-desc">(Not currently used) View significant or key information about a given set of data on a chart</p>
-							</li>
-							<li>
-								<span class="e360-time-line-play"></span>
-								<p class="icon-name">e360-time-line-play</p>
-								<p class="icon-desc">(Not currently used) Play segments of a timeline to view changes in a chart over time</p>
-							</li>
-						</ul>
-					</div>
-				</div> <!--end typography content-->
-			</div><!-- end typography guide-section-->
-
-			<div class="guide-section" id="controls">
-				<h2 class="guide-section-title">Controls</h2>
-				<div class="content">
-					<div class="style-element" id="text-input">
-						<h3 class="elementTitle">Text Input</h3>
-						<p>Hover and click to view hover and focus styles.</p>
-						<div class="inputGroup">
-							<div class="label">Label</div>
-							<input type="text" placeholder="Text input" />
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/3a31b3669c92fc5fe0da.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/9c2896788b3ec8cc1fc1.js"></script>
-							<script src="https://gist.github.com/jen-p/9235022bd39dc4ff7eb9.js"></script>
-						</div>
-
-						<div class="inputGroup required">
-							<div class="label">Required field <span class="asterisk">*</span></div>
-							<input type="text" placeholder="Text input" required />
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/e9effe5631dc68fa6d3c.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/6028f50eaf9b921208ae.js"></script>
-						</div>
-
-						<div class="inputGroup error">
-							<div class="label">Errored field</div>
-							<input type="text" placeholder="Text input" required />
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/4469651f96f4d070db3c.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/71ff943382a39a920099.js"></script>
-						</div>
-
-						<div class="inputGroup">
-							<div class="label">Disabled Field</div>
-							<input type="text" placeholder="Text input" disabled />
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/6db0f63d6be0cd42ada0.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/10b40b546615faf66d60.js"></script>
-						</div>
-					</div><!--end input styles -->
-
-					<div class="style-element" id="select">
-						<h3 class="elementTitle">Select box</h3>
-						<p>Hover and click to view hover and focus styles.</p>
-						<div class="inputGroup">
-							<div class="label">Label</div>
-							<div class="select">
-								<label>
-									<select name="Select">
-									  <option value="">Select box</option>
-									  <option value="1">Option 1</option>
-									  <option value="2">Option 2</option>
-									  <option value="3">Option 3</option>
-									  <option value="4">Option 4</option>
-									</select>
-								</label>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/32796454f0c968356120.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/fef6b98bd044ab270032.js"></script>
-							<script src="https://gist.github.com/jen-p/9235022bd39dc4ff7eb9.js"></script>
-						</div>
-
-						<div class="inputGroup error">
-							<div class="label">Errored Select</div>
-							<div class="select">
-								<label>
-									<select name="Select">
-									  <option value="">Select box</option>
-									  <option value="1">Option 1</option>
-									  <option value="2">Option 2</option>
-									  <option value="3">Option 3</option>
-									  <option value="4">Option 4</option>
-									</select>
-								</label>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/43f72e83991040584948.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/347ff19b260017684b85.js"></script>
-						</div>
-
-						<div class="inputGroup">
-							<div class="label">Disabled Select</div>
-							<div class="select">
-								<label>
-									<select name="Select" disabled>
-									  <option value="">Select box</option>
-									  <option value="1">Option 1</option>
-									  <option value="2">Option 2</option>
-									  <option value="3">Option 3</option>
-									  <option value="4">Option 4</option>
-									</select>
-								</label>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/f0d66467b592422f6a27.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/6cd7213db3834cc5a48f.js"></script>
-						</div>
-
-					</div><!--end select styles -->
-
-					<div class="style-element" id="buttons">
-						<h3 class="elementTitle">Button</h3>
-						<p>Hover and click to view hover and focus styles.</p>
-						<button>Button</button>
-						<button><span class="e360-save"></span>With Icon</button>
-						<button disabled>Disabled</button>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/01ee9bf2885206a08dd1.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/1552d0c9446557fa2653.js"></script>
+			<div class="guide-section" id="radio-button">
+				<h2 class="guide-section-title">Radio Button</h2>
+				<div class="component">
+					<div class="inputGroup">
+						<div class="label">Label</div>
+						<div class="radio">
+						    <p><input id="opt1" type="radio" name="optionSet" value="opt1">
+						    <label for="opt1">Option 1</label></p>
+						    <p><input id="opt2" type="radio" name="optionSet" value="opt2">
+						    <label for="opt2">Option 2</label></p>
 						</div>
 					</div>
-
-					<div class="style-element">
-						<h3 class="elementTitle">Active Button</h3>
-						<p>Hover and click to view hover and focus styles.</p>
-						<button class="active">Active Button</button>
-						<button class="active"><span class="e360-save"></span>With Icon</button>
-						<button class="active" disabled>Disabled</button>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/0adaf692594d55ca9b58.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/016f8934c92acae507ec.js"></script>
-						</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/b4b0b4a8de73470c85df.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/cf9053a4d849b39fcf46.js"></script>
 					</div>
 
-					<div class="style-element" id="slider">
-						<h3 class="elementTitle">Slider / Range selection</h3>
-						<div class="inputGroup">
-							<div class="label">Label</div>
-							<!--<input class="range" type="range" name="points" min="0" max="10">-->
+					<div class="inputGroup error">
+						<div class="label">Errored Radio</div>
+						<div class="radio">
+						    <p><input id="opt3" type="radio" name="optionSet2" value="opt3">
+						    <label for="opt3">Option 3</label></p>
+						    <p><input id="opt4" type="radio" name="optionSet2" value="opt4">
+						    <label for="opt4">Option 4</label></p>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/b763cfc1346860dfbd45.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/5cc395004deef48be7f4.js"></script>
+					</div>
+
+					<div class="inputGroup">
+						<div class="label">Disabled Radio</div>
+						<div class="radio disabled">
+						    <p><input id="opt5" type="radio" name="optionSet3" value="opt5" disabled>
+						    <label for="opt5">Option 3</label></p>
+						    <p><input id="opt6" type="radio" name="optionSet3" value="opt6" disabled>
+						    <label for="opt6">Option 4</label></p>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/4ef6db0a026888cce018.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/e5d33b5f82e9c9446fb3.js"></script>
+					</div>
+				</div>
+			</div><!--end radio -->
+
+			<div class="guide-section" id="checkboxes">
+				<h2 class="guide-section-title">Checkbox</h2>
+				<div class="component">
+					<div class="inputGroup">
+						<div class="label">Label</div>
+						<div class="checkbox">
+						    <p><input id="check1" type="checkbox" name="check" value="check1">
+						    <label for="check1">Checkbox 1</label></p>
+						    <p><input id="check2" type="checkbox" name="check" value="check2">
+						    <label for="check2">Checkbox 2</label></p>
+						    <p><input id="check3" type="checkbox" name="check" value="check3">
+						    <label for="check3">Checkbox 3</label></p>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/221a48ba62e4c698a3bf.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/85ff35707a769341bb7e.js"></script>
+					</div>
+
+					<div class="inputGroup error">
+						<div class="label">Errored Checkboxes</div>
+						<div class="checkbox">
+						    <p><input id="check4" type="checkbox" name="check" value="check1">
+						    <label for="check4">Checkbox 1</label></p>
+						    <p><input id="check5" type="checkbox" name="check" value="check2">
+						    <label for="check5">Checkbox 2</label></p>
+						    <p><input id="check6" type="checkbox" name="check" value="check3">
+						    <label for="check6">Checkbox 3</label></p>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/23cf6ac3430cd39acc50.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/5cc395004deef48be7f4.js"></script>
+					</div>
+
+					<div class="inputGroup">
+						<div class="label">Disabled Checkboxes</div>
+						<div class="checkbox disabled">
+						    <p><input id="check7" type="checkbox" name="check" value="check1" disabled>
+						    <label for="check7">Checkbox 1</label></p>
+						    <p><input id="check8" type="checkbox" name="check" value="check2" disabled>
+						    <label for="check8">Checkbox 2</label></p>
+						    <p><input id="check9" type="checkbox" name="check" value="check3" disabled>
+						    <label for="check9">Checkbox 3</label></p>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/d7fd30be9303e3bc8c64.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/e5d33b5f82e9c9446fb3.js"></script>
+					</div>
+				</div>
+			</div><!--end checkbox-->
+
+			<div class="guide-section" id="buttons">
+				<h2 class="guide-section-title">Button</h2>
+				<div class="component">
+					<h3 class="guide-section-title">Standard Button</h3>
+					<button>Button</button>
+					<button><span class="e360-save"></span>With Icon</button>
+					<button disabled>Disabled</button>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/01ee9bf2885206a08dd1.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/1552d0c9446557fa2653.js"></script>
+					</div>
+
+					<h3 class="guide-section-title">Active Button</h3>
+					<button class="active">Active Button</button>
+					<button class="active"><span class="e360-save"></span>With Icon</button>
+					<button class="active" disabled>Disabled</button>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/0adaf692594d55ca9b58.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/016f8934c92acae507ec.js"></script>
+					</div>
+				</div>
+			</div><!--end button-->
+
+			<div class="guide-section" id="slider">
+				<h2 class="guide-section-title">Slider</h2>
+				<div class="component">
+					<div class="inputGroup range">
+						<div class="label">Label</div>
+							<!--<input class="range" type="range" name="points" min="0" max="10">
+							<label for="points" onforminput="value = points.valueAsNumber"></label>-->
 							<img src="./assets/images/ui-range.png" height="29" width="156"/>
-						</div>
-						<p class="sub-note">Note: Slider not built out in guide, general styles shown below:</p>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/94f092639f34c3e489a5.js"></script>
-						</div>
-					</div>
-
-					<div class="style-element" id="toggle">
-						<h3 class="elementTitle">Toggle</h3>
-						<p>Hover and click to view different states outlined in the styles.</p>
-						<div class="inputGroup">
-							<div class="label">Label</div>
-							<div class="switch">
-							  <input id="toggle1" class="toggle" type="checkbox">
-							  <label for="toggle1"></label>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/7437d8093dd37ab3ddfe.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/f7fceac04b20aab987a0.js"></script>
-						</div>
-
-						<div class="inputGroup">
-							<div class="label">Disabled Toggle</div>
-							<div class="switch disabled">
-							  <input id="toggle2" class="toggle" type="checkbox" disabled>
-							  <label for="toggle2"></label>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/e6bc847a90897fd53562.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/e88deb89ab8a137b173b.js"></script>
-						</div>
-					</div><!--end toggle-->
-
-					<div class="style-element" id="radio-button">
-						<h3 class="elementTitle">Radio button</h3>
-						<p>Hover and click to view different states outlined in the styles.</p>
-						<div class="inputGroup">
-							<div class="label">Label</div>
-							<div class="radio">
-							    <p><input id="opt1" type="radio" name="optionSet" value="opt1">
-							    <label for="opt1">Option 1</label></p>
-							    <p><input id="opt2" type="radio" name="optionSet" value="opt2">
-							    <label for="opt2">Option 2</label></p>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/b4b0b4a8de73470c85df.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/cf9053a4d849b39fcf46.js"></script>
-						</div>
-
-						<div class="inputGroup error">
-							<div class="label">Errored Radio</div>
-							<div class="radio">
-							    <p><input id="opt3" type="radio" name="optionSet2" value="opt3">
-							    <label for="opt3">Option 3</label></p>
-							    <p><input id="opt4" type="radio" name="optionSet2" value="opt4">
-							    <label for="opt4">Option 4</label></p>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/b763cfc1346860dfbd45.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/5cc395004deef48be7f4.js"></script>
-						</div>
-
-						<div class="inputGroup">
-							<div class="label">Disabled Radio</div>
-							<div class="radio disabled">
-							    <p><input id="opt5" type="radio" name="optionSet3" value="opt5" disabled>
-							    <label for="opt5">Option 3</label></p>
-							    <p><input id="opt6" type="radio" name="optionSet3" value="opt6" disabled>
-							    <label for="opt6">Option 4</label></p>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/4ef6db0a026888cce018.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/e5d33b5f82e9c9446fb3.js"></script>
-						</div>
-					</div>
-
-					<div class="style-element" id="checkbox-option">
-						<h3 class="elementTitle">Checkboxes</h3>
-						<p>Hover and click to view different states outlined in the styles.</p>
-						<div class="inputGroup">
-							<div class="label">Label</div>
-							<div class="checkbox">
-							    <p><input id="check1" type="checkbox" name="check" value="check1">
-							    <label for="check1">Checkbox 1</label></p>
-							    <p><input id="check2" type="checkbox" name="check" value="check2">
-							    <label for="check2">Checkbox 2</label></p>
-							    <p><input id="check3" type="checkbox" name="check" value="check3">
-							    <label for="check3">Checkbox 3</label></p>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/221a48ba62e4c698a3bf.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/85ff35707a769341bb7e.js"></script>
-						</div>
-
-						<div class="inputGroup error">
-							<div class="label">Errored Checkboxes</div>
-							<div class="checkbox">
-							    <p><input id="check4" type="checkbox" name="check" value="check1">
-							    <label for="check4">Checkbox 1</label></p>
-							    <p><input id="check5" type="checkbox" name="check" value="check2">
-							    <label for="check5">Checkbox 2</label></p>
-							    <p><input id="check6" type="checkbox" name="check" value="check3">
-							    <label for="check6">Checkbox 3</label></p>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/23cf6ac3430cd39acc50.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/5cc395004deef48be7f4.js"></script>
-						</div>
-
-						<div class="inputGroup">
-							<div class="label">Disabled Checkboxes</div>
-							<div class="checkbox disabled">
-							    <p><input id="check7" type="checkbox" name="check" value="check1" disabled>
-							    <label for="check7">Checkbox 1</label></p>
-							    <p><input id="check8" type="checkbox" name="check" value="check2" disabled>
-							    <label for="check8">Checkbox 2</label></p>
-							    <p><input id="check9" type="checkbox" name="check" value="check3" disabled>
-							    <label for="check9">Checkbox 3</label></p>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/d7fd30be9303e3bc8c64.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/e5d33b5f82e9c9446fb3.js"></script>
-						</div>
-					</div>
-
-					<div class="style-element" id="popup">
-						<h3 class="elementTitle">Popup</h3>
-						<div class="popupDialog">
-							<div class="header"> Project Settings </div>
-							<div class="popupOptions">
-								<div class="description"><p>Changes to these settings will apply across all reports in your workspace.</p></div>
-								<div class="group">
-									<h3>Filepaths & notifications</h3>
-									<div class="inputGroup">
-										<div class="label">Email error notifications</div>
-										<input type="text" value="jcp209@nta.com" />
-									</div>
-								</div>
-								<div class="group">
-									<h3>Duration & Adjustments</h3>
-									<div class="inputGroup">
-										<div class="label">Replace existing durations</div>
-										<div class="radio">
-										    <p><input id="use2" type="radio" name="replaceDurations2" value="use2">
-										    <label for="use2">Use all potentially supplied durations</label></p>
-										    <p><input id="replace2" type="radio" name="replaceDurations2" value="replace2">
-										    <label for="replace2">Replace all potentially supplied durations</label></p>
-										</div>
-										
-									</div>
-									<div class="inputGroup">
-										<div class="label">Max Rx or pack duration</div>
-										<input type="text" value="365" />
-									</div>
-									<div class="inputGroup">
-										<div class="label">Episode Overlapping</div>
-										<div class="select">
-											<label>
-												<select name="Select">
-													<option value="">Add up overlapping episodes</option>
-													<option value="1">Option 1</option>
-													<option value="2">Option 2</option>
-													<option value="3">Option 3</option>
-													<option value="4">Option 4</option>
-												</select>
-											</label>
-										</div>
-									</div>
-								</div>
-								<div class="group">
-									<h3>Predominant Therapy</h3>
-									<div class="inputGroup">
-										<div class="label">Prioritize Segment</div>
-										<div class="select">
-											<label>
-												<select name="Select">
-												<option value="">None</option>
-												<option value="1">Option 1</option>
-												<option value="2">Option 2</option>
-												<option value="3">Option 3</option>
-												<option value="4">Option 4</option>
-												</select>
-											</label>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="footer">
-								<div class="restore"><a>Restore to default</a></div>
-								<div class="save">
-									<a>Cancel</a>
-									<button class="active">Apply</button>
-								</div>
-							</div>
-						</div>
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/ee4a9f770ebdc1116685.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/762bb02bed680d2d630c.js"></script>
-						</div>
-						<!--<h3 class="show_JS">Show Scripts</h3>
-						<div class="js">
-							<script src="https://gist.github.com/jen-p/6a829241b643fa196414.js"></script>
-						</div>-->
-					</div><!-- end popup style element-->
-
-					<div class="style-element" id="parameterPanel">
-						<h3 class="elementTitle">Parameter Panel</h3>
-						<p>Click on guide-section title to expand parameters, click again on title to collapse.</p>
-						<p>Click on advanced to open advanced options panel.</p>
-						<div class="reportArea">
-							<div class="parametersContainer">
-								<div class="sidePanel parameters">
-									<div class="group advancedToggle"><a>Advanced</a></div>
-									<div class="group timeParameters">
-										<div class="title">Time<span class="e360-ui-drop-arrow"></span></div>
-										<div class="groupOptions">
-											<div class="inputGroup">
-												<div class="label">Time Presets</div>
-												<div class="select">
-													<label>
-														<select name="Select">
-														  <option value="">Last 24 months</option>
-														  <option value="1">Last 12 months</option>
-														  <option value="2">Last 6 months</option>
-														  <option value="3">Custom</option>
-														</select>
-													</label>
-												</div>
-											</div>
-											<div class="inputGroup">
-												<div class="label">Analysis Start <span class="required">*</span></div>
-												<input type="text" placeholder="11 Nov 2013" />
-											</div>
-											<div class="inputGroup">
-												<div class="label">Analysis End <span class="required">*</span></div>
-												<input type="text" placeholder="11 Nov 2015" />
-											</div>
-										</div>
-									</div>
-									<div class="footer">
-										<div class="restore"><a>Restore to default</a></div>
-										<div class="run">
-											<button class="active">Apply</button>
-										</div>
-									</div>
-								</div><!--end parameters panel-->
-								<div class="sidePanel advanced">
-									<div class="group patientParameters">
-										<div class="title">Patients<span class="e360-ui-drop-arrow"></span></div>
-										<div class="groupOptions">
-											<div class="inputGroup">
-												<div class="label">Patient Assignment</div>
-												<div class="select">
-													<label>
-														<select name="Select">
-														  <option value="">Multi-assignment</option>
-														  <option value="1">Single-assignment</option>
-														</select>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="group projectionParameters">
-										<div class="title">Projections<span class="e360-ui-drop-arrow"></span></div>
-										<div class="groupOptions">
-											<div class="inputGroup">
-												<div class="label">Rounding method</div>
-												<div class="select">
-													<label>
-														<select name="Select">
-														  <option value="">Round to nearest i...</option>
-														  <option value="1">Round towards zero</option>
-														</select>
-													</label>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div><!--end advanced panel-->
-							</div>
-						</div>
-		
-						<h3 class="show_markup">Show Markup</h3>
-						<div class="markup">
-							<script src="https://gist.github.com/jen-p/4f38bac953e414d16bfa.js"></script>
-						</div>
-						<h3 class="show_styles">Show LESS</h3>
-						<div class="styles">
-							<script src="https://gist.github.com/jen-p/ac668be182332f4eef69.js"></script>
-						</div>
-					</div><!--end parameters-->
-
-				</div> <!-- end controls  content -->
-			</div> <!-- end controls guide-section -->
-
-			<div class="guide-section" id="report">
-				<h2 class="guide-section-title">Report</h2>
-
-				<div class="style-element" id="report-layout">
-					<h3 class="elementTitle">Layout</h3>
-
-					<div class="example_img">
-						<img src="./assets/images/imsHealth_styleGuideNotations4.png" class="scale-with-grid">
-					</div>
-					<p>When confining content to a 1024px width, allow legend 107px, with 15px of gutter between the legend and the chart. Allow the report title 575px width, with a 15 px gutter between the title and the report options.</p>
-					<p>15px of space between the navigation and the title / report options area, allowing for space for more complex controls and title editing. Align report options with the title such that the baseline for main text is the same. 30px of space between title / report options area and the chart area. Align the top of the chart to the top of the legend. 15px spacing between Analysis period label and any otherx-axis labelling.</p>
-					<div class="example_img">
-						<img src="./assets/images/imsHealth_styleGuideNotations3.png" class="scale-with-grid">
+							<p class="sub-note">Note: Slider not built out in guide, general styles shown below:</p>
 					</div>
 					
-					<div class="example_img">
-						<img src="./assets/images/imsHealth_styleGuideNotations2.png" class="scale-with-grid">
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/94f092639f34c3e489a5.js"></script>
 					</div>
-				</div><!--end report layout -->
-				
-				<div class="style-element" id="report-title">
-					<h3 class="elementTitle">Report Title</h3>
-					<p>Allow user to enter edit mode by clicking on the edit icon or by clicking on the title itself. Exit edit mode by clicking OK or anywhere outside the input.</p>
-					<p class="sub-note">Scripts and styles below are used to demonstrate the desired look and behaviour. Alternatives are welcome as long as the appearance and behaviour are replicated.</p>
-					<!--<div class="reportTitle">
-						<input type="text" value="Alphacyn Monthly Source of Business Analysis, Aug 2014 - Aug 2015" /><span class="e360-edit"></span><button class="confirm active">OK</button>
-					</div>-->
+				</div>
+			</div><!--end slider -->
 
+			<div class="guide-section" id="toggle">
+				<h2 class="guide-section-title">Toggle</h2>
+				<div class="component">
+					<div class="inputGroup">
+						<div class="label">Label</div>
+						<div class="switch">
+						  <input id="toggle1" class="toggle" type="checkbox">
+						  <label for="toggle1"></label>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/7437d8093dd37ab3ddfe.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/f7fceac04b20aab987a0.js"></script>
+					</div>
+
+					<div class="inputGroup">
+						<div class="label">Disabled Toggle</div>
+						<div class="switch disabled">
+						  <input id="toggle2" class="toggle" type="checkbox" disabled>
+						  <label for="toggle2"></label>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/e6bc847a90897fd53562.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/e88deb89ab8a137b173b.js"></script>
+					</div>
+				</div>
+			</div><!--end toggle-->
+
+			<div class="guide-section" id="edit-title">
+				<h2 class="guide-section-title">Edit Title</h2>
+				<div class="component">
 					<div class="reportTitle editInput">
 						<pre><span></span><br></pre>
 						<textarea type="text">Alphacyn Moving Annual Totals Source of Business Analysis, Aug 2014 - Aug 2015</textarea><span class="e360-edit"></span><button class="confirm active">OK</button>
 					</div>
-					
-					<h3 class="show_markup">Show Markup</h3>
+				</div>
+				<h3 class="show_markup">Show Markup</h3>
+				<div class="markup">
+					<script src="https://gist.github.com/jen-p/98ad3853a5d37c8d47eb.js"></script>
+				</div>
+				<h3 class="show_styles">Show LESS</h3>
+				<div class="styles">
+					<script src="https://gist.github.com/jen-p/430bdbd90246e68f3513.js"></script>
+					<script src="https://gist.github.com/jen-p/4e848fb711b59981b2de.js"></script>
+				</div>
+				<h3 class="show_JS">Show Scripts</h3>
+				<div class="js">
+					<script src="https://gist.github.com/jen-p/6c5ec78b9d09cc38e995.js"></script>
+				</div>
+			</div><!--end edit title -->
+
+			<div class="bookmark" id="structure"></div>
+
+			<div class="guide-section" id="nav-menu">
+				<h2 class="guide-section-title">Navigational Menu</h2>
+				<div class="component">
+					<div class="menu">
+						<ul>
+							<li id="user"><a>Welcome, User</a><span class="e360-ui-drop-arrow"></span>
+								<ul class="dropdown">
+									<li>User Settings</li>
+									<li>Log out</li>
+								</ul>
+							</li>
+							<li><a>Workspaces</a></li>
+							<li><a>Cohorts</a></li>
+							<li><a>Cards</a><span class="e360-ui-drop-arrow"></span></li>
+							<li><a>Codelist</a><span class="e360-ui-drop-arrow"></span></li>
+							<li><a>Recruitment</a></li>
+							<li><a>Admin</a><span class="e360-ui-drop-arrow"></span></li>
+							<li><a>Tasks</a> <span class="alert"> 1 </span></li>
+						</ul>
+						<ul class="logo-container">
+							<li class="search e360-search"></li>
+							<li id="logo"><img src="./assets/images/logo.png" width="45" height="24" /></li>
+						</ul>
+					</div>
+				</div>
+				<h3 class="show_markup">Show Markup</h3>
+				<div class="markup">
+					<script src="https://gist.github.com/jen-p/86ca192605323c3df522.js"></script>
+				</div>
+				<h3 class="show_styles">Show LESS</h3>
+				<div class="styles">
+					<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
+				</div>
+			</div><!-- end menu -->
+
+			<div class="guide-section" id="breadcrumb-menu">
+				<h2 class="guide-section-title">Breadcrumb Menu</h2>
+				<div class="component">
+					<div class="subNav">
+						<div class="subNavLeft">
+							<ul class="breadcrumbNav">
+								<li class="subNavItem breadcrumb">
+									<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
+								</li>
+								<li class="subNavItem breadcrumb">
+									<a id="workspaceButton"><span class="e360-workspace"></span></a>
+								</li>
+								<li class="subNavItem pageTitle"><span class="e360-faved"></span>Source of Business</li>
+							</ul>
+							<ul class="chartTypeList">
+								<li class="subNavItem chart active" id="businessBasic">
+									<span class="icon active e360-chart-bar-stack-vertical"></span>
+								</li>
+								<li class="subNavItem chart" id="sankey">
+									<span class="icon e360-chart-switch-matrix"></span>
+								</li>
+								<li class="subNavItem chart" id="switchBasic">
+									<span class="icon e360-chart-switch-matrix-basic"></span>
+								</li>
+							</ul>
+							<ul class="reportDetails">
+								<li class="subNavItem reportSwitch" id="timeframe">
+									<a>Monthly</a><span class="arrow e360-ui-drop-arrow"></span>
+									<ul class="dropdown">
+										<li class="active">Monthly</li>
+										<li>Quarterly</li>
+										<li>MAT</li>
+									</ul>
+								</li>
+								<li class="subNavItem reportSwitch" id="timeframe">
+									<a>Alphacyn</a><span class="arrow e360-ui-drop-arrow"></span>
+									<ul class="dropdown">
+										<li class="active">Alphacyn</li>
+										<li>Betacyn</li>
+										<li>Deltacyn</li>
+										<li>Etacyn</li>
+										<li>Gammacyn</li>
+										<li>Gammacyn Deltacyn</li>
+										<li>Kappacyn</li>
+										<li>Kappacyn Betacyn</li>
+										<li>Omegacyn</li>
+										<li>Omega Zetacyn</li>
+										<li>Sigma Alphacyn</li>
+										<li>Sigma Betacyn</li>
+										<li>Sigmacyn</li>
+										<li>Thetacyn</li>
+										<li>Zetacyn</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="subNavRight">
+							<ul class="reportSettings">
+								<li class="subNavItem reportAction exportButton">
+									<svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg>
+								</li>
+								<li class="subNavItem reportAction saveButton">
+									<span class="icon e360-save"></span>
+								</li>
+								<li class="subNavItem reportAction">
+									<a>Project Settings</a>
+								</li>
+								<li class="subNavItem reportAction">
+									<a>Parameters</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<h3 class="show_markup">Show Markup</h3>
 					<div class="markup">
-						<script src="https://gist.github.com/jen-p/98ad3853a5d37c8d47eb.js"></script>
+						<script src="https://gist.github.com/jen-p/a5aee5d86ce211db7dfc.js"></script>
 					</div>
 					<h3 class="show_styles">Show LESS</h3>
 					<div class="styles">
-						<script src="https://gist.github.com/jen-p/430bdbd90246e68f3513.js"></script>
-						<script src="https://gist.github.com/jen-p/4e848fb711b59981b2de.js"></script>
+						<script src="https://gist.github.com/jen-p/46b21fa4f5df5c7c189d.js"></script>
 					</div>
-					<h3 class="show_JS">Show Scripts</h3>
-					<div class="js">
-						<script src="https://gist.github.com/jen-p/6c5ec78b9d09cc38e995.js"></script>
-					</div>
-					
-				</div>
+			</div><!--end breadcrumbs -->
 
-				<div class="style-element" id="cohort-definition">
-					<h3 class="elementTitle">Cohort Definition</h3>
-
-					<div class="cohortDefinition">
-						<h4>
-							<a class="grouping condition">HLHS</a>
-							<a class="grouping focus">treatments</a>
-							for
-							<a class="grouping ageGroup">adults</a>
-							in
-							<a class="grouping location">North America</a>
-						</h4>
-						<span class="sampleSize">198K patients</span>
-						<span class="e360-more-info"></span>
-					</div>
-				</div>
-
-				<div class="style-element" id="report-legend">
-					<h3 class="elementTitle">Report Legend</h3>
-					<p><strong>Report legend.</strong> Allow for 100% height of the report container in the case that there are so many segments that the user will need to scroll. Once that point is reached, allow the user to type in the progressive search and scroll to that segment, highlighted with font-weight: bold.</p>
-					<p>Segments added after initial load are injected into the list alphabetically, but are assigned colors continuing from the end of the original list.</p>
-					<p>Selecting segments from the hidden list does not add them to the above list as these are exceptions to what's hidden.</p>
-					<p>Styles below may vary once in implementation due to rendering in svg through d3.js, but the intent is to match the sizing and spacing.</p>
-
-					<div class="reportLegend" id="legend_one">
-						<ul class="checkbox legend">
-							<li class="legendList">
-								<ul>
-									<li class="legend-color"> 
-										<input class="legend-check" id="alphacyn" type="checkbox" name="check" value="alphacyn" checked>
-								    	<label for="alphacyn">Alphacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="betacyn" type="checkbox" name="check" value="betacyn" checked>
-								    	<label for="betacyn">Betacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="deltacyn" type="checkbox" name="check" value="deltacyn"  checked>
-								    	<label for="deltacyn">Deltacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="etacyn" type="checkbox" name="check" value="etacyn"  checked>
-								    	<label for="etacyn">Etacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="gammacyn" type="checkbox" name="check" value="gammacyn"  checked>
-								    	<label for="gammacyn">Gammacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="gammacyn-deltacyn" type="checkbox" name="check" value="gammacyn-deltacyn"  checked>
-								    	<label for="gammacyn-deltacyn">Gammacyn Deltacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="kappacyn-betacyn" type="checkbox" name="check" value="kappacyn-betacyn"  checked>
-								    	<label for="kappacyn-betacyn">Kappacyn Betacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="omegacyn" type="checkbox" name="check" value="omegacyn"  checked>
-								    	<label for="omegacyn">Omegacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="sigmacyn" type="checkbox" name="check" value="sigmacyn"  checked>
-								    	<label for="sigmacyn">Sigmacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="sigma-alphacyn" type="checkbox" name="check" value="sigma-alphacyn"  checked>
-								    	<label for="sigma-alphacyn">Sigma Alphacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="sigma-betacyn" type="checkbox" name="check" value="sigma-betacyn"  checked>
-								    	<label for="sigma-betacyn">Sigma Betacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="thetacyn" type="checkbox" name="check" value="thetacyn"  checked>
-								    	<label for="thetacyn">Thetacyn</label>
-								    </li>
-								    <li class="legend-color"> 
-										<input class="legend-check" id="zetacyn" type="checkbox" name="check" value="zetacyn"  checked>
-								    	<label for="zetacyn">Zetacyn</label>
-								    </li>
-							    </ul>
-							</li>
-						    <li> 
-								<input class="select-all" id="select-all1" type="checkbox" name="check" value="select-all1" checked>
-						    	<label for="select-all1">Select All</label>
-						    </li>
-						</ul>
-						<div class="hidden">
-							<div class="hiddenCount">8 hidden<span class="e360-ui-drop-arrow"></span>
-								<ul class="checkbox hiddenSwitches dropdown">
-									<li class="searchBox searchHidden">
-										<span class="e360-search"></span>
-										<input class="search" type="text" placeholder="Search" />
-									</li>
-									<li class="hiddenList">
-										<ul>
-											<li class="legend-color"> 
-												<input class="legend-check" id="alpha-betacyn" type="checkbox" name="check" value="alpha-betacyn" >
-										    	<label for="alpha-betacyn">Alpha Betacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="alphacyn-betacyn" type="checkbox" name="check" value="alphacyn-betacyn" >
-										    	<label for="alphacyn-betacyn">Alphacyn Betacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="delta-betacyn" type="checkbox" name="check" value="delta-betacyn"  >
-										    	<label for="delta-betacyn">Delta Betacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="delta-etacyn" type="checkbox" name="check" value="delta-etacyn"  >
-										    	<label for="delta-etacyn">Delta Etacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="eta-betacyn" type="checkbox" name="check" value="eta-betacyn" >
-										    	<label for="eta-betacyn">Eta Betacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="gamma-betacyn" type="checkbox" name="check" value="gamma-betacyn"  >
-										    	<label for="gamma-betacyn">Gamma Betacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="iotacyn" type="checkbox" name="check" value="iotacyn"  >
-										    	<label for="iotacyn">Iotacyn</label>
-										    </li>
-										    <li class="legend-color"> 
-												<input class="legend-check" id="theta-sigmacyn" type="checkbox" name="check" value="theta-sigmacyn"  >
-										    	<label for="theta-sigmacyn">Theta Sigmacyn</label>
-										    </li>
-									    </ul>
-									</li>
-								   <li class="selectHidden">
-										<input class="select-all" id="select-all2" type="checkbox" name="check" value="select-all2">
-								    	<label for="select-all2">Select All</label>
-								    </li>
-								</ul>
+			<div class="guide-section" id="modal-popup">
+				<h2 class="guide-section-title">Popup</h2>
+				<div class="component">
+					<div class="popupDialog">
+						<div class="header"> Project Settings </div>
+						<div class="popupOptions">
+							<div class="description"><p>Changes to these settings will apply across all reports in your workspace.</p></div>
+							<div class="group">
+								<h3>Filepaths & notifications</h3>
+								<div class="inputGroup">
+									<div class="label">Email error notifications</div>
+									<input type="text" value="jcp209@nta.com" />
+								</div>
+							</div>
+							<div class="group">
+								<h3>Duration & Adjustments</h3>
+								<div class="inputGroup">
+									<div class="label">Replace existing durations</div>
+									<div class="radio">
+									    <p><input id="use2" type="radio" name="replaceDurations2" value="use2">
+									    <label for="use2">Use all potentially supplied durations</label></p>
+									    <p><input id="replace2" type="radio" name="replaceDurations2" value="replace2">
+									    <label for="replace2">Replace all potentially supplied durations</label></p>
+									</div>
+									
+								</div>
+								<div class="inputGroup">
+									<div class="label">Max Rx or pack duration</div>
+									<input type="text" value="365" />
+								</div>
+								<div class="inputGroup">
+									<div class="label">Episode Overlapping</div>
+									<div class="select">
+										<label>
+											<select name="Select">
+												<option value="">Add up overlapping episodes</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+												<option value="4">Option 4</option>
+											</select>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="group">
+								<h3>Predominant Therapy</h3>
+								<div class="inputGroup">
+									<div class="label">Prioritize Segment</div>
+									<div class="select">
+										<label>
+											<select name="Select">
+											<option value="">None</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
+											<option value="4">Option 4</option>
+											</select>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer">
+							<div class="restore"><a>Restore to default</a></div>
+							<div class="save">
+								<a>Cancel</a>
+								<button class="active">Apply</button>
 							</div>
 						</div>
 					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/ee4a9f770ebdc1116685.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/762bb02bed680d2d630c.js"></script>
+					</div>
+				</div>
+			</div><!--end popup-->
 
+			<div class="guide-section" id="side-panel">
+				<h2 class="guide-section-title">Side Panel</h2>
+				<div class="component">
+					<div class="reportArea">
+						<div class="parametersContainer">
+							<div class="sidePanel parameters">
+								<div class="group advancedToggle"><a>Advanced</a></div>
+								<div class="group timeParameters">
+									<div class="title">Time<span class="e360-ui-drop-arrow"></span></div>
+									<div class="groupOptions">
+										<div class="inputGroup">
+											<div class="label">Time Presets</div>
+											<div class="select">
+												<label>
+													<select name="Select">
+													  <option value="">Last 24 months</option>
+													  <option value="1">Last 12 months</option>
+													  <option value="2">Last 6 months</option>
+													  <option value="3">Custom</option>
+													</select>
+												</label>
+											</div>
+										</div>
+										<div class="inputGroup">
+											<div class="label">Analysis Start <span class="required">*</span></div>
+											<input type="text" placeholder="11 Nov 2013" />
+										</div>
+										<div class="inputGroup">
+											<div class="label">Analysis End <span class="required">*</span></div>
+											<input type="text" placeholder="11 Nov 2015" />
+										</div>
+									</div>
+								</div>
+								<div class="footer">
+									<div class="restore"><a>Restore to default</a></div>
+									<div class="run">
+										<button class="active">Apply</button>
+									</div>
+								</div>
+							</div><!--end parameters panel-->
+							<div class="sidePanel advanced">
+								<div class="group patientParameters">
+									<div class="title">Patients<span class="e360-ui-drop-arrow"></span></div>
+									<div class="groupOptions">
+										<div class="inputGroup">
+											<div class="label">Patient Assignment</div>
+											<div class="select">
+												<label>
+													<select name="Select">
+													  <option value="">Multi-assignment</option>
+													  <option value="1">Single-assignment</option>
+													</select>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="group projectionParameters">
+									<div class="title">Projections<span class="e360-ui-drop-arrow"></span></div>
+									<div class="groupOptions">
+										<div class="inputGroup">
+											<div class="label">Rounding method</div>
+											<div class="select">
+												<label>
+													<select name="Select">
+													  <option value="">Round to nearest i...</option>
+													  <option value="1">Round towards zero</option>
+													</select>
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div><!--end advanced panel-->
+						</div>
+					</div>
+	
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/4f38bac953e414d16bfa.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/ac668be182332f4eef69.js"></script>
+					</div>
+				</div>
+			</div><!--end side panel-->
+
+			<div class="guide-section" id="tiles">
+				<h2 class="guide-section-title">Tiles</h2>
+				<div class="component">
+					<div class="style-element" id="workspace-tiles">
+						<h3 class="elementTitle">Tiles</h3>
+						<div class="tile corporate workspaceTile" id="companyTile">
+							<div class="workspaceType">Corporate</div>
+							<div class="header">
+								<div class="title">
+									<h2>Long Title for Company Workspace</h2>
+								</div>
+								<div class="description">
+									27 Reports, 3 Assets
+								</div>
+								<div class="options">
+									<span class="e360-options-ellipsis"></span>
+									<span class="e360-faved"></span>
+								</div>
+							</div>
+							<div class="content">
+								<img src="./assets/images/imsHealth_0000_persistence.png"  />
+							</div>
+							<div class="footer">
+								<div class="updateDate">Last updated 14 Aug 2015</div>
+							</div>
+						</div>
+						<div class="tile private workspaceTile">
+							<div class="workspaceType">Private</div>
+							<div class="header">
+								<div class="title">
+									<h2>Private Workspace</h2>
+								</div>
+								<div class="description">
+									3 Reports, 1 Asset
+								</div>
+								<div class="options">
+									<span class="e360-options-ellipsis"></span>
+									<span class="e360-faved"></span>
+								</div>
+							</div>
+							<div class="content">
+								<img src="./assets/images/imsHealth_0001_sankey.png" />
+							</div>
+							<div class="footer">
+								<div class="updateDate">Last updated 14 Aug 2015</div>
+							</div>
+						</div>
+						<div class="tile shared workspaceTile">
+							<div class="workspaceType">Shared</div>
+							<div class="header">
+								<div class="title">
+									<h2>Shared Workspace</h2>
+								</div>
+								<div class="description">
+									8 Reports, 2 Assets
+								</div>
+								<div class="options">
+									<span class="e360-options-ellipsis"></span>
+									<span class="e360-faved"></span>
+								</div>
+							</div>
+							<div class="content">
+								<img src="./assets/images/imsHealth_0002_sob.png" />
+							</div>
+							<div class="footer">
+								<div class="updateDate">Last updated 14 Aug 2015</div>
+							</div>
+						</div>
+						<div class="tile cohortTile">
+							<div class="title">
+								<h2>Heart Failure</h2>
+							</div>
+							<div class="description">
+								Cohort
+							</div>
+							<div class="options">
+								<span class="e360-edit"></span>
+							</div>
+							<div class="content">
+								<ul class="cohortContents">
+									<li class="cohortDB">
+										<span class="e360-database"></span>
+										<div class="databaseName">AHA dataset (239.18M)</div>
+									</li>
+									<li class="cohortDB">
+										<span class="e360-database"></span>
+										<div class="databaseName">HFSC dataset (8.79M)</div>
+									</li>
+								</ul>
+								<div class="cohortStats">
+									<span class="stat">247.97</span><span class="unit"> M</span> sample
+								</div>
+								<div class="cohortDescription">
+									<p>Includes codes for hypertension and heart failure as well as congenital heart diseases.</p>
+								</div>
+							</div>
+							<div class="footer">
+								<div class="updateDate">Last updated 14 Aug 2015</div>
+							</div>
+						</div>
+						<div class="tile reportTile" id="sobTile">
+							<div class="title">
+								<h2>Source of Business</h2>
+							</div>
+							<div class="description">
+								Sources of Business over time, and most common win and loss events between market segments.
+							</div>
+							<div class="options">
+								<span class="e360-options-ellipsis"></span>
+								<span class="e360-faved"></span>
+							</div>
+							<div class="content">
+								<img src="./assets/images/imsHealth_0002_sob.png" />
+							</div>
+							<div class="footer">
+								<div class="updateDate">Last updated 17 Aug 2015</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h3 class="show_markup">Show Markup</h3>
+				<div class="markup">
+					<script src="https://gist.github.com/jen-p/5e56d252f03a63239257.js"></script>
+				</div>
+				<h3 class="show_styles">Show LESS</h3>
+				<div class="styles">
+					<script src="https://gist.github.com/jen-p/2f4361e0f1e76eb3195f.js"></script>
+				</div>
+			</div><!--end tile-->
+
+			<div class="bookmark" id="charts"></div>
+
+			<div class="guide-section" id="chart-grid">
+				<h2 class="guide-section-title">Chart Grid</h2>
+				<div class="component">
+					<div class="report-container">
+						<div class="axis x-axis">
+							<div class="axis-label-container"><div class="axis-label">Patient</div></div>
+							<ul class="labels values">
+								<li class="value">4000</li>
+								<li class="tick"></li>
+								<li class="value">3500</li>
+								<li class="tick"></li>
+								<li class="value">3000</li>
+								<li class="tick"></li>
+								<li class="value">2500</li>
+								<li class="tick"></li>
+								<li class="value">2000</li>
+								<li class="tick"></li>
+								<li class="value">1500</li>
+								<li class="tick"></li>
+								<li class="value">1000</li>
+								<li class="tick"></li>
+								<li class="value">500</li>
+								<li class="tick"></li>
+								<li class="value">0</li>
+								<li class="tick-zero"></li>
+								<li class="value">-500</li>
+							</ul>
+							<div class="axisBar">
+							</div>
+						</div>
+						<div class="axis y-axis">
+							<div class="axisBar">
+							</div>
+							<ul class="labels">
+								<li>Aug 2014</li>
+								<li>Sep</li>
+								<li>Oct</li>
+								<li>Nov</li>
+								<li class="active">Dec</li>
+								<li class="newYear"> Jan 2015</li>
+								<li>Feb</li>
+								<li>Mar</li>
+								<li>Apr</li>
+								<li>May</li>
+								<li>Jun</li>
+								<li>Jul</li>
+							</ul>
+						</div>
+					</div>
+					<h3 class="show_markup">Show Markup</h3>
+					<div class="markup">
+						<script src="https://gist.github.com/jen-p/9fe56f42f2176456c1e3.js"></script>
+					</div>
+					<h3 class="show_styles">Show LESS</h3>
+					<div class="styles">
+						<script src="https://gist.github.com/jen-p/770c735d5f9e3f405114.js"></script>
+					</div>
+				</div>
+			</div><!-- end chart grid -->
+
+			<div class="guide-section" id="chart-legend">
+				<h2 class="guide-section-title">Chart Legend</h2>
+				<div class="component">
 					<div class="reportLegend" id="scroll">
 						<ul class="checkbox legend">
 							<li class="searchBox searchLegend">
@@ -1356,73 +1211,12 @@ color: #00aeef;
 					<div class="styles">
 						<script src="https://gist.github.com/jen-p/1ef3c2c69da2812b849b.js"></script>
 					</div>
-					
-					
-				</div><!--end #report-legend .style-element -->
-
-				<div class="style-element" id="axis-labels">
-					<h3 class="elementTitle">Axis &amp; Labels</h3>
-					<p>Styles below may vary once in implementation due to rendering in svg through d3.js, but the intent is to match the sizing and spacing.</p>
-					<div class="report-container">
-						<div class="axis x-axis">
-							<div class="axis-label-container"><div class="axis-label">Patient</div></div>
-							<ul class="labels values">
-								<li class="value">4000</li>
-								<li class="tick"></li>
-								<li class="value">3500</li>
-								<li class="tick"></li>
-								<li class="value">3000</li>
-								<li class="tick"></li>
-								<li class="value">2500</li>
-								<li class="tick"></li>
-								<li class="value">2000</li>
-								<li class="tick"></li>
-								<li class="value">1500</li>
-								<li class="tick"></li>
-								<li class="value">1000</li>
-								<li class="tick"></li>
-								<li class="value">500</li>
-								<li class="tick"></li>
-								<li class="value">0</li>
-								<li class="tick-zero"></li>
-								<li class="value">-500</li>
-							</ul>
-							<div class="axisBar">
-							</div>
-						</div>
-						<div class="axis y-axis">
-							<div class="axisBar">
-							</div>
-							<ul class="labels">
-								<li>Aug 2014</li>
-								<li>Sep</li>
-								<li>Oct</li>
-								<li>Nov</li>
-								<li class="active">Dec</li>
-								<li class="newYear"> Jan 2015</li>
-								<li>Feb</li>
-								<li>Mar</li>
-								<li>Apr</li>
-								<li>May</li>
-								<li>Jun</li>
-								<li>Jul</li>
-							</ul>
-						</div>
-					</div>
-					<h3 class="show_markup">Show Markup</h3>
-					<div class="markup">
-						<script src="https://gist.github.com/jen-p/9fe56f42f2176456c1e3.js"></script>
-					</div>
-					<h3 class="show_styles">Show LESS</h3>
-					<div class="styles">
-						<script src="https://gist.github.com/jen-p/770c735d5f9e3f405114.js"></script>
-					</div>
 				</div>
+			</div><!-- end chart legend -->
 
-				<div class="style-element" id="report-tip">
-					<h3 class="elementTitle">Tip Popovers</h3>
-					<p>Hovering over points or bars of a chart will reveal more detailed information about that data point. Contents of each tip will vary by chart or report. Styles below may vary once in implementation due to rendering in svg through d3.js, but the intent is to match the sizing and spacing.</p>
-
+			<div class="guide-section" id="tip-popover">
+				<h2 class="guide-section-title">Tip Popover</h2>
+				<div class="component">
 					<div class="reportTip">
 						<div class="tipTitle">
 							<h4 class="title">Alphacyn Losses</h4>
@@ -1453,159 +1247,22 @@ color: #00aeef;
 							<dd class="label">to Alpha Betacyn</dd>
 						</div>
 					</div>
-					
-					<h3 class="show_markup">Show Markup</h3>
-					<div class="markup">
-						<script src="https://gist.github.com/jen-p/e93a18c2f8d0a3b17a8e.js"></script>
-					</div>
-					<h3 class="show_styles">Show LESS</h3>
-					<div class="styles">
-						<script src="https://gist.github.com/jen-p/53565a42a95d08ab69da.js"></script>
-					</div>
 				</div>
-			</div><!--end report guide-section-->
-
-			<div class="guide-section" id="workspace">
-				<h2 class="guide-section-title">Workspace Styles</h2>
-				<div class="style-element" id="workspace-tiles">
-					<h3 class="elementTitle">Tiles</h3>
-					<div class="tile corporate workspaceTile" id="companyTile">
-						<div class="workspaceType">Corporate</div>
-						<div class="header">
-							<div class="title">
-								<h2>Long Title for Company Workspace</h2>
-							</div>
-							<div class="description">
-								27 Reports, 3 Assets
-							</div>
-							<div class="options">
-								<span class="e360-options-ellipsis"></span>
-								<span class="e360-faved"></span>
-							</div>
-						</div>
-						<div class="content">
-							<img src="./assets/images/imsHealth_0000_persistence.png"  />
-						</div>
-						<div class="footer">
-							<div class="updateDate">Last updated 14 Aug 2015</div>
-						</div>
-					</div>
-					<div class="tile private workspaceTile">
-						<div class="workspaceType">Private</div>
-						<div class="header">
-							<div class="title">
-								<h2>Private Workspace</h2>
-							</div>
-							<div class="description">
-								3 Reports, 1 Asset
-							</div>
-							<div class="options">
-								<span class="e360-options-ellipsis"></span>
-								<span class="e360-faved"></span>
-							</div>
-						</div>
-						<div class="content">
-							<img src="./assets/images/imsHealth_0001_sankey.png" />
-						</div>
-						<div class="footer">
-							<div class="updateDate">Last updated 14 Aug 2015</div>
-						</div>
-					</div>
-					<div class="tile shared workspaceTile">
-						<div class="workspaceType">Shared</div>
-						<div class="header">
-							<div class="title">
-								<h2>Shared Workspace</h2>
-							</div>
-							<div class="description">
-								8 Reports, 2 Assets
-							</div>
-							<div class="options">
-								<span class="e360-options-ellipsis"></span>
-								<span class="e360-faved"></span>
-							</div>
-						</div>
-						<div class="content">
-							<img src="./assets/images/imsHealth_0002_sob.png" />
-						</div>
-						<div class="footer">
-							<div class="updateDate">Last updated 14 Aug 2015</div>
-						</div>
-					</div>
-					<div class="tile cohortTile">
-						<div class="title">
-							<h2>Heart Failure</h2>
-						</div>
-						<div class="description">
-							Cohort
-						</div>
-						<div class="options">
-							<span class="e360-edit"></span>
-						</div>
-						<div class="content">
-							<ul class="cohortContents">
-								<li class="cohortDB">
-									<span class="e360-database"></span>
-									<div class="databaseName">AHA dataset (239.18M)</div>
-								</li>
-								<li class="cohortDB">
-									<span class="e360-database"></span>
-									<div class="databaseName">HFSC dataset (8.79M)</div>
-								</li>
-							</ul>
-							<div class="cohortStats">
-								<span class="stat">247.97</span><span class="unit"> M</span> sample
-							</div>
-							<div class="cohortDescription">
-								<p>Includes codes for hypertension and heart failure as well as congenital heart diseases.</p>
-							</div>
-						</div>
-						<div class="footer">
-							<div class="updateDate">Last updated 14 Aug 2015</div>
-						</div>
-					</div>
-					<div class="tile reportTile" id="sobTile">
-						<div class="title">
-							<h2>Source of Business</h2>
-						</div>
-						<div class="description">
-							Sources of Business over time, and most common win and loss events between market segments.
-						</div>
-						<div class="options">
-							<span class="e360-options-ellipsis"></span>
-							<span class="e360-faved"></span>
-						</div>
-						<div class="content">
-							<img src="./assets/images/imsHealth_0002_sob.png" />
-						</div>
-						<div class="footer">
-							<div class="updateDate">Last updated 17 Aug 2015</div>
-						</div>
-					</div>
-					<h3 class="show_markup">Show Markup</h3>
-					<div class="markup">
-						<script src="https://gist.github.com/jen-p/5e56d252f03a63239257.js"></script>
-					</div>
-					<h3 class="show_styles">Show LESS</h3>
-					<div class="styles">
-						<script src="https://gist.github.com/jen-p/2f4361e0f1e76eb3195f.js"></script>
-					</div>
-				</div><!--end workspace layout -->
-
-				<div class="style-element" id="workspace-layout">
-					<h3 class="elementTitle">Layout</h3>
-					<img src="./assets/images/imsHealth_styleGuideNotations5.png" class="scale-with-grid" />
-					<img src="./assets/images/imsHealth_styleGuideNotations6.png" class="scale-with-grid" />
-				</div><!--end workspace layout -->
-			</div><!--end workspace guide-section-->
+				<h3 class="show_markup">Show Markup</h3>
+				<div class="markup">
+					<script src="https://gist.github.com/jen-p/e93a18c2f8d0a3b17a8e.js"></script>
+				</div>
+				<h3 class="show_styles">Show LESS</h3>
+				<div class="styles">
+					<script src="https://gist.github.com/jen-p/53565a42a95d08ab69da.js"></script>
+				</div>
+			</div><!--end tip-->
 
 		</div> <!--end container-->
 	</div> <!-- end guide -->
 	
-
 	<script src="./assets/js/jquery-1.11.3.min.js" type="text/javascript"></script>
   	<script src="./assets/js/main.js" type="text/javascript"></script>
   	<script src="./assets/js/guide.js" type="text/javascript"></script>
-  	<script src="./assets/js/mustache.js" type="text/javascript"></script>
 </body>
 </html>

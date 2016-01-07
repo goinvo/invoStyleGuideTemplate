@@ -1,6 +1,7 @@
 /* variables */
 $input-height: 2.7rem;
 $radius-base: 0.2rem;
+$range-width: 15rem;
 
 /* mix-ins */
 @mixin border-radius($radius) { 
@@ -21,4 +22,29 @@ $radius-base: 0.2rem;
 	  -moz-user-select: none;     /* Firefox all */
 	  -ms-user-select: none;      /* IE 10+ */
 	  user-select: none;	
+}
+
+@mixin range-track {
+	height: 0.5rem;
+	border-radius:0.4rem;
+	width: $range-width;
+	background: #fff;
+	box-shadow: $ui-track-shadow;
+	border: $input-border;
+	cursor: pointer;
+	animate: 0.2s;
+}
+
+@mixin range-thumb {
+	background: $button-active-bg;
+	border: none;
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 0.75rem;
+	cursor: pointer;
+	&:after {
+		content:'1-10';
+		color: $font-color-base;
+		size: $font-size-small;
+	}
 }
