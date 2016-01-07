@@ -91,6 +91,7 @@
 	&.small {
 		//border: solid blue 1px;
 		width: 400px;
+		@include menu-small;
 	}
 	&.medium {
 		//border: solid green 1px;
@@ -102,7 +103,8 @@
 .guide-section {
 	border-bottom: solid 0.063rem #dedede;
 	padding-bottom: 2.5rem;
-	margin: 1.5rem 0 1.5rem 0;
+	margin: 0 0 1.5rem 0;
+	padding-top: 7rem;
 }
 
 h3.elementTitle {font-weight: bold; }
@@ -237,4 +239,12 @@ h3.show_markup, h3.show_styles, h3.show_JS {
 		font-size: $font-size-small;
 		color: $font-color-secondary;
 	}
+}
+
+/* because the container in the guide 
+	is smaller than the browser area
+	approx. 760px + 15% + 20px*2 + scrollbar
+ */
+@media (max-width: 930px) {
+	@include menu-small;
 }

@@ -48,3 +48,24 @@ $range-width: 15rem;
 		size: $font-size-small;
 	}
 }
+
+@mixin menu-small {
+	.menu {
+		z-index: 5;
+		ul {
+			height: 100%;
+			width: 15.0rem;
+			li {
+				display: block;
+				padding-left: 2.0rem;
+				background: $main-nav-color;
+				&:nth-child(2) {margin-left: 0; } /*fix to reset hack*/
+			}
+		}
+		.right-container {
+			position: relative;
+			display: block;
+			margin-top: 1.7rem;
+		}
+	}
+}

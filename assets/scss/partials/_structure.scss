@@ -59,7 +59,7 @@ img.scale-with-grid {
 				li { 
 					color:$font-color-nav;
 					padding: 0.75rem 0rem 0.75rem 0;
-					&:nth-child(2) {margin-left: 0; } 
+					&:nth-child(2) { margin-left: 0; } /*fix to reset hack below*/
 				}
 			}	
 			&#user { 
@@ -73,7 +73,7 @@ img.scale-with-grid {
 				}
 			}
 			&:hover { background: $main-nav-selected; }
-			&:first-child { padding-left: 3.0rem; }
+			&:first-child { padding-left: 2.0rem; }
 			&:last-child { line-height: 4.6rem; } /*hack to force alert li to be the right height*/
 			&:nth-child(2) { margin-left: -0.3rem; } /*hack to space between user and workspaces*/
 			a {
@@ -98,7 +98,7 @@ img.scale-with-grid {
 			}
 		}
 	}
-	.logo-container {
+	.right-container {
 		display: inline-block;
 		position: absolute;
 		top: 0;
@@ -371,23 +371,7 @@ img.scale-with-grid {
 
 /* Larger than tablet */
 @media (max-width: 760px) {
-	.menu {
-		
-		ul {
-			height: 100%;
-			width: 15.0rem;
-			li {
-				display: block;
-				padding-left: 2.0rem;
-				background: $main-nav-color;
-				&:nth-child(2) {margin-left: 0; }
-			}
-		}
-		.right-container {
-			position: relative;
-			display: block;
-		}
-	}
+	@include menu-small;
 }
 
 /* Larger than desktop */

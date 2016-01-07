@@ -988,6 +988,7 @@ img.scale-with-grid {
 .menu ul li ul.dropdown li {
   color: #fff;
   padding: 0.75rem 0rem 0.75rem 0;
+  /*fix to reset hack below*/
 }
 .menu ul li ul.dropdown li:nth-child(2) {
   margin-left: 0;
@@ -1006,7 +1007,7 @@ img.scale-with-grid {
   background: #282a2e;
 }
 .menu ul li:first-child {
-  padding-left: 3.0rem;
+  padding-left: 2.0rem;
 }
 .menu ul li:last-child {
   line-height: 4.6rem;
@@ -1038,26 +1039,26 @@ img.scale-with-grid {
 .menu ul li .e360-ui-drop-arrow {
   color: #fff;
 }
-.menu .logo-container {
+.menu .right-container {
   display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
 }
-.menu .logo-container #logo {
+.menu .right-container #logo {
   border-left: solid #000 0.1rem;
   padding: 0.5rem 2.0rem 0 1.5rem;
   line-height: 4.4rem;
 }
-.menu .logo-container .search {
+.menu .right-container .search {
   position: relative;
   padding-right: 1.5rem;
 }
-.menu .logo-container .search:hover {
+.menu .right-container .search:hover {
   cursor: pointer;
   background: #282a2e;
 }
-.menu .logo-container .e360-search {
+.menu .right-container .e360-search {
   font-size: 1.8rem;
 }
 
@@ -1296,6 +1297,9 @@ img.scale-with-grid {
 /* Larger than mobile */
 /* Larger than tablet */
 @media (max-width: 760px) {
+  .menu {
+    z-index: 5;
+  }
   .menu ul {
     height: 100%;
     width: 15.0rem;
@@ -1304,6 +1308,7 @@ img.scale-with-grid {
     display: block;
     padding-left: 2.0rem;
     background: #34363b;
+    /*fix to reset hack*/
   }
   .menu ul li:nth-child(2) {
     margin-left: 0;
@@ -1311,6 +1316,7 @@ img.scale-with-grid {
   .menu .right-container {
     position: relative;
     display: block;
+    margin-top: 1.7rem;
   }
 }
 /* Larger than desktop */

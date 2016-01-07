@@ -987,6 +987,7 @@ img.scale-with-grid {
 .menu ul li ul.dropdown li {
   color: #fff;
   padding: 0.75rem 0rem 0.75rem 0;
+  /*fix to reset hack below*/
 }
 .menu ul li ul.dropdown li:nth-child(2) {
   margin-left: 0;
@@ -1005,7 +1006,7 @@ img.scale-with-grid {
   background: #282a2e;
 }
 .menu ul li:first-child {
-  padding-left: 3.0rem;
+  padding-left: 2.0rem;
 }
 .menu ul li:last-child {
   line-height: 4.6rem;
@@ -1037,26 +1038,26 @@ img.scale-with-grid {
 .menu ul li .e360-ui-drop-arrow {
   color: #fff;
 }
-.menu .logo-container {
+.menu .right-container {
   display: inline-block;
   position: absolute;
   top: 0;
   right: 0;
 }
-.menu .logo-container #logo {
+.menu .right-container #logo {
   border-left: solid #000 0.1rem;
   padding: 0.5rem 2.0rem 0 1.5rem;
   line-height: 4.4rem;
 }
-.menu .logo-container .search {
+.menu .right-container .search {
   position: relative;
   padding-right: 1.5rem;
 }
-.menu .logo-container .search:hover {
+.menu .right-container .search:hover {
   cursor: pointer;
   background: #282a2e;
 }
-.menu .logo-container .e360-search {
+.menu .right-container .e360-search {
   font-size: 1.8rem;
 }
 
@@ -1295,6 +1296,9 @@ img.scale-with-grid {
 /* Larger than mobile */
 /* Larger than tablet */
 @media (max-width: 760px) {
+  .menu {
+    z-index: 5;
+  }
   .menu ul {
     height: 100%;
     width: 15.0rem;
@@ -1303,6 +1307,7 @@ img.scale-with-grid {
     display: block;
     padding-left: 2.0rem;
     background: #34363b;
+    /*fix to reset hack*/
   }
   .menu ul li:nth-child(2) {
     margin-left: 0;
@@ -1310,6 +1315,7 @@ img.scale-with-grid {
   .menu .right-container {
     position: relative;
     display: block;
+    margin-top: 1.7rem;
   }
 }
 /* Larger than desktop */
@@ -2125,6 +2131,27 @@ img.scale-with-grid {
 .container.small {
   width: 400px;
 }
+.container.small .menu {
+  z-index: 5;
+}
+.container.small .menu ul {
+  height: 100%;
+  width: 15.0rem;
+}
+.container.small .menu ul li {
+  display: block;
+  padding-left: 2.0rem;
+  background: #34363b;
+  /*fix to reset hack*/
+}
+.container.small .menu ul li:nth-child(2) {
+  margin-left: 0;
+}
+.container.small .menu .right-container {
+  position: relative;
+  display: block;
+  margin-top: 1.7rem;
+}
 .container.medium {
   width: 768px;
 }
@@ -2132,7 +2159,8 @@ img.scale-with-grid {
 .guide-section {
   border-bottom: solid 0.063rem #dedede;
   padding-bottom: 2.5rem;
-  margin: 1.5rem 0 1.5rem 0;
+  margin: 0 0 1.5rem 0;
+  padding-top: 7rem;
 }
 
 h3.elementTitle {
@@ -2269,6 +2297,34 @@ h3.show_markup, h3.show_styles, h3.show_JS {
 #typography p.note {
   font-size: 1.2rem;
   color: #979ba8;
+}
+
+/* because the container in the guide 
+	is smaller than the browser area
+	approx. 760px + 15% + 20px*2 + scrollbar
+ */
+@media (max-width: 930px) {
+  .menu {
+    z-index: 5;
+  }
+  .menu ul {
+    height: 100%;
+    width: 15.0rem;
+  }
+  .menu ul li {
+    display: block;
+    padding-left: 2.0rem;
+    background: #34363b;
+    /*fix to reset hack*/
+  }
+  .menu ul li:nth-child(2) {
+    margin-left: 0;
+  }
+  .menu .right-container {
+    position: relative;
+    display: block;
+    margin-top: 1.7rem;
+  }
 }
 
 /*# sourceMappingURL=guide.css.map */
