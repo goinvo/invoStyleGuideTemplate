@@ -271,8 +271,10 @@ textarea:disabled {
   cursor: pointer;
   position: relative;
   padding-left: 2.0rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #323334;
+  top: -0.4rem;
+  line-height: 1.4rem;
 }
 .radio label:before, .checkbox label:before {
   content: "";

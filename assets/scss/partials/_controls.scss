@@ -119,17 +119,19 @@ textarea {
 		cursor: pointer;
 		position: relative;
 		padding-left: 2.0rem;
-		font-size: 1.2rem;
+		font-size: $font-size-base;
 		color: $font-color-base;
+		top: -0.4rem;
+		line-height: $font-size-base;
 		&:before {
-				content: "";
-				display: inline-block;
-				text-align: top;
-				margin-right: 0.6rem;
-				position: absolute;
-				left: 0;
-				background-color: #fff;
-				border: $input-border;
+			content: "";
+			display: inline-block;
+			text-align: top;
+			margin-right: 0.6rem;
+			position: absolute;
+			left: 0;
+			background-color: #fff;
+			border: $input-border;
 		}
 		&:focus, &:hover {
 			&:before {@include input-focus;}
