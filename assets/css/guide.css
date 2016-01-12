@@ -54,91 +54,16 @@ h3 {
   color: #979ba8;
 }
 
-.e360-input-drop-arrow {
-  font-size: 4px;
-  padding-left: 0.7rem;
-  margin-top: -0.2rem;
-  color: #979ba8;
+.icon {
+  display: inline-block;
+  width: 2rem;
+  height: auto;
+  fill: currentColor;
 }
-
-.e360-ui-drop-arrow {
-  font-size: 5px;
-  padding-left: 0.7rem;
-  margin-top: -0.2rem;
-  color: #323334;
-}
-
-.e360-close {
-  font-size: 1.2rem;
-  color: #979ba8;
-}
-
-.e360-options-ellipsis {
-  font-size: 4px;
-  color: #979ba8;
-}
-
-.e360-search {
-  font-size: 1.4rem;
-  color: #c3c3c3;
-}
-
-.e360-edit {
-  font-size: 2.2rem;
-  color: #c3c3c3;
-}
-
-.e360-copy {
-  font-size: 1.5rem;
-}
-
-.e360-chart-bar, .e360-chart-bar-stacked, .e360-chart-bar-stack-vertical,
-.e360-chart-switch-matrix, .e360-chart-switch-matrix-basic {
-  color: #00aeef;
-}
-
-.e360-chart-switch-matrix-basic {
-  font-size: 1.4rem;
-}
-
-.e360-chart-bar-stack-vertical {
-  font-size: 1.2em;
-}
-
-.e360-database {
-  color: #c3c3c3;
-  font-size: 1.2rem;
-  padding-right: 0.7rem;
-}
-
-.e360-faved {
-  cursor: pointer;
-  color: #fff;
-  text-shadow: 0.1rem 0 0 #979ba8, -0.1rem 0 0 #979ba8, 0 0.1rem 0 #979ba8, 0 -0.1rem 0 #979ba8, 0.1rem 0.1rem 0 #979ba8, -0.1rem -0.1rem 0 #979ba8, 0.1rem -0.1rem 0 #979ba8, -0.1rem 0.1rem 0 #979ba8;
-}
-.e360-faved.faved {
-  color: #e9dd5c;
-  text-shadow: 0.1rem 0 0 #d6ae34,  -0.1rem 0 0 #d6ae34,  0 0.1rem 0 #d6ae34,  0 -0.1rem 0 #d6ae34,  0.1rem 0.1rem #d6ae34,  -0.1rem -0.1rem 0 #d6ae34,  0.1rem -0.1rem 0 #d6ae34,  -0.1rem 0.1rem 0 #d6ae34;
-}
-
-/*Various icons not yet used in application*/
-.e360-collapse {
-  font-size: 2px;
-  color: #c3c3c3;
-}
-
-.e360-locked, .e360-unlocked {
-  color: #c3c3c3;
-}
-
-.e360-column-shift-arrow, .e360-column-shift-double-arrow {
-  color: #323334;
-}
-
-.e360-more-info {
-  color: rgba(0, 174, 239, 0.3);
-  /*font-color-link $ 30%*/
-  font-size: 1.8rem;
+.icon.icon-Navigationdown {
+  width: 1.0rem;
+  height: 1.0rem;
+  padding-left: 0.5rem;
 }
 
 button, .button {
@@ -1049,18 +974,20 @@ img.scale-with-grid {
 .menu .right-container #logo {
   border-left: solid #000 0.1rem;
   padding: 0.5rem 2.0rem 0 1.5rem;
-  line-height: 4.4rem;
+  line-height: 4.1rem;
+}
+.menu .right-container .icon-Search {
+  height: 2.0rem;
+  width: 2.0rem;
 }
 .menu .right-container .search {
-  position: relative;
-  padding-right: 1.5rem;
+  display: inline-block;
+  padding: 1.5rem 1.5rem 0 1.3rem;
+  height: 3.4rem;
 }
 .menu .right-container .search:hover {
   cursor: pointer;
   background: #282a2e;
-}
-.menu .right-container .e360-search {
-  font-size: 1.8rem;
 }
 
 .subNav {
@@ -1170,12 +1097,20 @@ img.scale-with-grid {
 }
 .subNav .breadcrumbNav .breadcrumb {
   margin-right: -1.5rem;
-  padding-left: 2.5rem;
+  padding-left: 2rem;
   margin-left: 1.5rem;
   padding-right: 0.3rem;
 }
 .subNav .breadcrumbNav .breadcrumb a {
   color: #979ba8;
+}
+.subNav .breadcrumbNav .breadcrumb a .icon {
+  fill: #979ba8;
+}
+.subNav .breadcrumbNav .breadcrumb .icon {
+  fill: #979ba8;
+  height: 1.8rem;
+  width: 1.8rem;
 }
 .subNav .breadcrumbNav .breadcrumb:before, .subNav .breadcrumbNav .breadcrumb:after {
   content: "";
@@ -1194,7 +1129,7 @@ img.scale-with-grid {
   border-left: 1.5rem solid #f7f5f4;
 }
 .subNav .breadcrumbNav .breadcrumb:first-child {
-  padding-left: 3.0rem;
+  padding-left: 2rem;
   margin-left: 0rem;
 }
 .subNav .breadcrumbNav .breadcrumb:hover {
@@ -1202,6 +1137,12 @@ img.scale-with-grid {
 }
 .subNav .breadcrumbNav .breadcrumb:hover a {
   color: #323334;
+}
+.subNav .breadcrumbNav .breadcrumb:hover a .icon {
+  fill: #323334;
+}
+.subNav .breadcrumbNav .breadcrumb:hover .icon {
+  fill: #323334;
 }
 .subNav .breadcrumbNav .breadcrumb:hover:after {
   border-left: 1.5rem solid #dfdfdf;

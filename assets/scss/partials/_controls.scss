@@ -124,7 +124,7 @@ textarea {
 		top: -0.4rem;
 		line-height: $font-size-base;
 		&:before {
-			content: "";
+			content: ""; 
 			display: inline-block;
 			text-align: top;
 			margin-right: 0.6rem;

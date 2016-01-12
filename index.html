@@ -6,13 +6,12 @@
 	<meta name="viewport" content="initial-scale=1, width=device-width">
 	
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="./assets/css/e360-icons.css">
 	<link rel="stylesheet" href="./assets/css/guide.css" media="screen">
 </head>
 
 <body>
 	<div class="guide-header">
-		<h1>Style Guide Template <span id="version">v1.0 - 7 Jan 2016</span></h1>
+		<h1><a href="https://github.com/goinvo/invoStyleGuideTemplate/">Style Guide Template</a> <span id="version">v1.3 - 12 Jan 2016</span></h1>
 		<p class="sub-note">Note: All styles are written with base-10 font-size, where 1.2rem = 12px.</p>
 		<div class="sizes">
 			<ul>
@@ -111,116 +110,127 @@ color: #00aeef;
 
 			<div class="guide-section" id="icons">
 				<h2 class="guide-section-title">Icons</h2>
+				<p><a href="demo-external-svg.html">View full list</a></p>
+				<p>SVGs are easier to style in CSS than images or font icons. To add an icon to your HTML, use the following:<pre>&lt;svg class="icon {{icon-id}}"&gt;&lt;use xlink:href="./assets/
+images/symbol-defs.svg#{{icon-id}}"&gt;&lt;/use&gt;&lt;/svg&gt;
+				</pre></p>
+				<p>To style the color of an icon, you'll want to use fill:#000; in your CSS. You can give SVGs a stroke:#000 as well. Below are some commonly used Helveticons as well as a handful of useful icons that were missing from the original libraries.
 				<div class="component">
 					<ul>
 						<li>
-							<span class="e360-input-drop-arrow"></span>
-							<p class="icon-name">e360-input-drop-arrow</p>
-							<p class="icon-desc">Accompanying arrow on select inputs</p>
+							<svg class="icon icon-Search"><use xlink:href="./assets/images/symbol-defs.svg#icon-Search"></use></svg>
+							<p class="icon-name">icon-Search</p>
+							<p class="icon-desc">Used in search inputs</p>
 						</li>
 						<li>
-							<span class="e360-ui-drop-arrow"></span>
-							<p class="icon-name">e360-ui-drop-arrow</p>
-							<p class="icon-desc">Accompanying arrow on dropdowns in navigation and report controls</p>
+							 <svg class="icon icon-Settings"><use xlink:href="./assets/images/symbol-defs.svg#icon-Settings"></use></svg>
+							<p class="icon-name">icon-Settings</p>
+							<p class="icon-desc">Used to access settings</p>
 						</li>
 						<li>
-							<span class="e360-close"></span>
-							<p class="icon-name">e360-close</p>
-							<p class="icon-desc">Close panels, modals, etc.</p>
+							 <svg class="icon icon-Delete"><use xlink:href="./assets/images/symbol-defs.svg#icon-Delete"></use></svg>
+							<p class="icon-name">icon-Delete</p>
+							<p class="icon-desc">Delete, close, remove, etc.</p>
 						</li>
 						<li>
-							<span class="e360-faved"></span>
-							<p class="icon-name">e360-faved</p>
-							<p class="icon-desc">Favorite workspaces, found on workspace tiles and in workspace subnav</p>
+							<svg class="icon icon-Trash"><use xlink:href="./assets/images/symbol-defs.svg#icon-Trash"></use></svg>
+							<p class="icon-name">icon-Trash</p>
+							<p class="icon-desc">Used for deletion</p>
 						</li>
 						<li>
-							<span class="e360-options-ellipsis"></span>
-							<p class="icon-name">e360-options-ellipsis</p>
-							<p class="icon-desc">Workspace options, found on workspace tiles</p>
+							<svg class="icon icon-Add"><use xlink:href="./assets/images/symbol-defs.svg#icon-Add"></use></svg>
+							<p class="icon-name">icon-Add</p>
+							<p class="icon-desc">Used for addition</p>
 						</li>
 						<li>
-							<span class="e360-search"></span>
-							<p class="icon-name">e360-search</p>
-							<p class="icon-desc">Search</p>
+							<svg class="icon icon-Chat"><use xlink:href="./assets/images/symbol-defs.svg#icon-Chat"></use></svg>
+							<p class="icon-name">icon-Chat</p>
+							<p class="icon-desc">Used for chats, comments, etc.</p>
 						</li>
 						<li>
-							<span class="e360-edit"></span>
-							<p class="icon-name">e360-edit</p>
-							<p class="icon-desc">Edit</p>
+							<svg class="icon icon-Check"><use xlink:href="./assets/images/symbol-defs.svg#icon-Check"></use></svg>
+							<p class="icon-name">icon-Check</p>
+							<p class="icon-desc">Used for checkmarks</p>
 						</li>
 						<li>
-							<span class="e360-save"></span>
-							<p class="icon-name">e360-save</p>
-							<p class="icon-desc">Save a workspace or report</p>
+							<svg class="icon icon-Calendar-alt"><use xlink:href="./assets/images/symbol-defs.svg#icon-Calendar-alt"></use></svg>
+							<p class="icon-name">icon-Calendar-alt</p>
+							<p class="icon-desc">Used for date pickers, calendars, etc.</p>
 						</li>
 						<li>
-							<span class="e360-download"><svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg></span>
-							<p class="icon-desc">Download / Export</p>
+							<svg class="icon icon-Message"><use xlink:href="./assets/images/symbol-defs.svg#icon-Message"></use></svg>
+							<p class="icon-name">icon-Message</p>
+							<p class="icon-desc">Used for email, messages</p>
 						</li>
 						<li>
-							<span class="e360-copy"></span>
-							<p class="icon-name">e360-copy</p>
-							<p class="icon-desc">Copy a workspace or report from a tile</p>
+							<svg class="icon icon-Save-alt"><use xlink:href="symbol-defs.svg#icon-Save-alt"></use></svg>
+							<p class="icon-name">icon-Save-alt</p>
+							<p class="icon-desc">Used for saving <span class="secondary">(not a helveticon)</span></p>
 						</li>
 						<li>
-							<span class="e360-share"></span>
-							<p class="icon-name">e360-share</p>
-							<p class="icon-desc">Share a workspace from a tile or subnavigation</p>
+							<svg class="icon icon-Navigationdown"><use xlink:href="./assets/images/symbol-defs.svg#icon-Navigationdown"></use></svg>
+							<p class="icon-name">icon-Navigationdown</p>
+							<p class="icon-desc">Used to indicate selection box, expansion, or sorting</p>
 						</li>
 						<li>
-							<span class="e360-workspace-landing"></span>
-							<p class="icon-name">e360-workspace-landing</p>
-							<p class="icon-desc">Breadcrumb to return to list of workspaces</p>
+							<svg class="icon icon-download"><use xlink:href="./assets/images/symbol-defs.svg#icon-download"></use></svg>
+							<p class="icon-name">icon-download</p>
+							<p class="icon-desc">Used for download, export</p>
 						</li>
 						<li>
-							<span class="e360-view-list"></span>
-							<p class="icon-name">e360-view-list</p>
-							<p class="icon-desc">(Not currently used) List view of workspaces and reports</p>
+							<svg class="icon icon-Upload"><use xlink:href="./assets/images/symbol-defs.svg#icon-Upload"></use></svg>
+							<p class="icon-name">icon-Upload</p>
+							<p class="icon-desc">Used for upload, import</p>
 						</li>
 						<li>
-							<span class="e360-workspace"></span>
-							<p class="icon-name">e360-workspace</p>
-							<p class="icon-desc">Breadcrumb to return to workspace</p>
+							<svg class="icon icon-Thumbnails"><use xlink:href="./assets/images/symbol-defs.svg#icon-Thumbnails"></use></svg>
+							<p class="icon-name">icon-Thumbnails</p>
+							<p class="icon-desc">Used for grids, tiles, etc.</p>
 						</li>
 						<li>
-							<span class="e360-chart-bar"></span>
-							<p class="icon-name">e360-chart-bar</p>
-							<p class="icon-desc">Bar chart</p>
+							<svg class="icon icon-List"><use xlink:href="./assets/images/symbol-defs.svg#icon-List"></use></svg>
+							<p class="icon-name">icon-List</p>
+							<p class="icon-desc">Used for menu, justified text</p>
 						</li>
 						<li>
-							<span class="e360-chart-bar-stacked"></span>
-							<p class="icon-name">e360-chart-bar-stacked</p>
-							<p class="icon-desc">Stacked bar chart</p>
+							<svg class="icon icon-Print"><use xlink:href="./assets/images/symbol-defs.svg#icon-Print"></use></svg>
+							<p class="icon-name">icon-Print</p>
+							<p class="icon-desc">Used for print</p>
 						</li>
 						<li>
-							<span class="e360-chart-bar-stack-vertical"></span>
-							<p class="icon-name">e360-chart-bar-stack-vertical</p>
-							<p class="icon-desc">Vertically stacked bar chart</p>
+							<svg class="icon icon-User"><use xlink:href="./assets/images/symbol-defs.svg#icon-User"></use></svg>
+							<p class="icon-name">icon-User</p>
+							<p class="icon-desc">Used to indicate person, profile, user</p>
 						</li>
 						<li>
-							<span class="e360-chart-switch-matrix"></span>
-							<p class="icon-name">e360-chart-switch-matrix</p>
-							<p class="icon-desc">Sankey switch matrix</p>
+							<svg class="icon icon-Pinlocation"><use xlink:href="./assets/images/symbol-defs.svg#icon-Pinlocation"></use></svg>
+							<p class="icon-name">icon-Pinlocation</p>
+							<p class="icon-desc">Used for location, maps</p>
 						</li>
 						<li>
-							<span class="e360-column-shift-arrow"></span>
-							<p class="icon-name">e360-column-shift</p>
-							<p class="icon-desc">(Not currently used) Horizontal auto-scroll of table by 1 column</p>
+							 <svg class="icon icon-Edit"><use xlink:href="./assets/images/symbol-defs.svg#icon-Edit"></use></svg>
+							<p class="icon-name">icon-Edit</p>
+							<p class="icon-desc">Used for edit</p>
 						</li>
 						<li>
-							<span class="e360-column-shift-double-arrow"></span>
-							<p class="icon-name">e360-shift-double-arrow</p>
-							<p class="icon-desc">(Not currently used) Horizontal auto-scroll of table by currently visible columns</p>
+							<svg class="icon icon-Folder"><use xlink:href="./assets/images/symbol-defs.svg#icon-Folder"></use></svg>
+							<p class="icon-name">icon-Folder</p>
+							<p class="icon-desc">Used for folder, project</p>
 						</li>
 						<li>
-							<span class="e360-locked"></span>
-							<p class="icon-name">e360-locked</p>
-							<p class="icon-desc">(Not currently used) Locked column on table</p>
+							<svg class="icon icon-Rate"><use xlink:href="./assets/images/symbol-defs.svg#icon-Rate"></use></svg>
+							<p class="icon-name">icon-Rate</p>
+							<p class="icon-desc">Used for favorites, rates</p>
 						</li>
 						<li>
-							<span class="e360-unlocked"></span>
-							<p class="icon-name">e360-unlocked</p>
-							<p class="icon-desc">(Not currently used) Unlocked column on table</p>
+							<svg class="icon icon-Favorite"><use xlink:href="./assets/images/symbol-defs.svg#icon-Favorite"></use></svg>
+							<p class="icon-name">icon-Favorite</p>
+							<p class="icon-desc">Used for favorites, matters of the heart</p>
+						</li>
+						<li>
+							<svg class="icon icon-Barchart"><use xlink:href="./assets/images/symbol-defs.svg#icon-Barchart"></use></svg>
+							<p class="icon-name">icon-Barchart</p>
+							<p class="icon-desc">Used for bar chart</p>
 						</li>
 					</ul>
 				</div>
@@ -520,10 +530,10 @@ color: #00aeef;
 				<div class="component">
 					<div class="inputGroup range">
 						<div class="label">Label</div>
-							<!--<input class="range" type="range" name="points" min="0" max="10">
-							<label for="points" onforminput="value = points.valueAsNumber"></label>-->
 							<img src="./assets/images/ui-range.png" height="29" width="156"/>
 							<p class="sub-note">Note: Slider not built out in guide, general styles shown below:</p>
+							<input class="range" type="range" name="points" min="0" max="10">
+							<label for="points" onforminput="value = points.valueAsNumber"></label>
 					</div>
 					
 					<h3 class="show_styles">Show LESS</h3>
@@ -607,13 +617,15 @@ color: #00aeef;
 								</ul>
 							</li>
 							<li><a>Healthcare</a></li>
-							<li><a>Products</a><span class="e360-ui-drop-arrow"></span></li>
-							<li><a>Studio</a><span class="e360-ui-drop-arrow"></span></li>
+							<li><a>Products</a>
+								 <svg class="icon icon-Navigationdown"><use xlink:href="./assets/images/symbol-defs.svg#icon-Navigationdown"></use></svg></li>
+							<li><a>Studio</a>
+								 <svg class="icon icon-Navigationdown"><use xlink:href="./assets/images/symbol-defs.svg#icon-Navigationdown"></use></svg></li>
 							<li><a>Articles</a></li>
 							<li><a>Notifications</a> <span class="alert"> 1 </span></li>
 						</ul>
 						<ul class="right-container">
-							<li class="search e360-search"></li>
+							<span class="search"><svg class="icon icon-Search"><use xlink:href="./assets/images/symbol-defs.svg#icon-Search"></use></svg></span>
 							<li id="logo"><img src="./assets/images/logo.png" width="45" height="24" /></li>
 						</ul>
 					</div>
@@ -635,19 +647,21 @@ color: #00aeef;
 						<div class="subNavLeft">
 							<ul class="breadcrumbNav">
 								<li class="subNavItem breadcrumb">
-									<a id="workspaceLandingButton"><span class="e360-view-grid"></span></a>
+									<a id="workspaceLandingButton"><span class="grid"><svg class="icon icon-Thumbnails"><use xlink:href="./assets/images/symbol-defs.svg#icon-Thumbnails"></use></svg></span></a>
 								</li>
 								<li class="subNavItem breadcrumb">
-									<a id="workspaceButton"><span class="e360-workspace"></span></a>
+									<a id="workspaceButton"><span class="project"><svg class="icon icon-Folder"><use xlink:href="./assets/images/symbol-defs.svg#icon-Folder"></use></svg></span></span></a>
 								</li>
-								<li class="subNavItem pageTitle"><span class="e360-faved"></span>Chart</li>
+								<li class="subNavItem pageTitle">
+									<svg class="icon icon-Rate"><use xlink:href="./assets/images/symbol-defs.svg#icon-Rate"></use></svg>
+									Chart</li>
 							</ul>
 							<ul class="chartTypeList">
 								<li class="subNavItem chart active" id="businessBasic">
-									<span class="icon active e360-chart-bar-stack-vertical"></span>
+									<svg class="icon icon-Poll"><use xlink:href="./assets/images/symbol-defs.svg#icon-Poll"></use></svg>
 								</li>
 								<li class="subNavItem chart" id="sankey">
-									<span class="icon e360-chart-switch-matrix"></span>
+									<svg class="icon icon-Barchart"><use xlink:href="./assets/images/symbol-defs.svg#icon-Barchart"></use></svg>
 								</li>
 							</ul>
 							<ul class="reportDetails">
@@ -664,10 +678,10 @@ color: #00aeef;
 						<div class="subNavRight">
 							<ul class="reportSettings">
 								<li class="subNavItem reportAction exportButton">
-									<svg version="1.1" id="export_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="12px" height="14px" viewBox="0 0 12 14" enable-background="new 0 0 12 14" xml:space="preserve"><g id="export"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M10.707,4.801H7.533V0H4.149v4.801H0.975l4.867,5.896 L10.707,4.801z M0,11.862V14h11.682v-2.138H0z"/></g></g></svg>
+									<svg class="icon icon-download"><use xlink:href="./assets/images/symbol-defs.svg#icon-download"></use></svg>
 								</li>
 								<li class="subNavItem reportAction saveButton">
-									<span class="icon e360-save"></span>
+									<svg class="icon icon-Barchart"><use xlink:href="./assets/images/symbol-defs.svg#icon-Barchart"></use></svg>
 								</li>
 								<li class="subNavItem reportAction">
 									<a>Settings</a>

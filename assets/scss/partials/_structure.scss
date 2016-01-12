@@ -105,22 +105,22 @@ img.scale-with-grid {
 		right: 0;
 		#logo {
 			border-left:$main-nav-border;
-			//margin-top: -0.5rem;
-			//height: 3.7rem;
 			padding: 0.5rem 2.0rem 0 1.5rem;
-			line-height: 4.4rem;
+			line-height: 4.1rem;
+		}
+		.icon-Search {
+			height: 2.0rem;
+			width: 2.0rem;
+			//line-height: 5.0rem;
 		}
 		.search {
-			position: relative;
-			padding-right: 1.5rem;
-			//top: -0.3rem;
+			display: inline-block;
+			padding: 1.5rem 1.5rem 0 1.3rem;
+			height: 3.4rem;
 			&:hover {
 				cursor: pointer;
 				background: $main-nav-selected;
 			}
-		}
-		.e360-search {
-			font-size: 1.8rem;
 		}
 	}
 }
@@ -239,10 +239,20 @@ img.scale-with-grid {
 	.breadcrumbNav {
 		.breadcrumb {
 			margin-right: -1.5rem;
-			padding-left: 2.5rem;
+			padding-left: 2rem;
 			margin-left: 1.5rem;
 			padding-right: 0.3rem; 
-			a {color: $font-color-secondary;}
+			a {
+				color: $font-color-secondary;
+				.icon {
+					fill: $font-color-secondary;
+				}
+			}
+			.icon {
+				fill: $font-color-secondary;
+				height: 1.8rem;
+				width: 1.8rem;
+			}
 			&:before,
 			&:after {
 				content: "";
@@ -261,11 +271,16 @@ img.scale-with-grid {
 				border-left: 1.5rem solid $sub-nav-color; 
 			}
 			&:first-child {
-				padding-left: 3.0rem;
+				padding-left: 2rem;
 				margin-left: 0rem;
 			}
 			&:hover { 
-				a{color: $font-color-base;} 
+				a {color: $font-color-base;
+					.icon {
+						fill: $font-color-base;
+					}
+				} 
+				.icon {fill: $font-color-base;} 
 				background: $sub-nav-selected;
 				&:after {
 					border-left: 1.5rem solid $sub-nav-selected;
