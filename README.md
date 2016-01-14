@@ -16,4 +16,5 @@ Invo's Reusable Style Guide
 * "load-grunt-config": "^0.17.2",
 * "ssi": "^0.3.0",
 * "time-grunt": "^1.2.1"
-5. Now you're ready to start your project. Open two shells, and type 'node server' in one, and 'grunt' in the other. 'Node server' will allow you to view your site at 'http://localhost:1337/'. 'Grunt' will watch your scss directory for changes.
+5.   
+6. Now you're ready to start your project. Open two shells, and type 'node server' in one, and 'grunt' in the other. 'Node server' will allow you to view your site at 'http://localhost:1337/'. 'Grunt' will watch your scss directory for changes.
