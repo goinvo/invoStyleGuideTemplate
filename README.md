@@ -1,7 +1,7 @@
 Invo's Reusable Style Guide
 ==========
 
-###First steps:
+###Get running
 
 1. Download a zip of this repo to start your style guide project and extract it to your project repo.
 2. If you don't have it already, install node.js, and make sure it's added to your system path. https://nodejs.org/en/
