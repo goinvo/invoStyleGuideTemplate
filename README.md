@@ -24,10 +24,11 @@ This guide gives you two main css files. One is to use for the guide with some e
 ###Switching to less or another css preprocessor
 
 1. Open a shell
-2. Type 'npm install less --save'. This will add less to your dependencies in your package.json and install the modules you'll need. You can also remove contrib-sass from this list as well.
+2. Type 'npm install grunt-contrib-less --save'. This will add less to your dependencies in your package.json and install the modules you'll need. You can also remove contrib-sass from this list as well.
 3. Rename the 'scss' directory to 'less'
 4. Rename or resave your files as .less, and remove underscores from the partials' filenames.
 5. Go to the grun directory. You can create a new one or reconfigure your sass.js. Name the file less.js, and replace 'scss' or 'sass' with 'less'.
+6. Reconfigure your watch.js in the grunt directory, replace sass and scss with less.
 6. Rename all variables in your scss to use @ instead of $
 7. Rework mixins. Remove '@mixin' and '@include' and replace with a '.' instead.
 
